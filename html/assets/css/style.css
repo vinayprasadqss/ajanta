@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +7,11 @@
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
 }
+
 html {
     font-size: 15px !important;
 }
+
 /* varibales */
 :root {
     /* colors */
@@ -26,11 +29,12 @@ html {
     --testimonial-text: #828385e9;
     --testimonial-heading: #5d5e60e9;
 }
+
 a {
     text-decoration: none;
 }
 
-header{
+header {
     background: #fefefe;
     height: 100px;
     position: fixed;
@@ -41,17 +45,21 @@ header{
     box-shadow: 0px 0px 4px 0px #858585;
 }
 
-header nav.navBarNew .container .navbar-collapse{
+header nav.navBarNew .container .navbar-collapse {
     flex-grow: unset;
 }
-header nav.navBarNew .container .navbar-collapse li a img{
- margin-right: 10px;
+
+header nav.navBarNew .container .navbar-collapse li a img {
+    margin-right: 10px;
 }
-header nav.navBarNew .container .navbar-collapse li a{
+
+header nav.navBarNew .container .navbar-collapse li a {
     text-transform: uppercase;
     font-weight: 500;
 }
-header nav.navBarNew .container .navbar-collapse li a:hover, header nav.navBarNew .container .navbar-collapse li a.active{
+
+header nav.navBarNew .container .navbar-collapse li a:hover,
+header nav.navBarNew .container .navbar-collapse li a.active {
     color: #8c287b;
 }
 
@@ -72,38 +80,46 @@ header nav.navBarNew .container .navbar-collapse li a:hover, header nav.navBarNe
     align-items: center;
     position: relative;
 }
-.HomeBanner .swiper-slide .content{
+
+.HomeBanner .swiper-slide .content {
     position: absolute;
     width: 100%;
 
 }
-.HomeBanner .swiper-slide .content .inner{
+
+.HomeBanner .swiper-slide .content .inner {
     max-width: 420px;
 }
-.HomeBanner .swiper-slide .content .inner img{
+
+.HomeBanner .swiper-slide .content .inner img {
     margin-bottom: 20px;
     max-width: 350px;
 }
+
 .HomeBanner .swiper-slide .content .inner p {
     line-height: 32px;
     text-align: left;
 }
+
 .HomeBanner .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.HomeBanner .swiper-slide .content.other .inner{
+
+.HomeBanner .swiper-slide .content.other .inner {
     max-width: 1100px;
 }
+
 .HomeBanner .swiper-slide .content.other .inner ul {
     width: 100%;
     display: inline-block;
     margin: 0;
     padding: 0;
 }
-.HomeBanner .swiper-slide .content.other .inner ul li{
+
+.HomeBanner .swiper-slide .content.other .inner ul li {
     width: 50%;
     float: left;
     display: flex;
@@ -113,37 +129,170 @@ header nav.navBarNew .container .navbar-collapse li a:hover, header nav.navBarNe
     margin: 20px 0;
     padding: 0 40px;
 }
+
 .HomeBanner .swiper-slide .content.other .inner ul li p {
     font-size: 18px;
 }
 
-.HomeBanner .swiper-slide .content.other .inner ul li strong{
+.HomeBanner .swiper-slide .content.other .inner ul li strong {
     font-weight: bold;
 }
-.HomeBanner .swiper-slide .content.other .inner ul li img{
+
+.HomeBanner .swiper-slide .content.other .inner ul li img {
     width: 150px;
 }
 
 .HomeBanner .swiper-pagination {
     position: absolute;
-    left: 5% !important;  /* Adjust horizontal positioning as needed */
-    top: 50% !important;  /* Center vertically */
+    left: 5% !important;
+    /* Adjust horizontal positioning as needed */
+    top: 50% !important;
+    /* Center vertically */
     transform: translateY(-50%) !important;
     display: flex;
-    flex-direction: column;  /* Stack dots vertically */
+    flex-direction: column;
+    /* Stack dots vertically */
 }
 
 .HomeBanner .swiper-pagination .swiper-pagination-bullet {
-    margin: 5px 0;  /* Adjust spacing between dots */
-    background-color: #d090bd; /* Change dot color */
-    width: 10px;  /* Adjust dot size */
-    height: 10px;  /* Adjust dot size */
+    margin: 5px 0;
+    /* Adjust spacing between dots */
+    background-color: #d090bd;
+    /* Change dot color */
+    width: 10px;
+    /* Adjust dot size */
+    height: 10px;
+    /* Adjust dot size */
     border-radius: 50%;
     border: 1px solid #d090bd;
 }
 
 .HomeBanner .swiper-pagination.swiper-pagination-bullet-active {
-    background-color: #d090bd; /* Change active dot color */
+    background-color: #d090bd;
+    /* Change active dot color */
     border: 1px solid #d090bd;
+}
+
+.About {
+    padding-top: 40px;
+}
+
+.about_btn {
+    margin-top: 25px;
+}
+
+.about_btn button {
+    padding: 10px;
+    width: 30%;
+
+    background-color: white;
+}
+
+.about_btn_1 button {
+    padding: 10px;
+    width: 30%;
+    background-color: white;
+}
+
+.about_btn_1 button {
+    padding: 10px;
+    background-color: white;
+}
+
+.about_btn_1 {
+    margin-top: 15px;
+}
+
+.about_content {
+    margin: 0px;
+    padding: 0px;
+    /* width: 28%; */
+}
+
+.about_content h1 {
+    margin-top: 30px;
+    color: grey;
+}
+
+.about_content p {
+    font-size: 18px;
+}
+
+.about_img {
+    margin-left: 40px;
+}
+
+.AboutVitiligo {
+    margin-top: 50px;
+}
+
+
+.a li {
+    margin-top: 10px;
+}
+
+.vitiligo_img img {
+    width: 90%;
+}
+
+.vitiligo {
+    margin: 0;
+    padding: 0;
+}
+
+.VitiligoContent {
+    margin: 0;
+    padding: 0;
+}
+
+.vitiligo ul li {
+    margin-top: 5px;
+}
+
+.VitiligoContent h1 {
+    color: grey;
+}
+
+.VitiligoContent p,
+li {
+    font-size: 18px;
+}
+
+.custom-list {
+    margin: 0px;
+    padding: 0px;
+}
+
+.custom-list li {
+    list-style: none;
+}
+
+.list_content {
+    display: flex;
+    gap: 20px;
+}
+
+.list_content i {
+    font-size: 14px;
+}
+
+.cases {
+    margin-top: 25px;
+    background-color: #fce8f8;
+    color: purple;
+    font-weight: 300;
+    padding-top: 18px;
+    padding-right: 30px;
+    padding-left: 34px;
+   border-left: 10px solid purple!important;
+   border-right: 10px solid purple!important;
+}
+
+.cases p {
+    font-size: 27px;
+}
+
+.vitiligoSymptoms_img img{
+    width: 75%;
 }
 
