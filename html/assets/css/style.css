@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+html {
+    font-size: 15px !important;
+}
+/* varibales */
+:root {
+    /* colors */
+    --clr-header: #231f20;
+    --clr-footer: #333233;
+    --clr-white: #fff;
+    --nav-text-color: rgb(217 218 218 / 80%);
+    --clr-black: #231f20;
+    --clr-blue: #1bafed;
+    --clr-secondary: #555463;
+    --footer-bg: #9c9da130;
+    --testimonial-card: #9c9da176;
+    --footer-btn-primary: #00b9f2;
+    --footer-btn-secondary: #97989a;
+    --testimonial-text: #828385e9;
+    --testimonial-heading: #5d5e60e9;
+}
+a {
+    text-decoration: none;
+}
+
+header{
+    background: #fefefe;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    box-shadow: 0px 0px 4px 0px #858585;
+}
+
+header nav.navBarNew .container .navbar-collapse{
+    flex-grow: unset;
+}
+header nav.navBarNew .container .navbar-collapse li a img{
+ margin-right: 10px;
+}
+header nav.navBarNew .container .navbar-collapse li a{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+header nav.navBarNew .container .navbar-collapse li a:hover, header nav.navBarNew .container .navbar-collapse li a.active{
+    color: #8c287b;
+}
+
+.HomeBanner .swiper {
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    margin-top: 100px;
+}
+
+.HomeBanner .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.HomeBanner .swiper-slide .content{
+    position: absolute;
+    width: 100%;
+
+}
+.HomeBanner .swiper-slide .content .inner{
+    max-width: 420px;
+}
+.HomeBanner .swiper-slide .content .inner img{
+    margin-bottom: 20px;
+    max-width: 350px;
+}
+.HomeBanner .swiper-slide .content .inner p {
+    line-height: 32px;
+    text-align: left;
+}
+.HomeBanner .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.HomeBanner .swiper-slide .content.other .inner{
+    max-width: 1100px;
+}
+.HomeBanner .swiper-slide .content.other .inner ul {
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.HomeBanner .swiper-slide .content.other .inner ul li{
+    width: 50%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+    padding: 0 40px;
+}
+.HomeBanner .swiper-slide .content.other .inner ul li p {
+    font-size: 18px;
+}
+
+.HomeBanner .swiper-slide .content.other .inner ul li strong{
+    font-weight: bold;
+}
+.HomeBanner .swiper-slide .content.other .inner ul li img{
+    width: 150px;
+}
+
+.HomeBanner .swiper-pagination {
+    position: absolute;
+    left: 5% !important;  /* Adjust horizontal positioning as needed */
+    top: 50% !important;  /* Center vertically */
+    transform: translateY(-50%) !important;
+    display: flex;
+    flex-direction: column;  /* Stack dots vertically */
+}
+
+.HomeBanner .swiper-pagination .swiper-pagination-bullet {
+    margin: 5px 0;  /* Adjust spacing between dots */
+    background-color: #d090bd; /* Change dot color */
+    width: 10px;  /* Adjust dot size */
+    height: 10px;  /* Adjust dot size */
+    border-radius: 50%;
+    border: 1px solid #d090bd;
+}
+
+.HomeBanner .swiper-pagination.swiper-pagination-bullet-active {
+    background-color: #d090bd; /* Change active dot color */
+    border: 1px solid #d090bd;
+}
+
