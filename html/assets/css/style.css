@@ -177,29 +177,29 @@ header nav.navBarNew .container .navbar-collapse li a.active {
     padding-top: 40px;
 }
 
-.about_btn {
+.btn_group {
     margin-top: 25px;
 }
 
-.about_btn button {
+.btn_group button {
     padding: 10px;
     width: 30%;
 
     background-color: white;
 }
 
-.about_btn_1 button {
+.btn_group_1 button {
     padding: 10px;
     width: 30%;
     background-color: white;
 }
 
-.about_btn_1 button {
+.btn_group_1 button {
     padding: 10px;
     background-color: white;
 }
 
-.about_btn_1 {
+.btn_group_1 {
     margin-top: 15px;
 }
 
@@ -209,7 +209,7 @@ header nav.navBarNew .container .navbar-collapse li a.active {
     /* width: 28%; */
 }
 
-.about_content h1 {
+.about_content h2 {
     margin-top: 30px;
     color: grey;
 }
@@ -231,8 +231,12 @@ header nav.navBarNew .container .navbar-collapse li a.active {
     margin-top: 10px;
 }
 
+.vitiligo_img{
+   
+}
 .vitiligo_img img {
-    width: 90%;
+    width: 100%;
+     margin-left: 20px
 }
 
 .vitiligo {
@@ -251,6 +255,10 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 
 .VitiligoContent h1 {
     color: grey;
+}
+
+.Vitiligo p {
+    font-size: 18px;
 }
 
 .VitiligoContent p,
@@ -284,15 +292,152 @@ li {
     padding-top: 18px;
     padding-right: 30px;
     padding-left: 34px;
-   border-left: 10px solid purple!important;
-   border-right: 10px solid purple!important;
+    border-left: 10px solid purple !important;
+    border-right: 10px solid purple !important;
 }
 
 .cases p {
     font-size: 27px;
 }
 
-.vitiligoSymptoms_img img{
-    width: 75%;
+.vitiligoSymptoms_img {
+    margin-left: 20px;
+    ;
 }
+
+
+.vitiligoSymptoms_img img {
+    width: 100%;
+    height: 320px;
+    margin-left: 20px;
+}
+
+.rotated-text-container {
+    position: relative;
+    /* Positioning context for absolute positioning */
+
+}
+
+.rotated-text {
+    position: absolute;
+    /* Position relative to the container */
+    top: 32px;
+    right: 170px;
+    transform: rotate(-90deg);
+    /* Rotates the text -90 degrees */
+    transform-origin: right top;
+    /* Sets the rotation origin */
+    font-size: 24px;
+    white-space: nowrap;
+    /* Prevents text wrapping */
+
+}
+
+.rotated-texts {
+    position: absolute;
+    /* Position relative to the container */
+    top: 32px;
+    right: 119px;
+    transform: rotate(-90deg);
+    /* Rotates the text -90 degrees */
+    transform-origin: right top;
+    /* Sets the rotation origin */
+    font-size: 24px;
+    white-space: nowrap;
+    /* Prevents text wrapping */
+
+}
+
+.row_container {
+    display: flex;
+    width: 67%;
+    justify-content: space-around;
+    border: 1px solid;
+    border-bottom: none !important;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(230, 227, 227);
+    border-radius: 10px;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.row_containers {
+
+    display: flex;
+    width: 67%;
+    justify-content: space-around;
+    border: 1px solid;
+    border-top: none !important;
+    margin: 0;
+    padding: 0;
+    background-color: white !important;
+    border-radius: 10px;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+
+}
+
+.about_section_img img{
+    height: 300px;
+    width: 100%;
+}
+
+.About_section_3 p{
+    font-size: 18px;
+}
+
+.about_section_4_img img{
+    width: 70%;
+   
+}
+
+.description p{
+    text-align: center;
+}
+
+.categories{
+    width: 30%;
+    border-radius: 5px;
+}
+
+.categories img{
+    padding: 12px;
+}
+.living_img img{
+    margin-left: 20px;
+}
+.Living{
+    width: 30%;
+    border-radius: 5px;
+ 
+}
+.Living img{
+    padding: 12px;
+}
+
+.Living_info{
+gap: 25px;
+}
+
+.column{
+  width: 30%;
+  border-bottom: 5px solid rgb(194, 193, 193) !important;
+  padding: 25px;
+}
+
+.column p{
+    font-size: 16px;
+}
+.food_item{
+    gap: 25px;
+}
+
+.Cosmetic{
+    background-color: #D3D3D3;
+}
+.cosmetic_img img{
+    height: 300px;
+}
+
 
