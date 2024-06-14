@@ -10,7 +10,7 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-var swiper1 = new Swiper(".mySwiper1", {
+var swiper= new Swiper(".mySwiper2", {
     slidesPerView: 1, // Number of slides per view
     spaceBetween: 10, // Space between each slide
     loop: true, // Enable looping mode

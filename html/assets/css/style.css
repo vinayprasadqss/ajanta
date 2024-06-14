@@ -201,13 +201,11 @@ header nav.navBarNew .container .navbar-collapse li a.active {
     margin: 0;
     padding: 0;
   
-    h2 {
-      margin-top: 30px;
-      color: grey;
-    }
+    
   
     p {
       font-size: 18px;
+      line-height: 2;
     }
   }
   
@@ -239,14 +237,16 @@ header nav.navBarNew .container .navbar-collapse li a.active {
       margin-top: 5px;
     }
   
-    p,
+    p{
+      line-height: 2;
+      font-size: 18px;
+    }
+    
     li {
       font-size: 18px;
     }
   
-    h1 {
-      color: grey;
-    }
+   
   }
   
   .custom-list {
@@ -291,7 +291,7 @@ header nav.navBarNew .container .navbar-collapse li a.active {
   
     img {
       width: 100%;
-      height: 320px;
+      height: auto;
       margin-left: 20px;
     }
   }
@@ -329,7 +329,7 @@ header nav.navBarNew .container .navbar-collapse li a.active {
     border-radius: 10px;
   
     &.row_container {
-      background-color: rgb(230, 227, 227);
+      background-color: #f3f4f4;
       border-bottom: none !important;
       border-bottom-left-radius: 0 !important;
       border-bottom-right-radius: 0 !important;
@@ -359,10 +359,14 @@ header nav.navBarNew .container .navbar-collapse li a.active {
   }
   
   .categories {
-    width: 30%;
+    width: 32%;
     border-radius: 5px;
   
     img {
+      padding: 12px;
+    }
+
+    p{
       padding: 12px;
     }
   }
@@ -373,7 +377,7 @@ header nav.navBarNew .container .navbar-collapse li a.active {
   
   .Living {
     width: 31%;
-    border-radius: 5px;
+    border-radius: 8px;
   
     img {
       padding: 12px;
@@ -389,25 +393,25 @@ header nav.navBarNew .container .navbar-collapse li a.active {
   }
   
   .Living_info {
-    gap: 25px;
+    gap: 40px;
   }
   
   .column {
-    width: 30%;
+    width: 31%;
     border-bottom: 5px solid rgb(194, 193, 193) !important;
     padding: 25px;
   
     p {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
   
   .food_item {
-    gap: 25px;
+    gap: 39px;
   }
   
   .Cosmetic {
-    background-color: #e8e8ea;
+    background-color: #ebecec;
   }
   
   .cosmetic_img {
@@ -415,7 +419,7 @@ header nav.navBarNew .container .navbar-collapse li a.active {
   
     img {
       width: 100%;
-      height: 300px;
+      height: 330px;
       margin-left: 20px;
     }
   }
@@ -426,6 +430,8 @@ header nav.navBarNew .container .navbar-collapse li a.active {
   
   .yoga_content,
   .yoga_contents {
+    
+    border-radius: 12px;
     background-color: #e8e8ea;
   
     &.yoga_contents {
@@ -435,7 +441,10 @@ header nav.navBarNew .container .navbar-collapse li a.active {
   
       h2 {
         margin: 0;
+        font-size: 3rem;
       }
+
+    
     }
   }
   
@@ -683,7 +692,7 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 .website_link_btn button {
   padding: 10px;
   background-color: white;
-  color: var(--clr-blue);
+  color: #3b3da1;
 }
 
 .bottom_img {
@@ -727,11 +736,28 @@ header nav.navBarNew .container .navbar-collapse li a.active {
     position: absolute;bottom: 0px;
     left: 765px;
     width: 50%;
+    top: -5px;
 }
 
 .column_detail{
     width: 80%;
     background-color:#d2e0e6 !important;
+
+    
+}.column_detail h4{
+  font-weight: 600;
+  color:#5b5b5c;
+}
+
+.text-bold{
+  font-weight: 600;
+  color: #5b5d69;
+}
+
+.fa-caret-up{
+  margin-top: 10px;
+  font-size: 20px;
+  color: #c5c6c6;
 }
 
 .slider{
@@ -763,4 +789,77 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 
 .accordion-button:not(.collapsed)::before {
     content: '\f068'; /* Font Awesome minus icon */
+}
+
+
+nav ul li a.active {
+  /* border-bottom: 2px solid pink; */
+  color: #8c287b;
+}
+
+.swiper-pagination-progressbar{
+  display: none;
+}
+
+.heading{
+  color: #727271;
+  font-weight: 600;
+}
+
+.strong{
+  font-weight: 700;
+  font-size: 18px;
+  color: #625b5b!important;
+}
+
+.list_description ,p{
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.slides{
+  line-height: 2;
+ 
+}
+
+.swiper-button-prev{
+  border-radius: 70px;
+    height: 77px;
+  width: 78px;
+    /* padding: 20px; */
+    border: 1px solid black;
+}
+
+.swiper-button-prev::after{
+  display: none;
+}
+
+.swiper-button-next::after{
+  display: none;
+}
+
+.fa-arrow-left{
+  font-size: 30px;
+  color: black;
+}
+
+.fa-arrow-right{
+  font-size: 30px;
+  color: black;
+}
+
+
+
+
+.swiper-button-next{
+  border-radius: 70px;
+  height: 77px;
+  width: 78px;
+    /* padding: 20px; */
+    border: 1px solid black;
+}
+.circle{
+  width: 50px;
+  border-radius: 26px;
+  border: 2px dotted #000;
 }
