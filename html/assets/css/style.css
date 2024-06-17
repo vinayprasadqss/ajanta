@@ -8,6 +8,16 @@
   font-family: "Poppins", sans-serif;
 }
 
+body ,html{
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+
+.swiper-slide {
+  overflow: hidden;
+}
+
 html {
   font-size: 15px !important;
 }
@@ -58,9 +68,13 @@ header nav.navBarNew .container .navbar-collapse li a {
   font-weight: 500;
 }
 
-header nav.navBarNew .container .navbar-collapse li a:hover,
-header nav.navBarNew .container .navbar-collapse li a.active {
+header nav.navBarNew .container .navbar-collapse li a:hover{
   color: #8c287b;
+}
+
+header nav.navBarNew .container .navbar-collapse li a.active {
+  /* background-color: #cf8ebd; */
+    color:#cf8ebd;;
 }
 
 .HomeBanner .swiper {
@@ -172,65 +186,98 @@ header nav.navBarNew .container .navbar-collapse li a.active {
   /* Change active dot color */
   border: 1px solid #d090bd;
 }
-/* .first_slide{
-  height: 100vh!important;
-} */
-.swiper_content{
+
+.slider {
+  width: 100%;
+  overflow: hidden;
   position: relative;
 }
 
-.bg-image{
+/* .first_slide{
+  height: 100vh!important;
+} */
+.swiper_content {
+  position: relative;
+}
+
+.bg-image {
   position: absolute;
   top: 205px;
-    left: 143px;
+  left: 143px;
 
 }
+
 .bg-image img {
-  width: 75%!important;
+  width: 75% !important;
 }
 
-.dropdown-item{
-  padding: 10px;
-  border-bottom: 1px solid lightgray ;
-}
 
 .dropdown-menu{
+  --bs-dropdown-link-active-bg:transparent!important;
+}
+.dropdown-item {
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.dropdown-menu {
   width: 200px;
   padding: 0;
   margin: 0;
 }
-.dropdown-menu li{
+
+.dropdown-menu li {
   padding: 0;
   margin: 0;
 }
 
-.dropdown-menu li :hover{
+
+
+.dropdown-menu li :hover {
   background-color: #cf8ebd;
-  color: white!important;
+  color: white !important;
 }
+
 .About {
   padding-top: 40px;
 }
 
 .btn_group {
   margin-top: 25px;
+}
 
-  button {
-    padding: 10px;
-    width: 30%;
-    background-color: white;
-  }
+.btn_group button {
+  padding: 10px;
+  width: 30%;
+  background-color: #fdfdfd;
+  color: #c2c4c4;
+  border: 1px solid #c2c4c4;
+}
+
+.btn_group button:hover {
+  background-color: white!important;
+  border: 1px solid black!important;
+  color: black!important;
 }
 
 .btn_group_1 {
   margin-top: 15px;
-
-  button {
-    padding: 10px;
-    width: 30%;
-    background-color: white;
-  }
 }
+
+.btn_group_1 button {
+  padding: 10px;
+  width: 30%;
+  background-color: #fdfdfd;
+  color: #c2c4c4;
+  border: 1px solid #c2c4c4;
+}
+
+.btn_group_1 button:hover {
+  background-color: white!important;
+  border: 1px solid black!important;
+  color: black!important;
+}
+
 
 .about_content {
   margin: 0;
@@ -261,6 +308,10 @@ header nav.navBarNew .container .navbar-collapse li a.active {
     width: 100%;
     margin-left: 20px;
   }
+}
+
+.symptoms{
+  width: 10%;
 }
 
 .vitiligo,
@@ -345,11 +396,11 @@ header nav.navBarNew .container .navbar-collapse li a.active {
   white-space: nowrap;
 
   &.rotated-text {
-    right: 50px;
+  right: 33px;
   }
 
   &.rotated-texts {
-    right: 119px;
+    right: 98px;
   }
 }
 
@@ -375,6 +426,8 @@ header nav.navBarNew .container .navbar-collapse li a.active {
     border-top: none !important;
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
+    padding-bottom: 30px;
+    padding-top: 30px;
   }
 }
 
@@ -419,7 +472,7 @@ header nav.navBarNew .container .navbar-collapse li a.active {
   }
 }
 
-.Living_info{
+.Living_info {
   margin-bottom: 60px;
 }
 
@@ -512,6 +565,13 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 
 .accordion-body {
   font-size: 1.2rem;
+
+
+}
+
+.accordion-item h1 button {
+  font-weight: 700 !important;
+  color: #7a7471 !important;
 }
 
 .accordion-item,
@@ -581,8 +641,8 @@ footer {
     .top {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 50px;
       margin-top: 20px;
+      padding-top: 20px;
 
       .logo-details {
         color: #fff;
@@ -709,6 +769,7 @@ footer {
       a {
         font-size: 14px;
         font-weight: 300;
+        margin-left: -128px;
         color: #fff;
         opacity: 0.8;
         text-decoration: none;
@@ -743,6 +804,7 @@ footer {
 
   img {
     width: 50%;
+    margin-right: -128px;
   }
 }
 
@@ -778,7 +840,7 @@ footer {
 .about_image {
   position: absolute;
   bottom: 0px;
-  left: 765px;
+  left: 706px;
   width: 50%;
   top: -5px;
 }
@@ -806,9 +868,7 @@ footer {
   color: #c5c6c6;
 }
 
-.slider {
-  height: auto !important;
-}
+
 
 
 .accordion-button {
@@ -877,9 +937,10 @@ p {
 
 .swiper-button-prev {
   top: 321px;
+  margin-left: 116px;
   border-radius: 70px;
-  height: 77px;
-  width: 78px;
+  height: 66px;
+  width: 69px;
   /* padding: 20px; */
   border: 1px solid purple;
 }
@@ -893,26 +954,26 @@ p {
 }
 
 .fa-arrow-left {
+  font-weight: 400;
   font-size: 28px;
   color: purple;
 }
 
 .fa-arrow-right {
+  font-weight: 400;
   font-size: 28px;
-  color: purple;
+  color:#4c4b4b;
 }
 
-
-
-
 .swiper-button-next {
+  margin-right: 116px;
   border-radius: 70px;
   top: 321px;
 
-  height: 77px;
-  width: 78px;
+  height: 66px;
+  width: 69px;
   /* padding: 20px; */
-  border: 1px solid purple;
+  border: 1px solid #dadada;
 }
 
 .circle {
@@ -920,8 +981,166 @@ p {
   border-radius: 26px;
   border: 2px dotted purple;
 }
+.circle-1 {
+  width: 50px;
+  border-radius: 26px;
+  border: 2px dotted #dadada;
+}
 
 
+.contact {
+  border: none;
+  background-color: transparent;
+
+}
+
+.nav_contact {
+  display: flex;
+
+
+  button {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+form input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+  overflow: hidden;
+}
+
+.popup-content {
+  border-radius: 20px;
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 45px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+
+
+  h1 {
+    font-weight: 700;
+    color: #6e6e6d;
+    text-transform: none;
+  }
+
+  p {
+    color: #6e6e6d;
+    font-weight: 400;
+    text-transform: none;
+  }
+
+
+  form label {
+    color: #6e6e6d;
+    font-size: 12px;
+    text-transform: none;
+  }
+
+  button {
+    width: 100%;
+    padding: 20px;
+    background-color: #535353;
+    color: white;
+    border: none;
+    border-radius: 10px;
+  }
+
+  textarea {
+    height: 120px;
+  }
+}
+
+.close {
+  color: #aaa;
+
+  font-size: 29px;
+  font-weight: 400;
+  top: 12px;
+
+  color: white;
+  background-color: #c5c6c6;
+  right: 6px;
+  position: absolute;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  border: 1px solid;
+  /* padding: 5px; */
+  border-radius: 20px;
+  margin: auto;
+}
+
+
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form label {
+  display: block;
+
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+#backToTop {
+  width: 6%;
+  display: none;
+  position: fixed;
+  bottom: 298px;
+  right: -13px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 11px;
+  border-top-left-radius: 23px;
+  border-bottom-left-radius: 23px;
+  font-size: 12px!important;
+}
+
+#backToTop button{
+  background-color: white;
+  color: black;
+ 
+}
+
+
+/* .mySwiper {
+  overflow: scroll;
+} */
 
 @media (max-width: 600px) {
 
@@ -986,7 +1205,7 @@ p {
   }
 
 
- h4 {
+  h4 {
     font-size: 1.9rem;
     text-align: center;
   }
@@ -1009,46 +1228,50 @@ p {
     display: block;
     padding: 10px;
   }
-  .row_containers{
+
+  .row_containers {
     display: block;
   }
-  .rotated-text{
-    right: 0px!important;
+
+  .rotated-text {
+    right: 0px !important;
   }
 
   .column_detail {
     width: 100%;
   }
 
-  .About_section_3 p{
+  .About_section_3 p {
     font-size: 1.6rem;
     text-align: center;
   }
 
-  .about_section_4_img img{
+  .about_section_4_img img {
     width: 100%;
   }
+
   .description p {
     font-size: 1.5rem;
   }
 
-  .categories{
+  .categories {
     width: 100%;
   }
 
-  .living_img img{
+  .living_img img {
     margin-top: 20px;
   }
 
-  .Living_With_Vitiligo p{
+  .Living_With_Vitiligo p {
     font-size: 1.5rem;
   }
 
   .Living {
     width: 100%;
-    margin-top:30px;
+    margin-top: 30px;
+  }
 }
-}
+
 /* Small devices (portrait tablets and large phones, 600px to 768px) */
 @media (min-width: 601px) and (max-width: 768px) {
   .about_content {
