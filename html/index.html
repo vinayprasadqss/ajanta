@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="assets/css_1/vendors.min.css" />
+    <link rel="stylesheet" href="assets/css_1/icon.min.css" />
+    <link rel="stylesheet" href="assets/css_1/style.min.css" />
+
+    <link rel="stylesheet" href="assets/css_1/branding-agency.css" /> -->
 </head>
 
 <body>
@@ -101,31 +106,36 @@
 
 
                             <a class="nav-link nav_contact" href="#">
-                                 <img src="./assets/img/menu_bg.png" alt="bg" />
+                                <img src="./assets/img/menu_bg.png" alt="bg" />
                                 <button id="contactUsButton" class="contact nav-link ">Contact Us
-                            </button>
-                            <div id="popupForm" class="popup">
-                                <div class="popup-content">
-                                    <div class="close_btn">
-                                        <span class="close">&times;</span>
+                                </button>
+                                <div id="popupForm" class="popup">
+                                    <div class="popup-content">
+                                        <div class="close_btn">
+                                            <span class="close">&times;</span>
+                                        </div>
+
+                                        <h1>Connect with us</h1>
+                                        <hr>
+                                        <p>Please write your massage and contact information below. We will respond as
+                                            soon as possible.</p>
+
+                                        <form>
+                                            <input type="email" id="email" name="email" required
+                                                placeholder="knowyourvitiligo@ajantpharma.com"><br><br>
+                                            <textarea id="message" name="message" required
+                                                placeholder="Type your massage here!"></textarea><br><br>
+                                            <input type="number" id="number" name="number" required
+                                                placeholder="Enter your phone number" /><br><br>
+                                            <label>
+                                                <input type="checkbox" id="privacy" name="privacy" required>
+                                                I confirm that i've read and agree to<span
+                                                    class="text-decoration-underline mx-1">Privacy policy.</span>
+                                            </label><br><br>
+                                            <button type="submit">Submit</button>
+                                        </form>
                                     </div>
-                                   
-                                    <h1>Connect with us</h1>
-                                    <hr>
-                                    <p>Please write your massage and contact information below. We will respond as soon as possible.</p>
-                                   
-                                    <form>
-                                        <input type="email" id="email" name="email" required placeholder="knowyourvitiligo@ajantpharma.com"><br><br>
-                                        <textarea id="message" name="message" required placeholder="Type your massage here!"></textarea><br><br>
-                                        <input type="number" id="number" name="number" required placeholder="Enter your phone number"/><br><br>
-                                        <label>
-                                            <input type="checkbox" id="privacy" name="privacy" required>
-                                            I confirm that i've read and agree to<span class="text-decoration-underline mx-1">Privacy policy.</span> 
-                                        </label><br><br>
-                                        <button type="submit">Submit</button>
-                                    </form>
                                 </div>
-                            </div>
                             </a>
                         </li>
                     </ul>
@@ -133,6 +143,37 @@
             </div>
         </nav>
     </header>
+
+    <!-- <section class="stack-box py-0">
+        <div class="stack-box-contain">
+  
+            <div class="stack-item stack-item-01 bg-white lg-pt-8 lg-pb-8 md-pb-0">
+                <div class="stack-item-wrapper">
+                    <div class="container-fluid">
+                        <div class="row align-items-center full-screen md-h-auto">
+                            <div class="col-lg-6 cover-background overflow-visible h-100 md-h-500px w-100"
+                                style="background-image: url('assets/images/banner.jpg');">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="stack-item stack-item-02 bg-linen md-pt-0 md-pb-0">
+                <div class="stack-item-wrapper">
+                    <div class="container-fluid">
+                        <div class="row align-items-center full-screen md-h-auto">
+                            <div class="col-6 cover-background overflow-visible h-100 md-h-500px w-100"
+                                style="background-image: url('assets/img/banner2.jpg');">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
     <section id="home">
         <div class="HomeBanner">
             <div class="swiper mySwiper">
@@ -174,7 +215,7 @@
     <section id="about" class="mt-5 ">
         <div class="About">
             <div class="AllAboutVitiligo row justify-content-center">
-                <div class="col-10 col-10 col-lg-4 col-md-4 col-sm-10 about_content">
+                <div class="col-10 col-10 col-lg-4 col-md-10 col-sm-10 about_content">
                     <h1 class="heading">All About Vitiligo</h1>
                     <hr>
                     <p>Vitiligo is a long-term skin condition characterized by patches
@@ -194,7 +235,7 @@
                         <button class="  mx-3 scrollButton" data-target="#Complication"> Complications</button>
                     </div>
                 </div>
-                <div class="col-10 col-10 col-lg-4 col-md-4 col-sm-10 ">
+                <div class="col-10 col-10 col-lg-4 col-md-10 col-sm-10 ">
                     <div class="about_img">
                         <img src="assets/img/All about vitiligo.png" class="img-fluid" />
                     </div>
@@ -202,12 +243,13 @@
                 </div>
 
             </div>
+            </div>
     </section>
 
     <section id="sign">
         <div class="AboutVitiligo mt-5">
             <div class="row justify-content-center mt-5">
-                <div class="col-lg-8 col-md-8 col-sm-10 col-10 VitiligoContent mt-5">
+                <div class="col-lg-8 col-md-10 col-sm-10 col-10 VitiligoContent mt-5">
                     <h1 class="heading"> ‘Vitiligo Early Signsʼ: At a Glance </h1>
 
                     <p class="mt-3">While the patches by themselves are not dry or flaky, they may itch from
@@ -218,7 +260,7 @@
 
 
                 <div class="listsOfaffects row justify-content-center">
-                    <div class="col-10 col-10 col-lg-4 col-md-4 col-sm-10 vitiligo">
+                    <div class="col-10 col-10 col-lg-4 col-md-10 col-sm-10 vitiligo">
                         <ul class="custom-list">
                             <li>
                                 <div class="list_content">
@@ -313,7 +355,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-10 col-10 col-lg-4 col-md-4 col-sm-10 ">
+                    <div class="col-10 col-10 col-lg-4 col-md-10 col-sm-10 ">
                         <div class="vitiligo_img">
                             <img src="assets/img/At a Glance.png" class="img-fluid" />
 
@@ -325,7 +367,7 @@
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-8 border cases">
+            <div class="col-10 col-lg-8 col-md-10 col-sm-10  border cases">
                 <p>According to research, lip vitiligo constitutes about 16% of all vitiligo patients. In this case,
                     the lips lose their colour. Vitiligo treatment for lips can stop the spread to an extent if
                     detected early enough .</p>
@@ -336,7 +378,7 @@
 
             <div class="AboutVitiligo ">
                 <div class="row justify-content-center">
-                    <div class="col-8 VitiligoContent">
+                    <div class="col-lg-8 col-md-10 col-10 col-sm-10 VitiligoContent">
                         <h1 class="heading"> Vitiligo Symptoms</h1>
 
 
@@ -344,7 +386,7 @@
 
 
                     <div class="listsOfaffects row justify-content-center">
-                        <div class="col-10 col-10 col-lg-4 col-md-4 col-sm-10 vitiligo">
+                        <div class="col-10 col-10 col-lg-4 col-md-10 col-sm-10 vitiligo">
                             <p class="strong"> In terms of the diseaseʼs progression, here are the vitiligo
                                 symptoms in the order in which they usually appear:</p>
                             <ul class="custom-list">
@@ -404,7 +446,7 @@
                             </ul>
                         </div>
 
-                        <div class="col-10 col-10 col-lg-4 col-md-4 col-sm-10 ">
+                        <div class="col-10 col-10 col-lg-4 col-md-10 col-sm-10 ">
                             <div class="vitiligoSymptoms_img">
                                 <img src="assets/img/Stress and Vitiligo.png" class="img-fluid" />
 
@@ -418,7 +460,7 @@
 
             <div class="About_section ">
                 <div class="row justify-content-center mt-5">
-                    <div class="col-8 VitiligoContent mt-4">
+                    <div class="col-10 col-md-10 col-sm-10 col-lg-8 VitiligoContent mt-4">
                         <h1 class="heading"> Different Types of Vitiligo</h1>
                         <p> Vitiligo consists of two main types, namely:
                         </p>
@@ -428,7 +470,7 @@
 
                     <div class="row justify-content-center ">
                         <div class="row_container">
-                            <div class=" col-lg-5 col-md-5 col-sm-10 col-10 ">
+                            <div class=" col-lg-5 col-md-6 col-sm-6 col-6 ">
                                 <h4 class="mt-3">Segmental Vitiligo:</h4>
                                 <ul class="custom-list mt-3">
                                     <li>
@@ -537,7 +579,7 @@
                             <div class="row_containers ">
                                 <div class="col-lg-6 col-md-6 col-sm-10 col-10">
 
-                                    <div class="row">
+                                    <div class="row segemntal">
                                         <div class=" col-1 col-sm-1 col-md-3 col-lg-3 symptoms">
                                             <div class="rotated-text-container">
                                                 <div class="rotated-text">L O C A L I Z E D
@@ -591,6 +633,9 @@
                         </div>
 
                     </div>
+                    </div>
+                    </div>
+                </div>
 
     </section>
 
@@ -599,7 +644,7 @@
         <div class="About_section_2 mt-5">
 
             <div class="row justify-content-center mt-5">
-                <div class="col-8 VitiligoContent mt-4">
+                <div class="col-lg-8 col-10 col-sm-10 col-md-10 VitiligoContent mt-4">
                     <h1 class="heading"> What Causes Vitiligo to Spread?</h1>
                     <p> Vitiligo starts out as small white irregular patches, taking months or even, years
                         to
@@ -610,7 +655,7 @@
 
                 </div>
                 <div class=" row justify-content-center ">
-                    <div class="col-sm-10 col-10 col-lg-8 col-md-8 border about_section_column">
+                    <div class="col-sm-10 col-10 col-lg-8 col-md-10 border about_section_column">
                         <div class="row  about_row">
                             <div class="col-12 border column_detail">
                                 <h4> SUNBURN</h4>
@@ -661,14 +706,14 @@
     <section id="diagnosis">
         <div class="About_section_3 ">
             <div class="row justify-content-center mt-5">
-                <div class="col-8 about_content mt-4">
+                <div class="col-lg-8 col-10 col-sm-10 col-md-10 about_content mt-4">
                     <h1 class="heading">Vitiligo Diagnosis</h1>
 
                 </div>
 
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                <div class="col-lg-4 col-md-10 col-sm-10 col-10">
                     <p class="text-bold"> A dermatologist makes diagnosis of vitiligo by doing:
                     </p>
                     <ul class="custom-list">
@@ -708,7 +753,7 @@
 
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                <div class="col-lg-4 col-md-10 col-sm-10 col-10">
                     <div class="about_section_img">
                         <img src="assets/img/Vitiligo Diagnosis.png" class="img-fluid" />
                     </div>
@@ -726,7 +771,7 @@
 
         <div class="about_section_4 mt-5">
             <div class="row justify-content-center">
-                <div class="col-8 about_content">
+                <div class="col-lg-8 col-sm-10 col-md-10 col-10 about_content">
                     <h1 class="heading"> Complications Due to Vitiligo
                     </h1>
                     <p> Like other diseases, vitiligo too can cause other health complications such as:
@@ -735,7 +780,7 @@
             </div>
 
             <div class="row justify-content-center ">
-                <div class="col-lg-2 col-md-2 col-5 col-sm-5 text-center">
+                <div class="col-lg-2 col-md-5 col-5 col-sm-5 text-center">
                     <div class="about_section_4_img">
                         <img src="assets/img/Complication Due to Vitiligo 1.png" class="img-fluid" />
                         <div class="icon">
@@ -749,7 +794,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-2 col-md-2 col-5 col-sm-5 text-center">
+                <div class="col-lg-2 col-md-5 col-5 col-sm-5 text-center">
                     <div class="about_section_4_img">
                         <img src="assets/img/Complication Due to Vitiligo 2.png" class="img-fluid" />
                         <div class="icon">
@@ -762,7 +807,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-2 col-5 col-sm-5 text-center">
+                <div class="col-lg-2 col-md-5 col-5 col-sm-5 text-center">
                     <div class="about_section_4_img">
                         <img src="assets/img/Complication Due to Vitiligo 3.png" class="img-fluid" />
                         <div class="icon">
@@ -775,7 +820,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-2 col-5 col-sm-5 text-center">
+                <div class="col-lg-2 col-md-5 col-5 col-sm-5 text-center">
                     <div class="about_section_4_img">
                         <img src="assets/img/Complication Due to Vitiligo 4.png" class="img-fluid" />
                         <div class="icon">
@@ -797,7 +842,7 @@
     <section id="treatment">
         <div class="about_section_5">
             <div class="row justify-content-center mt-5">
-                <div class="col-8 about_content">
+                <div class=" col-lg-8 col-md-10 col-sm-8 col-8 about_content">
                     <h1 class="heading"> Treatment Options in Vitiligo
                     </h1>
                     <p> A dermatologist may prescribe a medication that focuses on stopping the disease
@@ -877,7 +922,7 @@
     <div class="Living_With_Vitiligo mt-5">
 
         <div class=" row justify-content-center mt-5">
-            <div class=" col-sm-10 col-10 col-lg-4 col-md-4 about_content">
+            <div class=" col-sm-10 col-10 col-lg-4 col-md-10 about_content">
                 <h1 class="heading">Living With Vitiligo</h1>
                 <hr>
                 <p>Living with vitiligo involves embracing one's uniqueness,
@@ -896,7 +941,7 @@
 
                 </div>
             </div>
-            <div class="col-sm-10 col-10 col-lg-4 col-md-4">
+            <div class="col-sm-10 col-10 col-lg-4 col-md-10">
                 <div class="living_img">
                     <img src="assets/img/Living With Vitiligo.png" class="img-fluid" />
                 </div>
@@ -906,21 +951,21 @@
         </div>
 
         <div class="row justify-content-center mt-5">
-            <div class="col-8">
+            <div class="col-10 col-lg-8 col-md-10 col-sm-10">
                 <h1 class="heading"> Living With Vitiligo
                 </h1>
                 <p> In addition to the treatments recommended by dermatologist, you can help manage the
                     disease by:
                 </p>
                 <div class="row mx-0 px-0 Living_info">
-                    <div class=" Living col-4 m-0 p-0 border ">
+                    <div class=" Living  col-lg-4 col-md-5 col-sm-5 col-5 m-0 p-0 border ">
                         <img src="assets/img/Living With Vitiligo 1.png" class="img-fluid" />
                         <p class="text-center">Protecting your skin from the sun. Use
                             sunscreen and wear clothes to help
                             protect your skin from sunburn and
                             long-term damage</p>
                     </div>
-                    <div class="Living col-4 m-0 p-0  border ">
+                    <div class="Living col-lg-4 col-md-5 col-sm-5 col-5 m-0 p-0  border ">
                         <img src="assets/img/Living With Vitiligo 2.png" class="img-fluid" />
                         <p class="text-center">Wearing cosmetics, such as self
                             tanning lotions or dyes, to cover
@@ -954,11 +999,12 @@
 
 
         </div>
+        </div>
 
         <section id="diet">
             <div class="Healthy">
                 <div class="row  mt-5 justify-content-center ">
-                    <div class="col-8">
+                    <div class="col-lg-8 col-sm-10 col-md-10 col-10">
                         <h1 class="heading">Healthy Diet for Vitiligo
                         </h1>
                         <div class="row food_item mt-4">
@@ -1143,433 +1189,301 @@
 
 
         <section id="makeup">
-        <div class="Cosmetic mt-5 mb-5">
-            <div class="row justify-content-center pt-5 mb-5">
-                <div class="col-8">
-                    <h1 class="heading"> Cosmetic Camouflage in Vitiligo
-                    </h1>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-4">
-                    <p class="mt-2">Camouflage improves the appearance of the individual, as the
-                        focus is no longer on the discoloration that the person wishes to
-                        hide, thereby improving their confidence and self-esteem.
-                        Camouflage may be permanent or temporary.</p>
-                    <p class="mt-2"><span class="text-bold">Permanent Camouflage</span> is obtained with a
-                        cosmetic tattoo.
-                        Unlike pigments used for ritual or symbolic tattoos, cosmetic
-                        tattoos are inert iron oxides that are available in more than 15
-                        shades.</p>
-                    <h5 class="mt-4 text-bold">Various Tattoo Pigments include:</h5>
-                    <ul class="custom-list">
-                        <li>
-                            <div class="list_content">
-                                <div class="icon">
-                                    <i class="fa-regular fa-circle"></i>
-                                </div>
-                                <div class="list_description">
-                                    <p>Cosmetic results are strongly dependent on the doctor's or
-                                        the technician's skill in perfectly matching the colour of the
-                                        tattoo with the colour of the surrounding skin area. </p>
-                                </div>
-                            </div>
-
-                        </li>
-                        <li>
-                            <div class="list_content">
-                                <div class="icon">
-                                    <i class="fa-regular fa-circle"></i>
-                                </div>
-                                <div class="list_description">
-                                    <p>The colours of the tattoo fade naturally over time, requiring
-                                        periodic maintenance, usually 2–5 years. </p>
-                                </div>
-                            </div>
-
-                        </li>
-                    </ul>
-
-                </div>
-                <div class="col-4">
-                    <div class="cosmetic_img">
-                        <img src="assets/img/Cosmetic Camouflage in Vitiligo.png" class="img-fluid" />
+            <div class="Cosmetic mt-5 mb-5">
+                <div class="row justify-content-center pt-5 mb-5">
+                    <div class="col-lg-8 col-sm-10 col-md-10 col-10">
+                        <h1 class="heading"> Cosmetic Camouflage in Vitiligo
+                        </h1>
                     </div>
-
                 </div>
-            </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-sm-10 col-md-10 col-10">
+                        <p class="mt-2">Camouflage improves the appearance of the individual, as the
+                            focus is no longer on the discoloration that the person wishes to
+                            hide, thereby improving their confidence and self-esteem.
+                            Camouflage may be permanent or temporary.</p>
+                        <p class="mt-2"><span class="text-bold">Permanent Camouflage</span> is obtained with a
+                            cosmetic tattoo.
+                            Unlike pigments used for ritual or symbolic tattoos, cosmetic
+                            tattoos are inert iron oxides that are available in more than 15
+                            shades.</p>
+                        <h5 class="mt-4 text-bold">Various Tattoo Pigments include:</h5>
+                        <ul class="custom-list">
+                            <li>
+                                <div class="list_content">
+                                    <div class="icon">
+                                        <i class="fa-regular fa-circle"></i>
+                                    </div>
+                                    <div class="list_description">
+                                        <p>Cosmetic results are strongly dependent on the doctor's or
+                                            the technician's skill in perfectly matching the colour of the
+                                            tattoo with the colour of the surrounding skin area. </p>
+                                    </div>
+                                </div>
 
-            <div class="row justify-content-center">
-                <div class="col-8 border cases_second">
-                    <p>Unless performed under universal precautions with scrupulous sterile technique,
-                        tattooing
-                        carries a risk of transmitting infectious diseases, including viral hepatitis and
-                        human
-                        immunodeficiency virus (HIV) infection .</p>
-                </div>
-            </div>
+                            </li>
+                            <li>
+                                <div class="list_content">
+                                    <div class="icon">
+                                        <i class="fa-regular fa-circle"></i>
+                                    </div>
+                                    <div class="list_description">
+                                        <p>The colours of the tattoo fade naturally over time, requiring
+                                            periodic maintenance, usually 2–5 years. </p>
+                                    </div>
+                                </div>
 
+                            </li>
+                        </ul>
 
-            <div class="row justify-content-center mt-5">
-                <div class="col-8 ">
-                    <h5 class="text-bold">Temporary Cosmetic Camouflage</h5>
+                    </div>
+                    <div class="col-lg-4 col-sm-10 col-md-10 col-10">
+                        <div class="cosmetic_img">
+                            <img src="assets/img/Cosmetic Camouflage in Vitiligo.png" class="img-fluid" />
+                        </div>
+
+                    </div>
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-4">
-                        <p>The cosmetics that are used to cover up vitiligo are very different
-                            from other cosmetics. Spreading thin layers of certain dark
-                            cosmetics that contain light-reflecting ingredients over white
-                            spots is a very good way to cover them up or at least reduce their
-                            appearance.</p>
-
-                        <p class="mt-3">There are four basic facial foundations:</p>
-                        <ul class="custom-list">
-                            <li>
-                                <div class="list_content">
-                                    <div class="icon">
-                                        <p>1</p>
-                                    </div>
-                                    <div class="list_description">
-                                        <p>Oil-based foundations. </p>
-                                    </div>
-                                </div>
-
-                            </li>
-                            <li>
-                                <div class="list_content">
-                                    <div class="icon">
-                                        <p>2</p>
-                                    </div>
-                                    <div class="list_description">
-                                        <p>Water-based facial foundations. </p>
-                                    </div>
-                                </div>
-
-                            </li>
-                            <li>
-                                <div class="list_content">
-                                    <div class="icon">
-                                        <p>3</p>
-                                    </div>
-                                    <div class="list_description">
-                                        <p>Oil-free facial foundations. </p>
-                                    </div>
-                                </div>
-
-                            </li>
-                            <li>
-                                <div class="list_content">
-                                    <div class="icon">
-                                        <p>4</p>
-                                    </div>
-                                    <div class="list_description">
-                                        <p>Water-free foundations are waterproof. </p>
-                                    </div>
-                                </div>
-
-                            </li>
-                        </ul>
-                        <p class="mt-3">There are three basic approaches to basic camouflage cosmetics,
-                            i.e. contour correction, colour correction, or a combination of both.</p>
-                        <p>Color abnormality camouflage: An opaque cosmetic can hide
-                            pigmentation problems. Using a complementary camouflage
-                            makeup to cover up uneven colouring is the best technique to
-                            disguise it.</p>
-                    </div>
-                    <div class="col-4">
-                        <img src="assets/img/Temporary Cosmetic Camouflage.png" class="img-fluid" />
+                    <div class="col-lg-8 col-md-10 col-sm-10 col-10 border cases_second">
+                        <p>Unless performed under universal precautions with scrupulous sterile technique,
+                            tattooing
+                            carries a risk of transmitting infectious diseases, including viral hepatitis and
+                            human
+                            immunodeficiency virus (HIV) infection .</p>
                     </div>
                 </div>
+
+
                 <div class="row justify-content-center mt-5">
-                    <div class="col-8">
-                        <h3 class="heading">How to Cover Vitiligo Patches with Makeup
-                        </h3>
-
-                        <div class="row mx-0 px-0 Living_info mt-3">
-                            <div class=" Living col-4 m-0 p-0 border bg">
-                                <img src="assets/img/Cover Vitiligo Patches with Makeup 1.png" class="img-fluid" />
-                                <p class="text-center">Cleanse the skin.</p>
-                            </div>
-                            <div class="Living col-4 m-0 p-0  border bg">
-                                <img src="assets/img/Cover Vitiligo Patches with Makeup 2.png" class="img-fluid" />
-                                <p class="text-center">Choose a make-up base closest to
-                                    the natural skin color. Blend with
-                                    other colors so as to match the skin
-                                    tone.</p>
-                            </div>
-                            <div class=" Living col-4 m-0 p-0 border bg">
-                                <img src="assets/img/Cover Vitiligo Patches with Makeup 3.png" class="img-fluid" />
-                                <p class="text-center"> Apply cream sparingly from the
-                                    center (thin coat) of blemish and
-                                    blend into normal skin. Wait for 5 min
-                                    for setting of cream.</p>
-                            </div>
-
-                        </div>
-
-                        <div class="row mt-4 Living_info mx-0 mb-5">
-                            <div class="Living col-3 m-0 p-0 border bg">
-                                <img src="assets/img/Cover Vitiligo Patches with Makeup 4.png" class="img-fluid" />
-                                <p class="text-center">Translucent loose powder must be
-                                    pressed on top of the foundation with
-                                    cotton wool. Multiple thin layers may
-                                    be used for maximum coverage.</p>
-                            </div>
-                            <div class="Living col-3 m-0 p-0 border bg">
-                                <img src="assets/img/Cover Vitiligo Patches with Makeup5.png" class="img-fluid" />
-                                <p class="text-center">Remove the camouflage with oily
-                                    cleanser. </p>
-                            </div>
-                            <div class="Living col-3 m-0 p-0 border bg">
-                                <img src="assets/img/Cover Vitiligo Patches with Makeup 1.png" class="img-fluid" />
-                                <p class="text-center">Apply soap and water for cleansing
-                                    the skin.</p>
-                            </div>
-
-                        </div>
-                        <div class="row  Living_info mx-0">
-                            <div class="Living col-3 m-0 p-0 border bg ">
-                                <img src="assets/img/Cover Vitiligo Patches with Makeup 7.png" class="img-fluid" />
-                                <p class="text-center">Apply moisturizer. </p>
-                            </div>
-                        </div>
+                    <div class="col-lg-8 col-sm-10 col-md-10 col-10">
+                        <h5 class="text-bold">Temporary Cosmetic Camouflage</h5>
                     </div>
 
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-sm-10 col-md-10 col-10">
+                            <p>The cosmetics that are used to cover up vitiligo are very different
+                                from other cosmetics. Spreading thin layers of certain dark
+                                cosmetics that contain light-reflecting ingredients over white
+                                spots is a very good way to cover them up or at least reduce their
+                                appearance.</p>
 
+                            <p class="mt-3">There are four basic facial foundations:</p>
+                            <ul class="custom-list">
+                                <li>
+                                    <div class="list_content">
+                                        <div class="icon">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="list_description">
+                                            <p>Oil-based foundations. </p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="list_content">
+                                        <div class="icon">
+                                            <p>2</p>
+                                        </div>
+                                        <div class="list_description">
+                                            <p>Water-based facial foundations. </p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="list_content">
+                                        <div class="icon">
+                                            <p>3</p>
+                                        </div>
+                                        <div class="list_description">
+                                            <p>Oil-free facial foundations. </p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="list_content">
+                                        <div class="icon">
+                                            <p>4</p>
+                                        </div>
+                                        <div class="list_description">
+                                            <p>Water-free foundations are waterproof. </p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+                            <p class="mt-3">There are three basic approaches to basic camouflage cosmetics,
+                                i.e. contour correction, colour correction, or a combination of both.</p>
+                            <p>Color abnormality camouflage: An opaque cosmetic can hide
+                                pigmentation problems. Using a complementary camouflage
+                                makeup to cover up uneven colouring is the best technique to
+                                disguise it.</p>
+                        </div>
+                        <div class="col-lg-4 col-sm-10 col-md-10 col-10">
+                            <img src="assets/img/Temporary Cosmetic Camouflage.png" class="img-fluid" />
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-lg-8 col-sm-10 col-md-10 col-10">
+                            <h5 class="heading">How to Cover Vitiligo Patches with Makeup
+                            </h5>
+
+                            <div class="row mx-0 px-0 Living_info mt-3">
+                                <div class=" Living col-4 m-0 p-0 border bg">
+                                    <img src="assets/img/Cover Vitiligo Patches with Makeup 1.png" class="img-fluid" />
+                                    <p class="text-center">Cleanse the skin.</p>
+                                </div>
+                                <div class="Living col-4 m-0 p-0  border bg">
+                                    <img src="assets/img/Cover Vitiligo Patches with Makeup 2.png" class="img-fluid" />
+                                    <p class="text-center">Choose a make-up base closest to
+                                        the natural skin color. Blend with
+                                        other colors so as to match the skin
+                                        tone.</p>
+                                </div>
+                                <div class=" Living col-4 m-0 p-0 border bg">
+                                    <img src="assets/img/Cover Vitiligo Patches with Makeup 3.png" class="img-fluid" />
+                                    <p class="text-center"> Apply cream sparingly from the
+                                        center (thin coat) of blemish and
+                                        blend into normal skin. Wait for 5 min
+                                        for setting of cream.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="row mt-4 Living_info mx-0 mb-5">
+                                <div class="Living col-3 m-0 p-0 border bg">
+                                    <img src="assets/img/Cover Vitiligo Patches with Makeup 4.png" class="img-fluid" />
+                                    <p class="text-center">Translucent loose powder must be
+                                        pressed on top of the foundation with
+                                        cotton wool. Multiple thin layers may
+                                        be used for maximum coverage.</p>
+                                </div>
+                                <div class="Living col-3 m-0 p-0 border bg">
+                                    <img src="assets/img/Cover Vitiligo Patches with Makeup5.png" class="img-fluid" />
+                                    <p class="text-center">Remove the camouflage with oily
+                                        cleanser. </p>
+                                </div>
+                                <div class="Living col-3 m-0 p-0 border bg">
+                                    <img src="assets/img/Cover Vitiligo Patches with Makeup 1.png" class="img-fluid" />
+                                    <p class="text-center">Apply soap and water for cleansing
+                                        the skin.</p>
+                                </div>
+
+                            </div>
+                            <div class="row  Living_info mx-0">
+                                <div class="Living col-3 m-0 p-0 border bg ">
+                                    <img src="assets/img/Cover Vitiligo Patches with Makeup 7.png" class="img-fluid" />
+                                    <p class="text-center">Apply moisturizer. </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div>
+
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <section id="yoga">
-        <div class="about_section_4">
-            <div class="row justify-content-center mt-5">
-                <div class="col-8 about_content">
-                    <h1 class="heading"> How Does Yoga Help Deal with Vitiligo?
-                    </h1>
-                    <p>Following are some ways yoga can aid with treating vitiligo in patients:
+        <section id="yoga">
+            <div class="about_section_4">
+                <div class="row justify-content-center mt-5">
+                    <div class="col-8 about_content">
+                        <h1 class="heading"> How Does Yoga Help Deal with Vitiligo?
+                        </h1>
+                        <p>Following are some ways yoga can aid with treating vitiligo in patients:
 
-                    </p>
-                </div>
-            </div>
-
-            <div class="row justify-content-center ">
-                <div class="col-2 text-center">
-                    <div class="about_section_4_img">
-                        <img src="assets/img/Stress Reduction.png" class="img-fluid" />
-                        <div class="icon">
-                            <i class="fa-solid fa-caret-up"></i>
-                        </div>
-                        <div class="description">
-                            <p> Stress Reduction</p>
-                        </div>
+                        </p>
                     </div>
-
-                </div>
-                <div class="col-2 text-center">
-                    <div class="about_section_4_img">
-                        <img src="assets/img/Increase Immunity.png" class="img-fluid" />
-                        <div class="icon">
-                            <i class="fa-solid fa-caret-up"></i>
-                        </div>
-                        <div class="description">
-                            <p> Increase Immunity </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2 text-center">
-                    <div class="about_section_4_img">
-                        <img src="assets/img/Improved Circulation.png" class="img-fluid" />
-                        <div class="icon">
-                            <i class="fa-solid fa-caret-up"></i>
-                        </div>
-                        <div class="description">
-                            <p> Improved Circulation </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2 text-center">
-                    <div class="about_section_4_img">
-                        <img src="assets/img/Enhanced overall.png" class="img-fluid" />
-                        <div class="icon">
-                            <i class="fa-solid fa-caret-up"></i>
-                        </div>
-                        <div class="description">
-                            <p> Enhanced overall
-                                well-being</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-8 border cases">
-                    <p>The benefits of yoga for leucoderma should never be treated as a replacement for
-                        treatment</p>
-                </div>
-            </div>
-
-            <div class="row justify-content-center mt-5">
-                <div class="col-8">
-                    <h1 class="heading">Best Yoga Asanas for Vitiligo</h1>
-                </div>
-                <div class="row justify-content-center mt-5 yoga">
-                    <div class="col-1 border yoga_contents">
-                        <h1 class="text-center">1</h1>
-                    </div>
-                    <div class="col-7 border  yoga_content">
-                        <h2 class="mt-2 text-bold">Nadi Shodhna Pranyama</h2>
-                        <p><span class="text-bold">Benefits</span>: Balance energy channels, Stress relief,
-                            enhances focus, Harmonize body
-                            and mind, and Clear blockages.</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row justify-content-center mt-5">
-                <div class="col-8">
-                    <h4>How to do it?</h4>
                 </div>
 
                 <div class="row justify-content-center ">
-                    <div class="col-4 ">
-                        <ul class="custom-list">
-                            <li>
-                                <div class="list_content">
-                                    <div class="icons">
-                                        <p><i class="fa-solid fa-circle"></i></p>
-                                    </div>
-                                    <div class="list_description">
-                                        <p>Start with sitting comfortably in a seated position on the
-                                            ground,
-                                            keeping your shoulders relaxed. </p>
-                                    </div>
-                                </div>
+                    <div class="col-2 text-center">
+                        <div class="about_section_4_img">
+                            <img src="assets/img/Stress Reduction.png" class="img-fluid" />
+                            <div class="icon">
+                                <i class="fa-solid fa-caret-up"></i>
+                            </div>
+                            <div class="description">
+                                <p> Stress Reduction</p>
+                            </div>
+                        </div>
 
-                            </li>
-                            <li>
-                                <div class="list_content">
-                                    <div class="icons">
-                                        <p><i class="fa-solid fa-circle"></i></p>
-                                    </div>
-                                    <div class="list_description">
-                                        <p>Keep your spine erect and your shoulders relaxed. </p>
-                                    </div>
-                                </div>
-
-                            </li>
-                            <li>
-                                <div class="list_content">
-                                    <div class="icons">
-                                        <p><i class="fa-solid fa-circle"></i></p>
-                                    </div>
-                                    <div class="list_description">
-                                        <p>Next, place your right thumb over the right nostril and use the
-                                            right
-                                            ring finger to close the left nostril. </p>
-                                    </div>
-                                </div>
-
-                            </li>
-                            <li>
-                                <div class="list_content">
-                                    <div class="icons">
-                                        <p><i class="fa-solid fa-circle"></i></p>
-                                    </div>
-                                    <div class="list_description">
-                                        <p>Take a deep breath and exhale through both the nostrils.
-                                        </p>
-                                    </div>
-                                </div>
-
-                            </li>
-                            <li>
-                                <div class="list_content">
-                                    <div class="icons">
-                                        <p><i class="fa-solid fa-circle"></i></p>
-                                    </div>
-                                    <div class="list_description">
-                                        <p>Again, close your right nostril using your right thumb and then
-                                            inhale
-                                            slowly through the left nostril. </p>
-                                    </div>
-                                </div>
-
-                            </li>
-                            <li>
-                                <div class="list_content">
-                                    <div class="icons">
-                                        <p><i class="fa-solid fa-circle"></i></p>
-                                    </div>
-                                    <div class="list_description">
-                                        <p>Next, close both your nostrils using your right thumb and right
-                                            ring
-                                            finger and hold your breath for a few seconds. </p>
-                                    </div>
-                                </div>
-
-                            </li>
-                            <li>
-                                <div class="list_content">
-                                    <div class="icons">
-                                        <p><i class="fa-solid fa-circle"></i></p>
-                                    </div>
-                                    <div class="list_description">
-                                        <p>Gradually release your right thumb and then exhale slowly through
-                                            that nostril. </p>
-                                    </div>
-                                </div>
-
-                            </li>
-                            <li>
-                                <div class="list_content">
-                                    <div class="icons">
-                                        <p><i class="fa-solid fa-circle"></i></p>
-                                    </div>
-                                    <div class="list_description">
-                                        <p>Repeat the cycle changing the nostrils and breathing in and out
-                                            deeply. </p>
-                                    </div>
-                                </div>
-
-                            </li>
-                        </ul>
                     </div>
-                    <div class="col-4 ">
-                        <img src="assets/img/Nadi Shodhna Pranyama.png" class="img-fluid h-auto" />
+                    <div class="col-2 text-center">
+                        <div class="about_section_4_img">
+                            <img src="assets/img/Increase Immunity.png" class="img-fluid" />
+                            <div class="icon">
+                                <i class="fa-solid fa-caret-up"></i>
+                            </div>
+                            <div class="description">
+                                <p> Increase Immunity </p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-2 text-center">
+                        <div class="about_section_4_img">
+                            <img src="assets/img/Improved Circulation.png" class="img-fluid" />
+                            <div class="icon">
+                                <i class="fa-solid fa-caret-up"></i>
+                            </div>
+                            <div class="description">
+                                <p> Improved Circulation </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 text-center">
+                        <div class="about_section_4_img">
+                            <img src="assets/img/Enhanced overall.png" class="img-fluid" />
+                            <div class="icon">
+                                <i class="fa-solid fa-caret-up"></i>
+                            </div>
+                            <div class="description">
+                                <p> Enhanced overall
+                                    well-being</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-
-
-
-
-            </div>
-
-            <div class="row justify-content-center mt-5 yoga">
-                <div class="col-1 border yoga_contents">
-                    <h2 class="text-center">2</h2>
-                </div>
-                <div class="col-7 border  yoga_content">
-                    <h1 class="mt-3">Sheetali Pranayama
-                    </h1>
-                    <p><span class="text-bold">Benefits</span>: Cooling effects, Reduced stress, Improved
-                        digestion, Improved lung health,
-                        Balance pitta dosha.</p>
+                <div class="row justify-content-center">
+                    <div class="col-8 border cases">
+                        <p>The benefits of yoga for leucoderma should never be treated as a replacement for
+                            treatment</p>
+                    </div>
                 </div>
 
                 <div class="row justify-content-center mt-5">
                     <div class="col-8">
-                        <h4>How to do it?</h4>
+                        <h1 class="heading">Best Yoga Asanas for Vitiligo</h1>
+                    </div>
+                    <div class="row justify-content-center mt-5 yoga">
+                        <div class="col-1 border yoga_contents">
+                            <h1 class="text-center">1</h1>
+                        </div>
+                        <div class="col-7 border  yoga_content">
+                            <h2 class="mt-2 text-bold">Nadi Shodhna Pranyama</h2>
+                            <p><span class="text-bold">Benefits</span>: Balance energy channels, Stress relief,
+                                enhances focus, Harmonize body
+                                and mind, and Clear blockages.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row justify-content-center mt-5">
+                    <div class="col-8">
+                        <h4 class="how_to_do">How to do it?</h4>
                     </div>
 
-                    <div class="row justify-content-center ">
+                    <div class="row justify-content-center list">
                         <div class="col-4 ">
                             <ul class="custom-list">
                                 <li>
@@ -1578,9 +1492,9 @@
                                             <p><i class="fa-solid fa-circle"></i></p>
                                         </div>
                                         <div class="list_description">
-                                            <p>Start by sitting comfortably on the ground, keeping your
-                                                spine
-                                                straight and erect and your shoulders taut but relaxed. </p>
+                                            <p>Start with sitting comfortably in a seated position on the
+                                                ground,
+                                                keeping your shoulders relaxed. </p>
                                         </div>
                                     </div>
 
@@ -1591,11 +1505,7 @@
                                             <p><i class="fa-solid fa-circle"></i></p>
                                         </div>
                                         <div class="list_description">
-                                            <p>Next, you want to curl your tongue lengthwise, creating a
-                                                “tube-like”
-                                                structure. If you canʼt curl your tongue, combine your teeth
-                                                and part
-                                                your lips slightly. </p>
+                                            <p>Keep your spine erect and your shoulders relaxed. </p>
                                         </div>
                                     </div>
 
@@ -1606,9 +1516,9 @@
                                             <p><i class="fa-solid fa-circle"></i></p>
                                         </div>
                                         <div class="list_description">
-                                            <p>Through the curled tongue, inhale deeply, ensuring the air
-                                                passes
-                                                through the tongue into the body.</p>
+                                            <p>Next, place your right thumb over the right nostril and use the
+                                                right
+                                                ring finger to close the left nostril. </p>
                                         </div>
                                     </div>
 
@@ -1619,9 +1529,7 @@
                                             <p><i class="fa-solid fa-circle"></i></p>
                                         </div>
                                         <div class="list_description">
-                                            <p>Once you are done inhaling the air, close your mouth
-                                                immediately
-                                                and exhale through the nostrils
+                                            <p>Take a deep breath and exhale through both the nostrils.
                                             </p>
                                         </div>
                                     </div>
@@ -1633,16 +1541,54 @@
                                             <p><i class="fa-solid fa-circle"></i></p>
                                         </div>
                                         <div class="list_description">
-                                            <p>Continue doing this until you feel calm and relaxed.</p>
+                                            <p>Again, close your right nostril using your right thumb and then
+                                                inhale
+                                                slowly through the left nostril. </p>
                                         </div>
                                     </div>
 
                                 </li>
+                                <li>
+                                    <div class="list_content">
+                                        <div class="icons">
+                                            <p><i class="fa-solid fa-circle"></i></p>
+                                        </div>
+                                        <div class="list_description">
+                                            <p>Next, close both your nostrils using your right thumb and right
+                                                ring
+                                                finger and hold your breath for a few seconds. </p>
+                                        </div>
+                                    </div>
 
+                                </li>
+                                <li>
+                                    <div class="list_content">
+                                        <div class="icons">
+                                            <p><i class="fa-solid fa-circle"></i></p>
+                                        </div>
+                                        <div class="list_description">
+                                            <p>Gradually release your right thumb and then exhale slowly through
+                                                that nostril. </p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="list_content">
+                                        <div class="icons">
+                                            <p><i class="fa-solid fa-circle"></i></p>
+                                        </div>
+                                        <div class="list_description">
+                                            <p>Repeat the cycle changing the nostrils and breathing in and out
+                                                deeply. </p>
+                                        </div>
+                                    </div>
+
+                                </li>
                             </ul>
                         </div>
-                        <div class="col-4 ">
-                            <img src="assets/img/Sheetali Pranayama.png" class="img-fluid h-auto" />
+                        <div class="col-4 images_yoga">
+                            <img src="assets/img/Nadi Shodhna Pranyama.png" class="img-fluid h-auto" />
                         </div>
                     </div>
 
@@ -1652,26 +1598,24 @@
 
                 </div>
 
-
-
                 <div class="row justify-content-center mt-5 yoga">
                     <div class="col-1 border yoga_contents">
-                        <h1 class="text-center">3</h1>
+                        <h2 class="text-center">2</h2>
                     </div>
                     <div class="col-7 border  yoga_content">
-                        <h2 class="mt-4">Kapalbhati Pranayama
-                        </h2>
-                        <p><span class="text-bold">Benefits</span>: Cleansing and detoxification, Improved
-                            digestion, boost energy, and
-                            reduced stress.</p>
+                        <h1 class="mt-3">Sheetali Pranayama
+                        </h1>
+                        <p><span class="text-bold">Benefits</span>: Cooling effects, Reduced stress, Improved
+                            digestion, Improved lung health,
+                            Balance pitta dosha.</p>
                     </div>
 
                     <div class="row justify-content-center mt-5">
                         <div class="col-8">
-                            <h4>How to do it?</h4>
+                            <h4 class="how_to_do">How to do it?</h4>
                         </div>
 
-                        <div class="row justify-content-center ">
+                        <div class="row justify-content-center list">
                             <div class="col-4 ">
                                 <ul class="custom-list">
                                     <li>
@@ -1680,9 +1624,9 @@
                                                 <p><i class="fa-solid fa-circle"></i></p>
                                             </div>
                                             <div class="list_description">
-                                                <p>The first step you want to do is to sit comfortably on
-                                                    top of a yoga
-                                                    mat, keeping your spine erect. </p>
+                                                <p>Start by sitting comfortably on the ground, keeping your
+                                                    spine
+                                                    straight and erect and your shoulders taut but relaxed. </p>
                                             </div>
                                         </div>
 
@@ -1693,9 +1637,11 @@
                                                 <p><i class="fa-solid fa-circle"></i></p>
                                             </div>
                                             <div class="list_description">
-                                                <p>• While keeping your palms facing upward, place them on
-                                                    top of your
-                                                    knee. </p>
+                                                <p>Next, you want to curl your tongue lengthwise, creating a
+                                                    “tube-like”
+                                                    structure. If you canʼt curl your tongue, combine your teeth
+                                                    and part
+                                                    your lips slightly. </p>
                                             </div>
                                         </div>
 
@@ -1706,9 +1652,9 @@
                                                 <p><i class="fa-solid fa-circle"></i></p>
                                             </div>
                                             <div class="list_description">
-                                                <p>Inhale deeply through the nose, feel your chest expand,
-                                                    and fill up
-                                                    with air.</p>
+                                                <p>Through the curled tongue, inhale deeply, ensuring the air
+                                                    passes
+                                                    through the tongue into the body.</p>
                                             </div>
                                         </div>
 
@@ -1719,10 +1665,9 @@
                                                 <p><i class="fa-solid fa-circle"></i></p>
                                             </div>
                                             <div class="list_description">
-                                                <p>Next, you want to exhale the inhaled air out of the body
-                                                    forcefully, all
-                                                    while contracting your abdominal muscles at the same
-                                                    time.
+                                                <p>Once you are done inhaling the air, close your mouth
+                                                    immediately
+                                                    and exhale through the nostrils
                                                 </p>
                                             </div>
                                         </div>
@@ -1734,9 +1679,7 @@
                                                 <p><i class="fa-solid fa-circle"></i></p>
                                             </div>
                                             <div class="list_description">
-                                                <p>The forceful exhalation is the highlight of this yoga
-                                                    asana.
-                                                </p>
+                                                <p>Continue doing this until you feel calm and relaxed.</p>
                                             </div>
                                         </div>
 
@@ -1745,110 +1688,7 @@
                                 </ul>
                             </div>
                             <div class="col-4 ">
-                                <img src="assets/img/Kapalbhati Pranayama.png" class="img-fluid h-auto" />
-                            </div>
-                        </div>
-
-
-
-
-
-                    </div>
-                </div>
-
-                <div class="row justify-content-center mt-5 yoga">
-                    <div class="col-1 border yoga_contents">
-                        <h1 class="text-center">4</h1>
-                    </div>
-                    <div class="col-7 border  yoga_content">
-                        <h2 class="mt-4">Bhastrika Pranayama
-                        </h2>
-                        <p><span class="text-bold">Benefits</span>: Increased vitality, improved respiratory
-                            function, Enhanced focus,
-                            Boosted immunity.</p>
-                    </div>
-
-                    <div class="row justify-content-center mt-5">
-                        <div class="col-8">
-                            <h4>How to do it?</h4>
-                        </div>
-
-                        <div class="row justify-content-center ">
-                            <div class="col-4 ">
-                                <ul class="custom-list">
-                                    <li>
-                                        <div class="list_content">
-                                            <div class="icons">
-                                                <p><i class="fa-solid fa-circle"></i></p>
-                                            </div>
-                                            <div class="list_description">
-                                                <p>Start with sitting comfortably in a seated position on
-                                                    the ground,
-                                                    keeping your shoulders relaxed.</p>
-                                            </div>
-                                        </div>
-
-                                    </li>
-                                    <li>
-                                        <div class="list_content">
-                                            <div class="icons">
-                                                <p><i class="fa-solid fa-circle"></i></p>
-                                            </div>
-                                            <div class="list_description">
-                                                <p>Warm up by inhaling and exhaling air in and out of the
-                                                    body.
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                    </li>
-                                    <li>
-                                        <div class="list_content">
-                                            <div class="icons">
-                                                <p><i class="fa-solid fa-circle"></i></p>
-                                            </div>
-                                            <div class="list_description">
-                                                <p>You want to inhale deeply through the nose until your
-                                                    chest expands
-                                                    entirely. Then, forcefully expel the air out of the
-                                                    lungs while
-                                                    contracting the abdominal muscles.</p>
-                                            </div>
-                                        </div>
-
-                                    </li>
-                                    <li>
-                                        <div class="list_content">
-                                            <div class="icons">
-                                                <p><i class="fa-solid fa-circle"></i></p>
-                                            </div>
-                                            <div class="list_description">
-                                                <p>The inhalation and forceful exhalation cycle has to be
-                                                    done
-                                                    rhythmically, so keep that in mind.
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                    </li>
-                                    <li>
-                                        <div class="list_content">
-                                            <div class="icons">
-                                                <p><i class="fa-solid fa-circle"></i></p>
-                                            </div>
-                                            <div class="list_description">
-                                                <p>The breath should be powerful and controlled, with the
-                                                    movement
-                                                    originating from your diaphragm.</p>
-                                            </div>
-                                        </div>
-
-                                    </li>
-
-                                </ul>
-                            </div>
-                            <div class="col-4 ">
-                                <img src="assets/img/Bhastrika Pranayama.png" class="img-fluid h-auto" />
+                                <img src="assets/img/Sheetali Pranayama.png" class="img-fluid h-auto" />
                             </div>
                         </div>
 
@@ -1862,22 +1702,22 @@
 
                     <div class="row justify-content-center mt-5 yoga">
                         <div class="col-1 border yoga_contents">
-                            <h1 class="text-center">5</h1>
+                            <h1 class="text-center">3</h1>
                         </div>
                         <div class="col-7 border  yoga_content">
-                            <h2 class="mt-4">Padmasana (Lotus Pose)
+                            <h2 class="mt-4">Kapalbhati Pranayama
                             </h2>
-                            <p><span class="text-bold">Benefits</span>: Stability and grounding, Improved
-                                flexibility, Elongated spine,
-                                Enhanced meditation.</p>
+                            <p><span class="text-bold">Benefits</span>: Cleansing and detoxification, Improved
+                                digestion, boost energy, and
+                                reduced stress.</p>
                         </div>
 
                         <div class="row justify-content-center mt-5">
                             <div class="col-8">
-                                <h4>How to do it?</h4>
+                                <h4 class="how_to_do">How to do it?</h4>
                             </div>
 
-                            <div class="row justify-content-center ">
+                            <div class="row justify-content-center list">
                                 <div class="col-4 ">
                                     <ul class="custom-list">
                                         <li>
@@ -1886,10 +1726,9 @@
                                                     <p><i class="fa-solid fa-circle"></i></p>
                                                 </div>
                                                 <div class="list_description">
-                                                    <p>You want to start by sitting on the yoga mat, keeping
-                                                        your posture
-                                                        straight and your legs straightened out in front of
-                                                        you.</p>
+                                                    <p>The first step you want to do is to sit comfortably on
+                                                        top of a yoga
+                                                        mat, keeping your spine erect. </p>
                                                 </div>
                                             </div>
 
@@ -1900,8 +1739,9 @@
                                                     <p><i class="fa-solid fa-circle"></i></p>
                                                 </div>
                                                 <div class="list_description">
-                                                    <p>Gradually rest your right knee and foot over the left
-                                                        hip crease. </p>
+                                                    <p>• While keeping your palms facing upward, place them on
+                                                        top of your
+                                                        knee. </p>
                                                 </div>
                                             </div>
 
@@ -1912,9 +1752,9 @@
                                                     <p><i class="fa-solid fa-circle"></i></p>
                                                 </div>
                                                 <div class="list_description">
-                                                    <p>Bend the other knee and bring it towards the hip
-                                                        crease, placing the
-                                                        foot on the inner right thigh region.</p>
+                                                    <p>Inhale deeply through the nose, feel your chest expand,
+                                                        and fill up
+                                                        with air.</p>
                                                 </div>
                                             </div>
 
@@ -1925,9 +1765,10 @@
                                                     <p><i class="fa-solid fa-circle"></i></p>
                                                 </div>
                                                 <div class="list_description">
-                                                    <p>Once seated comfortably in the posture, adjust to
-                                                        ensure that none
-                                                        of your knees touch the ground.
+                                                    <p>Next, you want to exhale the inhaled air out of the body
+                                                        forcefully, all
+                                                        while contracting your abdominal muscles at the same
+                                                        time.
                                                     </p>
                                                 </div>
                                             </div>
@@ -1939,9 +1780,57 @@
                                                     <p><i class="fa-solid fa-circle"></i></p>
                                                 </div>
                                                 <div class="list_description">
-                                                    <p>Bring your hands in front of you in the chin mudra
-                                                        position (thumb
-                                                        and index finger touching).</p>
+                                                    <p>The forceful exhalation is the highlight of this yoga
+                                                        asana.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-4 ">
+                                    <img src="assets/img/Kapalbhati Pranayama.png" class="img-fluid h-auto" />
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mt-5 yoga">
+                        <div class="col-1 border yoga_contents">
+                            <h1 class="text-center">4</h1>
+                        </div>
+                        <div class="col-7 border  yoga_content">
+                            <h2 class="mt-4">Bhastrika Pranayama
+                            </h2>
+                            <p><span class="text-bold">Benefits</span>: Increased vitality, improved respiratory
+                                function, Enhanced focus,
+                                Boosted immunity.</p>
+                        </div>
+
+                        <div class="row justify-content-center mt-5">
+                            <div class="col-8">
+                                <h4 class="how_to_do">How to do it?</h4>
+                            </div>
+
+                            <div class="row justify-content-center list">
+                                <div class="col-4 ">
+                                    <ul class="custom-list">
+                                        <li>
+                                            <div class="list_content">
+                                                <div class="icons">
+                                                    <p><i class="fa-solid fa-circle"></i></p>
+                                                </div>
+                                                <div class="list_description">
+                                                    <p>Start with sitting comfortably in a seated position on
+                                                        the ground,
+                                                        keeping your shoulders relaxed.</p>
                                                 </div>
                                             </div>
 
@@ -1952,7 +1841,51 @@
                                                     <p><i class="fa-solid fa-circle"></i></p>
                                                 </div>
                                                 <div class="list_description">
-                                                    <p>Close your eyes and meditate in that position</p>
+                                                    <p>Warm up by inhaling and exhaling air in and out of the
+                                                        body.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <div class="list_content">
+                                                <div class="icons">
+                                                    <p><i class="fa-solid fa-circle"></i></p>
+                                                </div>
+                                                <div class="list_description">
+                                                    <p>You want to inhale deeply through the nose until your
+                                                        chest expands
+                                                        entirely. Then, forcefully expel the air out of the
+                                                        lungs while
+                                                        contracting the abdominal muscles.</p>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <div class="list_content">
+                                                <div class="icons">
+                                                    <p><i class="fa-solid fa-circle"></i></p>
+                                                </div>
+                                                <div class="list_description">
+                                                    <p>The inhalation and forceful exhalation cycle has to be
+                                                        done
+                                                        rhythmically, so keep that in mind.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <div class="list_content">
+                                                <div class="icons">
+                                                    <p><i class="fa-solid fa-circle"></i></p>
+                                                </div>
+                                                <div class="list_description">
+                                                    <p>The breath should be powerful and controlled, with the
+                                                        movement
+                                                        originating from your diaphragm.</p>
                                                 </div>
                                             </div>
 
@@ -1961,7 +1894,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-4 ">
-                                    <img src="assets/img/Padmasana (Lotus Pose).png" class="img-fluid h-auto" />
+                                    <img src="assets/img/Bhastrika Pranayama.png" class="img-fluid h-auto" />
                                 </div>
                             </div>
 
@@ -1972,24 +1905,25 @@
                         </div>
 
 
+
                         <div class="row justify-content-center mt-5 yoga">
                             <div class="col-1 border yoga_contents">
-                                <h1 class="text-center">6</h1>
+                                <h1 class="text-center">5</h1>
                             </div>
                             <div class="col-7 border  yoga_content">
-                                <h2 class="mt-4">Vrikshasana (Tree Pose)
+                                <h2 class="mt-4">Padmasana (Lotus Pose)
                                 </h2>
-                                <p><span class="text-bold">Benefits</span>: Improved balance, leg strength,
-                                    focus and concentration, hip
-                                    flexibility, Grounding, and stability.</p>
+                                <p><span class="text-bold">Benefits</span>: Stability and grounding, Improved
+                                    flexibility, Elongated spine,
+                                    Enhanced meditation.</p>
                             </div>
 
                             <div class="row justify-content-center mt-5">
                                 <div class="col-8">
-                                    <h4>How to do it?</h4>
+                                    <h4 class="how_to_do">How to do it?</h4>
                                 </div>
 
-                                <div class="row justify-content-center ">
+                                <div class="row justify-content-center list ">
                                     <div class="col-4 ">
                                         <ul class="custom-list">
                                             <li>
@@ -1998,10 +1932,10 @@
                                                         <p><i class="fa-solid fa-circle"></i></p>
                                                     </div>
                                                     <div class="list_description">
-                                                        <p>Start by standing against the wall for support,
-                                                            keeping your feet
-                                                            together and arms resting on either side of your
-                                                            body.</p>
+                                                        <p>You want to start by sitting on the yoga mat, keeping
+                                                            your posture
+                                                            straight and your legs straightened out in front of
+                                                            you.</p>
                                                     </div>
                                                 </div>
 
@@ -2012,9 +1946,8 @@
                                                         <p><i class="fa-solid fa-circle"></i></p>
                                                     </div>
                                                     <div class="list_description">
-                                                        <p>While shifting your weight on your left foot,
-                                                            take the right foot off the
-                                                            ground. </p>
+                                                        <p>Gradually rest your right knee and foot over the left
+                                                            hip crease. </p>
                                                     </div>
                                                 </div>
 
@@ -2025,9 +1958,9 @@
                                                         <p><i class="fa-solid fa-circle"></i></p>
                                                     </div>
                                                     <div class="list_description">
-                                                        <p>Place the sole of your right foot against your
-                                                            left inner thigh, with your
-                                                            toes pointing downward.</p>
+                                                        <p>Bend the other knee and bring it towards the hip
+                                                            crease, placing the
+                                                            foot on the inner right thigh region.</p>
                                                     </div>
                                                 </div>
 
@@ -2038,10 +1971,9 @@
                                                         <p><i class="fa-solid fa-circle"></i></p>
                                                     </div>
                                                     <div class="list_description">
-                                                        <p>Following this is a balancing game. This is why
-                                                            it is ideal for
-                                                            beginners to start while standing against the
-                                                            wall for extra support.
+                                                        <p>Once seated comfortably in the posture, adjust to
+                                                            ensure that none
+                                                            of your knees touch the ground.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -2053,9 +1985,9 @@
                                                         <p><i class="fa-solid fa-circle"></i></p>
                                                     </div>
                                                     <div class="list_description">
-                                                        <p>With your foot up, bring both arms above your
-                                                            head, join them in a
-                                                            Namaste position, and hold it there.</p>
+                                                        <p>Bring your hands in front of you in the chin mudra
+                                                            position (thumb
+                                                            and index finger touching).</p>
                                                     </div>
                                                 </div>
 
@@ -2066,9 +1998,7 @@
                                                         <p><i class="fa-solid fa-circle"></i></p>
                                                     </div>
                                                     <div class="list_description">
-                                                        <p>While maintaining this pose, breathe in and out
-                                                            deeply through your
-                                                            nose and mouth.</p>
+                                                        <p>Close your eyes and meditate in that position</p>
                                                     </div>
                                                 </div>
 
@@ -2077,7 +2007,7 @@
                                         </ul>
                                     </div>
                                     <div class="col-4 ">
-                                        <img src="assets/img/Vrikshasana (Tree Pose).png" class="img-fluid h-auto" />
+                                        <img src="assets/img/Padmasana (Lotus Pose).png" class="img-fluid h-auto" />
                                     </div>
                                 </div>
 
@@ -2086,699 +2016,844 @@
 
 
                             </div>
-                        </div>
-                    </section>
 
 
-                    <section id="stress">
-
-                    
-                        <div class="row justify-content-center mt-5">
-                            <div class="col-8">
-                                <h1 class="heading">Stress and Vitiligo</h1>
-                            </div>
-
-                            <div class="row justify-content-center">
-                                <div class="col-4">
-                                    <p class="paragraph">Chronic vitiligo can lower quality of life.
-                                        Vitiligo may be caused by
-                                        stress, environmental factors, and risk factors. Physical or mental
-                                        stress can cause vitiligo. Stress might rise with chronic skin
-                                        diseases. Some autoimmune disorders lead the immune system
-                                        to attack and destroy melanocytes. Vitiligo impairs mental and
-                                        emotional wellness, according to research. Vitiligo was linked to
-                                        anxiety, depression, and lower quality of life in one study. Stress
-                                        can increase vitiligo symptoms and cause new outbreaks. Stress
-                                        management is crucial for vitiligo patients' health and quality of
-                                        life.</p>
+                            <div class="row justify-content-center mt-5 yoga">
+                                <div class="col-1 border yoga_contents">
+                                    <h1 class="text-center">6</h1>
                                 </div>
-                                <div class="col-4">
-                                    <img src="assets/img/Stress and Vitiligo.png" class="img-fluid" />
+                                <div class="col-7 border  yoga_content">
+                                    <h2 class="mt-4">Vrikshasana (Tree Pose)
+                                    </h2>
+                                    <p><span class="text-bold">Benefits</span>: Improved balance, leg strength,
+                                        focus and concentration, hip
+                                        flexibility, Grounding, and stability.</p>
+                                </div>
+
+                                <div class="row justify-content-center mt-5 ">
+                                    <div class="col-8">
+                                        <h4 class="how_to_do">How to do it?</h4>
+                                    </div>
+
+                                    <div class="row justify-content-center list ">
+                                        <div class="col-4 ">
+                                            <ul class="custom-list">
+                                                <li>
+                                                    <div class="list_content">
+                                                        <div class="icons">
+                                                            <p><i class="fa-solid fa-circle"></i></p>
+                                                        </div>
+                                                        <div class="list_description">
+                                                            <p>Start by standing against the wall for support,
+                                                                keeping your feet
+                                                                together and arms resting on either side of your
+                                                                body.</p>
+                                                        </div>
+                                                    </div>
+
+                                                </li>
+                                                <li>
+                                                    <div class="list_content">
+                                                        <div class="icons">
+                                                            <p><i class="fa-solid fa-circle"></i></p>
+                                                        </div>
+                                                        <div class="list_description">
+                                                            <p>While shifting your weight on your left foot,
+                                                                take the right foot off the
+                                                                ground. </p>
+                                                        </div>
+                                                    </div>
+
+                                                </li>
+                                                <li>
+                                                    <div class="list_content">
+                                                        <div class="icons">
+                                                            <p><i class="fa-solid fa-circle"></i></p>
+                                                        </div>
+                                                        <div class="list_description">
+                                                            <p>Place the sole of your right foot against your
+                                                                left inner thigh, with your
+                                                                toes pointing downward.</p>
+                                                        </div>
+                                                    </div>
+
+                                                </li>
+                                                <li>
+                                                    <div class="list_content">
+                                                        <div class="icons">
+                                                            <p><i class="fa-solid fa-circle"></i></p>
+                                                        </div>
+                                                        <div class="list_description">
+                                                            <p>Following this is a balancing game. This is why
+                                                                it is ideal for
+                                                                beginners to start while standing against the
+                                                                wall for extra support.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                </li>
+                                                <li>
+                                                    <div class="list_content">
+                                                        <div class="icons">
+                                                            <p><i class="fa-solid fa-circle"></i></p>
+                                                        </div>
+                                                        <div class="list_description">
+                                                            <p>With your foot up, bring both arms above your
+                                                                head, join them in a
+                                                                Namaste position, and hold it there.</p>
+                                                        </div>
+                                                    </div>
+
+                                                </li>
+                                                <li>
+                                                    <div class="list_content">
+                                                        <div class="icons">
+                                                            <p><i class="fa-solid fa-circle"></i></p>
+                                                        </div>
+                                                        <div class="list_description">
+                                                            <p>While maintaining this pose, breathe in and out
+                                                                deeply through your
+                                                                nose and mouth.</p>
+                                                        </div>
+                                                    </div>
+
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="col-4 ">
+                                            <img src="assets/img/Vrikshasana (Tree Pose).png"
+                                                class="img-fluid h-auto" />
+                                        </div>
+                                    </div>
+
+
+
+
+
                                 </div>
                             </div>
-                        </div>
-
-
-                        <div class="row justify-content-center mt-5">
-                            <div class="col-8">
-                                <h1 class="heading">Tips for Reducing Stress in Vitiligo Patients</h1>
-                                <p>General stress-reduction tips can assist, but there is no
-                                    one-size-fits-all approach. Female vitiligo patients may benefit from a
-                                    support
-                                    group or networking. This can help you socialize and discuss coping
-                                    skills. Men may benefit from talking to friends and family about
-                                    their condition and how it affects them.</p>
-
-                            </div>
-
-                            <div class="row justify-content-center">
-                                <div class="col-4">
-                                    <p>Other tips for reducing stress include:</p>
-                                    <h5 class="text-decoration-underline">Exercise</h5>
-                                    <p>Exercise has been shown to reduce stress levels and improve
-                                        overall health. It can also help to boost your mood and improve
-                                        your body image.</p>
-
-                                    <h5 class="mt-2 text-decoration-underline ">Yoga</h5>
-                                    <p>Yoga can help to improve your flexibility, strength, and balance. It
-                                        can also be a great way to relax and de-stress.</p>
-
-                                    <h5 class="mt-2 text-decoration-underline">Meditation</h5>
-                                    <p>Meditation can help to clear your mind and focus on the present
-                                        moment. It can also be a great tool for managing stress and
-                                        anxiety.</p>
-
-                                    <h5 class="mt-2 text-decoration-underline">Relaxation Techniques</h5>
-                                    <p>There are many relaxation techniques that can help to reduce
-                                        stress. Try deep breathing exercises, progressive muscle
-                                        relaxation, or mindfulness meditation.
-                                    </p>
-                                </div>
-                                <div class="col-4">
-                                    <img src="assets/img/Tips for Reducing Stress in Vitiligo Patients.png"
-                                        class="img-fluid mt-5" />
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
+                    </div>
+                    </div>
+              </div>    
+        </section>
 
+
+        <section id="stress">
+
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-8">
+                    <h1 class="heading">Stress and Vitiligo</h1>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <p class="paragraph">Chronic vitiligo can lower quality of life.
+                            Vitiligo may be caused by
+                            stress, environmental factors, and risk factors. Physical or mental
+                            stress can cause vitiligo. Stress might rise with chronic skin
+                            diseases. Some autoimmune disorders lead the immune system
+                            to attack and destroy melanocytes. Vitiligo impairs mental and
+                            emotional wellness, according to research. Vitiligo was linked to
+                            anxiety, depression, and lower quality of life in one study. Stress
+                            can increase vitiligo symptoms and cause new outbreaks. Stress
+                            management is crucial for vitiligo patients' health and quality of
+                            life.</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="assets/img/Stress and Vitiligo.png" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-8">
+                    <h1 class="heading">Tips for Reducing Stress in Vitiligo Patients</h1>
+                    <p>General stress-reduction tips can assist, but there is no
+                        one-size-fits-all approach. Female vitiligo patients may benefit from a
+                        support
+                        group or networking. This can help you socialize and discuss coping
+                        skills. Men may benefit from talking to friends and family about
+                        their condition and how it affects them.</p>
 
                 </div>
 
-            </section>
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <p>Other tips for reducing stress include:</p>
+                        <h5 class="text-decoration-underline">Exercise</h5>
+                        <p>Exercise has been shown to reduce stress levels and improve
+                            overall health. It can also help to boost your mood and improve
+                            your body image.</p>
 
-                <div class="did_you_know mt-5">
-                    <div class="row justify-content-center mt-5">
-                        <div class="col-4">
-                            <h1 class="heading mt-5">Did You Know?</h1>
-                            <hr>
-                            <p>Understanding facts and dispelling myths about vitiligo is
-                                important for promoting awareness, acceptance, and support
-                                for individuals living with the condition. The only way to fight
-                                this stigma is to raise awareness about this largely harmless
-                                skin condition by busting the myths surrounding vitiligo.
-                            </p>
-                            <div class="btn_group">
-                                <button class="scrollButton" data-target="#myth"> Myths & Facts </button>
-                                <button class=" mx-3 scrollButton" data-target="#do">Dos & Donʼts</button>
-                                <button class="scrollButton" data-target="#faqs">FAQs</button>
+                        <h5 class="mt-2 text-decoration-underline ">Yoga</h5>
+                        <p>Yoga can help to improve your flexibility, strength, and balance. It
+                            can also be a great way to relax and de-stress.</p>
 
+                        <h5 class="mt-2 text-decoration-underline">Meditation</h5>
+                        <p>Meditation can help to clear your mind and focus on the present
+                            moment. It can also be a great tool for managing stress and
+                            anxiety.</p>
+
+                        <h5 class="mt-2 text-decoration-underline">Relaxation Techniques</h5>
+                        <p>There are many relaxation techniques that can help to reduce
+                            stress. Try deep breathing exercises, progressive muscle
+                            relaxation, or mindfulness meditation.
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <img src="assets/img/Tips for Reducing Stress in Vitiligo Patients.png"
+                            class="img-fluid mt-5" />
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+
+    </div>
+
+    </section>
+
+    <div class="did_you_know mt-5">
+        <div class="row justify-content-center mt-5">
+            <div class="col-4">
+                <h1 class="heading mt-5">Did You Know?</h1>
+                <hr>
+                <p>Understanding facts and dispelling myths about vitiligo is
+                    important for promoting awareness, acceptance, and support
+                    for individuals living with the condition. The only way to fight
+                    this stigma is to raise awareness about this largely harmless
+                    skin condition by busting the myths surrounding vitiligo.
+                </p>
+                <div class="btn_group">
+                    <button class="scrollButton" data-target="#myth"> Myths & Facts </button>
+                    <button class=" mx-3 scrollButton" data-target="#do">Dos & Donʼts</button>
+                    <button class="scrollButton" data-target="#faqs">FAQs</button>
+
+                </div>
+
+            </div>
+            <div class="col-4">
+                <div class="about_img">
+                    <img src="assets/img/Did You Know.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+     </div>
+
+        <section id="myth">
+
+            <div class="Myths&Facts mt-5">
+                <div class="row justify-content-center mt-5">
+                    <div class="fact_container">
+                        <div class="col-10 facts">
+                            <h3 class="text-center heading">Myths & Facts</h3>
+                            <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h1 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseOne" aria-expanded="true"
+                                            aria-controls="flush-collapseOne">
+                                            Vitiligo is contagious.
+                                        </button>
+                                    </h1>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Reality: Vitiligo is not
+                                            contagious neither is it an infectious disease.
+                                            You cannot ‘catchʼ or pass it to someone by touching.
+                                            Thereʼs no need to avoid people who may have visible
+                                            signs of the disorder.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mt-5">
+                                    <h1 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseTwo" aria-expanded="true"
+                                            aria-controls="flush-collapseTwo">
+                                            Vitiligo, albinism, and leprosy are the same
+                                        </button>
+                                    </h1>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Reality: Vitiligo is a separate
+                                            skin condition and is not linked to leprosy, cancer,
+                                            or albinism. It does not cause any notable physical
+                                            harm.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mt-5">
+                                    <h1 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseThree" aria-expanded="true"
+                                            aria-controls="flush-collapseThree">
+                                            Vitiligo is temporary and goes away with time
+                                        </button>
+                                    </h1>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Reality: Vitiligo is not a
+                                            temporary skin condition. Treatment options are
+                                            available that can reduce the appearance.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mt-5">
+                                    <h1 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseFour" aria-expanded="true"
+                                            aria-controls="flush-collapseFour">
+                                            Only dark-skinned people get vitiligo.
+                                        </button>
+                                    </h1>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Reality: Vitiligo affects people
+                                            of all races, but it may be more noticeable
+                                            in people with dark skin.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mt-5">
+                                    <h1 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseFive" aria-expanded="true"
+                                            aria-controls="flush-collapseFive">
+                                            You can predict the extent to which vitiligo can spread
+                                            by looking at the affected person.
+                                        </button>
+                                    </h1>
+                                    <div id="flush-collapseFive" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Reality: Thereʼs no way to know
+                                            how, when, or where vitiligo will occur.
+                                            Only an expert can diagnose the disease by using a
+                                            combination of physical examination, medical history and
+                                            a biopsy (in
+                                            rare cases).</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="do">
+            <div class="do&dont mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <h1 class="heading">Do's & Don'ts</h1>
+                    </div>
+                    <div class="row justify-content-center mt-4">
+                        <div class="col-5 ">
+                            <div class="row justify-content-center do">
+                                <div class="col-1 m-0 p-0">
+                                    <div class="icon_box">
+
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+
+                                </div>
+                                <div class="col-6">
+                                    <p>Always apply Sunscreen of SPF higher
+                                        than 15 whenever outside.</p>
+                                </div>
                             </div>
 
                         </div>
-                        <div class="col-4">
-                            <div class="about_img">
-                                <img src="assets/img/Did You Know.png" class="img-fluid" />
+                        <div class="col-5">
+                            <div class="row justify-content-center do">
+                                <div class="col-1 m-0 p-0">
+                                    <div class="icon_box">
+
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+
+                                </div>
+                                <div class="col-6">
+                                    <p>Always apply Sunscreen of SPF higher
+                                        than 15 whenever outside.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <section id="myth">
 
-                        <div class="Myths&Facts mt-5">
-                            <div class="row justify-content-center mt-5">
-                                <div class="fact_container">
-                                    <div class="col-10 facts">
-                                        <h3 class="text-center heading">Myths & Facts</h3>
-                                        <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
-                                            <div class="accordion-item">
-                                                <h1 class="accordion-header">
-                                                    <button class="accordion-button" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                                        aria-expanded="true" aria-controls="flush-collapseOne">
-                                                        Vitiligo is contagious.
-                                                    </button>
-                                                </h1>
-                                                <div id="flush-collapseOne" class="accordion-collapse collapse show"
-                                                    data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">Reality: Vitiligo is not
-                                                        contagious neither is it an infectious disease.
-                                                        You cannot ‘catchʼ or pass it to someone by touching.
-                                                        Thereʼs no need to avoid people who may have visible
-                                                        signs of the disorder.</div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item mt-5">
-                                                <h1 class="accordion-header">
-                                                    <button class="accordion-button" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-                                                        aria-expanded="true" aria-controls="flush-collapseTwo">
-                                                        Vitiligo, albinism, and leprosy are the same
-                                                    </button>
-                                                </h1>
-                                                <div id="flush-collapseTwo" class="accordion-collapse collapse show"
-                                                    data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">Reality: Vitiligo is a separate
-                                                        skin condition and is not linked to leprosy, cancer,
-                                                        or albinism. It does not cause any notable physical
-                                                        harm.</div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item mt-5">
-                                                <h1 class="accordion-header">
-                                                    <button class="accordion-button" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                                                        aria-expanded="true" aria-controls="flush-collapseThree">
-                                                        Vitiligo is temporary and goes away with time
-                                                    </button>
-                                                </h1>
-                                                <div id="flush-collapseThree" class="accordion-collapse collapse show"
-                                                    data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">Reality: Vitiligo is not a
-                                                        temporary skin condition. Treatment options are
-                                                        available that can reduce the appearance.</div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item mt-5">
-                                                <h1 class="accordion-header">
-                                                    <button class="accordion-button" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
-                                                        aria-expanded="true" aria-controls="flush-collapseFour">
-                                                        Only dark-skinned people get vitiligo.
-                                                    </button>
-                                                </h1>
-                                                <div id="flush-collapseFour" class="accordion-collapse collapse show"
-                                                    data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">Reality: Vitiligo affects people
-                                                        of all races, but it may be more noticeable
-                                                        in people with dark skin.</div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item mt-5">
-                                                <h1 class="accordion-header">
-                                                    <button class="accordion-button" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
-                                                        aria-expanded="true" aria-controls="flush-collapseFive">
-                                                        You can predict the extent to which vitiligo can spread
-                                                        by looking at the affected person.
-                                                    </button>
-                                                </h1>
-                                                <div id="flush-collapseFive" class="accordion-collapse collapse show"
-                                                    data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">Reality: Thereʼs no way to know
-                                                        how, when, or where vitiligo will occur.
-                                                        Only an expert can diagnose the disease by using a
-                                                        combination of physical examination, medical history and
-                                                        a biopsy (in
-                                                        rare cases).</div>
-                                                </div>
-                                            </div>
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-5 ">
+                            <div class="row justify-content-center do">
+                                <div class="col-1 m-0 p-0">
+                                    <div class="icon_box">
+
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+
+                                </div>
+                                <div class="col-6">
+                                    <p>Always apply Sunscreen of SPF higher
+                                        than 15 whenever outside.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-5">
+                            <div class="row justify-content-center do">
+                                <div class="col-1 m-0 p-0">
+                                    <div class="icon_box">
+
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+
+                                </div>
+                                <div class="col-6">
+                                    <p>Always apply Sunscreen of SPF higher
+                                        than 15 whenever outside.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-5 ">
+                            <div class="row justify-content-center do">
+                                <div class="col-1 m-0 p-0">
+                                    <div class="icon_box">
+
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+
+                                </div>
+                                <div class="col-6">
+                                    <p>Always apply Sunscreen of SPF higher
+                                        than 15 whenever outside.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-5">
+                            <div class="row justify-content-center do">
+                                <div class="col-1 m-0 p-0">
+                                    <div class="icon_box">
+
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+
+                                </div>
+                                <div class="col-6">
+                                    <p>Always apply Sunscreen of SPF higher
+                                        than 15 whenever outside.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-5 ">
+                            <div class="row justify-content-center do">
+                                <div class="col-1 m-0 p-0">
+                                    <div class="icon_box">
+
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+
+                                </div>
+                                <div class="col-6">
+                                    <p>Always apply Sunscreen of SPF higher
+                                        than 15 whenever outside.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-5">
+                            <div class="row justify-content-center do">
+                                <div class="col-1 m-0 p-0">
+                                    <div class="icon_box">
+
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+
+                                </div>
+                                <div class="col-6">
+                                    <p>Always apply Sunscreen of SPF higher
+                                        than 15 whenever outside.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="faqs">
+            <div class="Myths&Facts mt-5">
+                <div class="row justify-content-center mt-5">
+                    <div class="fact_container">
+                        <div class="col-10 facts">
+                            <h3 class="text-center heading">Frequently Asked Questions (FAQs)</h3>
+                            <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h1 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseOne" aria-expanded="true"
+                                            aria-controls="flush-collapseOne">
+                                            Can yoga help in treating vitiligo?
+                                        </button>
+                                    </h1>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">If you are wondering if yoga cures vitiligo, the
+                                            answer is no. Yoga is not a standalone
+                                            cure for vitiligo but can indirectly help arrest the spread and ensure that
+                                            the patient
+                                            feels better physically and mentally.
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mt-5">
+                                    <h1 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseTwo" aria-expanded="true"
+                                            aria-controls="flush-collapseTwo">
+                                            How often should I practice yoga to see potential benefits for vitiligo?
+                                        </button>
+                                    </h1>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">When it comes to yoga, consistency is key. You can
+                                            start by practicing yoga 3-5 times
+                                            a week and then gradually increase it to do it every day.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mt-5">
+                                    <h1 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseThree" aria-expanded="true"
+                                            aria-controls="flush-collapseThree">
+                                            Can yoga have any negative effects on vitiligo?
+                                        </button>
+                                    </h1>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Yoga is safe to do, even for patients with vitiligo.
+                                            If you are experiencing side effects
+                                            after starting yoga, it is better to consult a specialist to understand why
+                                            before proceeding.</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </section>
 
+                    </div>
+                </div>
+                </div>
+        </section>
+        <section id="initiative" class="  mb-5">
 
-                    <section id="do">
-                        <div class="do&dont mt-5">
-                            <div class="row justify-content-center">
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slides slide-1  mt-5">
+                        <div class="row justify-content-center mt-5">
+                            <div class="col-4">
+                                <img src="assets/img/CTP Booklet Cover .png" class="img-fluid" />
+                            </div>
+
+                            <div class="col-4">
+                                <p class="mt-5 ">Vitiligo remains the most intriguing
+                                    dermatosis. With scarce symptoms, while the
+                                    disease may not life threatening, its
+                                    psychological impact has deep ramifications
+                                    on oneʼs quality of life. Indisputably, the
+                                    emotional and social repercussion of
+                                    vitiligo might be unforgiving for patients, had
+                                    it not been for the care, compassion,
+                                    and ingenuity of doctors</p>
+
+                                <div class="btn">
+                                    <button class="btn border"> Download</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide mt-5">
+                        <div class="INITIATIVES ">
+                            <div class="row justify-content-center slides mt-5 mb-5">
                                 <div class="col-8">
-                                    <h1 class="heading">Do's & Don'ts</h1>
+                                    <h1 class="heading">CSR initiative in Vitiligo</h1>
+                                    <img src="assets/img/CSR initiative.png" class="img-fluid mt-4" />
+                                    <h4 class="mt-5">CSR initiative in Vitiligo
+                                        awareness month- Shweta
+                                        Association, Vitiligo Support Group
+                                    </h4>
+                                    <p class="mt-5">For the past 23 years, the
+                                        Shweta Association has
+                                        been a steadfast pillar of support for
+                                        individuals affected by
+                                        vitiligo, tirelessly
+                                        working to provide comprehensive resources,
+                                        educational
+                                        programs, and emotional support to those in
+                                        need. This dedicated
+                                        support
+                                        group has cultivated a strong community,
+                                        fostering awareness and
+                                        understanding about vitiligo while
+                                        advocating for the rights and
+                                        well-being of those living with this
+                                        condition. Through
+                                        workshops, counselling sessions, and public
+                                        awareness campaigns,
+                                        the
+                                        Shweta Association has significantly
+                                        improved the quality of
+                                        life for countless individuals, helping them
+                                        to embrace their
+                                        unique
+                                        beauty and find strength in solidarity</p>
+
+                                    <p class="mt-5">During Vitiligo Awareness Month,
+                                        the Shweta
+                                        Association received a significant boost
+                                        from Ajanta Pharma,
+                                        which donated a generous
+                                        amount under its Corporate Social
+                                        Responsibility (CSR)
+                                        initiative. This timely contribution
+                                        highlights Ajanta Pharma's
+                                        commitment to
+                                        social causes and its recognition of the
+                                        crucial work being done
+                                        by the Shweta Association. The donation will
+                                        enable the
+                                        association
+                                        to expand its reach and enhance its
+                                        programs, ensuring that even
+                                        more individuals can benefit from their
+                                        services. With this
+                                        support,
+                                        the Shweta Association is poised to make an
+                                        even greater impact,
+                                        spreading awareness, reducing stigma, and
+                                        providing invaluable
+                                        assistance to those affected by vitiligo.
+                                    </p>
                                 </div>
-                                <div class="row justify-content-center mt-4">
-                                    <div class="col-5 ">
-                                        <div class="row justify-content-center do">
-                                            <div class="col-1 m-0 p-0">
-                                                <div class="icon_box">
-
-                                                    <i class="fa-solid fa-check"></i>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-6">
-                                                <p>Always apply Sunscreen of SPF higher
-                                                    than 15 whenever outside.</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-5">
-                                        <div class="row justify-content-center do">
-                                            <div class="col-1 m-0 p-0">
-                                                <div class="icon_box">
-
-                                                    <i class="fa-solid fa-xmark"></i>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-6">
-                                                <p>Always apply Sunscreen of SPF higher
-                                                    than 15 whenever outside.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="row justify-content-center mt-3">
-                                    <div class="col-5 ">
-                                        <div class="row justify-content-center do">
-                                            <div class="col-1 m-0 p-0">
-                                                <div class="icon_box">
-
-                                                    <i class="fa-solid fa-check"></i>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-6">
-                                                <p>Always apply Sunscreen of SPF higher
-                                                    than 15 whenever outside.</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-5">
-                                        <div class="row justify-content-center do">
-                                            <div class="col-1 m-0 p-0">
-                                                <div class="icon_box">
-
-                                                    <i class="fa-solid fa-xmark"></i>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-6">
-                                                <p>Always apply Sunscreen of SPF higher
-                                                    than 15 whenever outside.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="row justify-content-center mt-3">
-                                    <div class="col-5 ">
-                                        <div class="row justify-content-center do">
-                                            <div class="col-1 m-0 p-0">
-                                                <div class="icon_box">
-
-                                                    <i class="fa-solid fa-check"></i>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-6">
-                                                <p>Always apply Sunscreen of SPF higher
-                                                    than 15 whenever outside.</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-5">
-                                        <div class="row justify-content-center do">
-                                            <div class="col-1 m-0 p-0">
-                                                <div class="icon_box">
-
-                                                    <i class="fa-solid fa-xmark"></i>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-6">
-                                                <p>Always apply Sunscreen of SPF higher
-                                                    than 15 whenever outside.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row justify-content-center mt-3">
-                                    <div class="col-5 ">
-                                        <div class="row justify-content-center do">
-                                            <div class="col-1 m-0 p-0">
-                                                <div class="icon_box">
-
-                                                    <i class="fa-solid fa-check"></i>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-6">
-                                                <p>Always apply Sunscreen of SPF higher
-                                                    than 15 whenever outside.</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-5">
-                                        <div class="row justify-content-center do">
-                                            <div class="col-1 m-0 p-0">
-                                                <div class="icon_box">
-
-                                                    <i class="fa-solid fa-xmark"></i>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-6">
-                                                <p>Always apply Sunscreen of SPF higher
-                                                    than 15 whenever outside.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
-
-                    </section>
-
-                    <section id="faqs">
-                        <div class="Myths&Facts mt-5">
+                    </div>
+                    <div class="swiper-slide mt-5">
+                        <div class="Academic_partnership">
                             <div class="row justify-content-center mt-5">
-                                <div class="fact_container">
-                                    <div class="col-10 facts">
-                                        <h3 class="text-center heading">Frequently Asked Questions (FAQs)</h3>
-                                        <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
-                                            <div class="accordion-item">
-                                                <h1 class="accordion-header">
-                                                    <button class="accordion-button" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                                        aria-expanded="true" aria-controls="flush-collapseOne">
-                                                        Can yoga help in treating vitiligo?
-                                                    </button>
-                                                </h1>
-                                                <div id="flush-collapseOne" class="accordion-collapse collapse show"
-                                                    data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">If you are wondering if yoga cures vitiligo, the answer is no. Yoga is not a standalone
-                                                        cure for vitiligo but can indirectly help arrest the spread and ensure that the patient
-                                                        feels better physically and mentally.
-                                                        </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item mt-5">
-                                                <h1 class="accordion-header">
-                                                    <button class="accordion-button" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-                                                        aria-expanded="true" aria-controls="flush-collapseTwo">
-                                                        How often should I practice yoga to see potential benefits for vitiligo? 
-                                                    </button>
-                                                </h1>
-                                                <div id="flush-collapseTwo" class="accordion-collapse collapse show"
-                                                    data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">When it comes to yoga, consistency is key. You can start by practicing yoga 3-5 times
-                                                        a week and then gradually increase it to do it every day.</div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item mt-5">
-                                                <h1 class="accordion-header">
-                                                    <button class="accordion-button" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                                                        aria-expanded="true" aria-controls="flush-collapseThree">
-                                                        Can yoga have any negative effects on vitiligo? 
-                                                    </button>
-                                                </h1>
-                                                <div id="flush-collapseThree" class="accordion-collapse collapse show"
-                                                    data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">Yoga is safe to do, even for patients with vitiligo. If you are experiencing side effects
-                                                        after starting yoga, it is better to consult a specialist to understand why before proceeding.</div>
-                                                </div>
-                                            </div>
+                                <div class="col-8">
+                                    <h1 class="heading">Academic partnership with
+                                        Vitiligo<br>
+                                        Foundation of India</h1>
+
+                                    <p>Ajanta Pharma is proud to be an academic
+                                        partner with the
+                                        Vitiligo Foundation of India (VFI), a
+                                        remarkable charity
+                                        dedicated to
+                                        supporting, inspiring, and educating
+                                        individuals affected by
+                                        vitiligo. VFI plays a crucial role in
+                                        addressing these
+                                        challenges by offering
+                                        comprehensive support and fostering a
+                                        community of understanding
+                                        and acceptance. Vitiligo Foundation of India
+                                        is committed to
+                                        organize workshops, community outreach
+                                        programs, and
+                                        informational sessions to educate both the
+                                        public and healthcare
+                                        professionals about the condition, its
+                                        causes, and the latest
+                                        treatment options. By providing accurate and
+                                        up-to-date
+                                        information, VFI
+                                        empowers patients and their families to make
+                                        informed decisions
+                                        about their care and to advocate for
+                                        themselves effectively.</p>
+
+
+                                    <p class="mt-4">For more information about
+                                        vitiligo, available
+                                        resources, and
+                                        upcoming events, we encourage patients,
+                                        families, and healthcare
+                                        professionals to visit the Vitiligo
+                                        Foundation of India's
+                                        website. Here, you can access a wealth of
+                                        knowledge, stay
+                                        updated on recent
+                                        advancements, and learn how to get involved
+                                        in supporting this
+                                        important cause. Ajanta Pharma is honoured
+                                        to support VFI in
+                                        their
+                                        mission to inspire, support, and educate,
+                                        contributing to a more
+                                        inclusive and compassionate society</p>
+
+                                    <div class=" m-0 p-0 websites mb-5">
+                                        <div class=" website">
+                                            <p class="mt-3"> Click on the website to
+                                                know more: </p>
+                                        </div>
+                                        <div class=" website_link_btn btn">
+                                            <button><a target="_blank" href="https://vitiligofoundationindia.org/">
+                                                    https://vitiligofoundationindia.org/</a>
+                                            </button>
                                         </div>
                                     </div>
-
-                                </div>
-                    </section>
-                    <section id ="initiative" class="  mb-5">
-
-                        <div class="swiper mySwiper2">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide slides slide-1  mt-5">
-                                    <div class="row justify-content-center mt-5">
-                                        <div class="col-4">
-                                            <img src="assets/img/CTP Booklet Cover .png" class="img-fluid" />
-                                        </div>
-
-                                        <div class="col-4">
-                                            <p class="mt-5 ">Vitiligo remains the most intriguing
-                                                dermatosis. With scarce symptoms, while the
-                                                disease may not life threatening, its
-                                                psychological impact has deep ramifications
-                                                on oneʼs quality of life. Indisputably, the
-                                                emotional and social repercussion of
-                                                vitiligo might be unforgiving for patients, had
-                                                it not been for the care, compassion,
-                                                and ingenuity of doctors</p>
-
-                                            <div class="">
-                                                <button class="btn border"> Download</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide mt-5">
-                                    <div class="INITIATIVES ">
-                                        <div class="row justify-content-center slides mt-5 mb-5">
-                                            <div class="col-8">
-                                                <h1 class="heading">CSR initiative in Vitiligo</h1>
-                                                <img src="assets/img/CSR initiative.png" class="img-fluid mt-4" />
-                                                <h4 class="mt-5">CSR initiative in Vitiligo
-                                                    awareness month- Shweta
-                                                    Association, Vitiligo Support Group
-                                                </h4>
-                                                <p class="mt-5">For the past 23 years, the
-                                                    Shweta Association has
-                                                    been a steadfast pillar of support for
-                                                    individuals affected by
-                                                    vitiligo, tirelessly
-                                                    working to provide comprehensive resources,
-                                                    educational
-                                                    programs, and emotional support to those in
-                                                    need. This dedicated
-                                                    support
-                                                    group has cultivated a strong community,
-                                                    fostering awareness and
-                                                    understanding about vitiligo while
-                                                    advocating for the rights and
-                                                    well-being of those living with this
-                                                    condition. Through
-                                                    workshops, counselling sessions, and public
-                                                    awareness campaigns,
-                                                    the
-                                                    Shweta Association has significantly
-                                                    improved the quality of
-                                                    life for countless individuals, helping them
-                                                    to embrace their
-                                                    unique
-                                                    beauty and find strength in solidarity</p>
-
-                                                <p class="mt-5">During Vitiligo Awareness Month,
-                                                    the Shweta
-                                                    Association received a significant boost
-                                                    from Ajanta Pharma,
-                                                    which donated a generous
-                                                    amount under its Corporate Social
-                                                    Responsibility (CSR)
-                                                    initiative. This timely contribution
-                                                    highlights Ajanta Pharma's
-                                                    commitment to
-                                                    social causes and its recognition of the
-                                                    crucial work being done
-                                                    by the Shweta Association. The donation will
-                                                    enable the
-                                                    association
-                                                    to expand its reach and enhance its
-                                                    programs, ensuring that even
-                                                    more individuals can benefit from their
-                                                    services. With this
-                                                    support,
-                                                    the Shweta Association is poised to make an
-                                                    even greater impact,
-                                                    spreading awareness, reducing stigma, and
-                                                    providing invaluable
-                                                    assistance to those affected by vitiligo.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide mt-5">
-                                    <div class="Academic_partnership">
-                                        <div class="row justify-content-center mt-5">
-                                            <div class="col-8">
-                                                <h1 class="heading">Academic partnership with
-                                                    Vitiligo<br>
-                                                    Foundation of India</h1>
-
-                                                <p>Ajanta Pharma is proud to be an academic
-                                                    partner with the
-                                                    Vitiligo Foundation of India (VFI), a
-                                                    remarkable charity
-                                                    dedicated to
-                                                    supporting, inspiring, and educating
-                                                    individuals affected by
-                                                    vitiligo. VFI plays a crucial role in
-                                                    addressing these
-                                                    challenges by offering
-                                                    comprehensive support and fostering a
-                                                    community of understanding
-                                                    and acceptance. Vitiligo Foundation of India
-                                                    is committed to
-                                                    organize workshops, community outreach
-                                                    programs, and
-                                                    informational sessions to educate both the
-                                                    public and healthcare
-                                                    professionals about the condition, its
-                                                    causes, and the latest
-                                                    treatment options. By providing accurate and
-                                                    up-to-date
-                                                    information, VFI
-                                                    empowers patients and their families to make
-                                                    informed decisions
-                                                    about their care and to advocate for
-                                                    themselves effectively.</p>
-
-
-                                                <p class="mt-4">For more information about
-                                                    vitiligo, available
-                                                    resources, and
-                                                    upcoming events, we encourage patients,
-                                                    families, and healthcare
-                                                    professionals to visit the Vitiligo
-                                                    Foundation of India's
-                                                    website. Here, you can access a wealth of
-                                                    knowledge, stay
-                                                    updated on recent
-                                                    advancements, and learn how to get involved
-                                                    in supporting this
-                                                    important cause. Ajanta Pharma is honoured
-                                                    to support VFI in
-                                                    their
-                                                    mission to inspire, support, and educate,
-                                                    contributing to a more
-                                                    inclusive and compassionate society</p>
-
-                                                <div class=" m-0 p-0 websites mb-5">
-                                                    <div class=" website">
-                                                        <p class="mt-3"> Click on the website to
-                                                            know more: </p>
-                                                    </div>
-                                                    <div class=" website_link_btn">
-                                                        <button><a target="_blank" href="https://vitiligofoundationindia.org/"> https://vitiligofoundationindia.org/</a>
-                                                          </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="swiper-button-next">
-                                <div class="circle-1  p-2">
-                                    <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
-                            <div class="swiper-button-prev">
-                                <div class="circle  p-2"><i class="fa-solid fa-arrow-left"></i>
-                                </div>
-                            </div>
-                            <div class="swiper-pagination"></div>
                         </div>
-                    </section>
-                    <footer>
-                        <div class="content">
-                            <div class="top">
-                                <div class="logo-details">
-                                    <img src="assets/img/MicrosoftTeams-image (4).png" class="img-fluid" />
-                                </div>
-                                <div class="link-boxes">
-                                    <ul class="box">
-                                        <li class="link_name">HOME</li>
+                    </div>
 
-                                    </ul>
-                                    <ul class="box">
-                                        <li class="link_name">ALL ABOUT VITILIGO </li>
-                                        <li><a href="#sign">Sign/Symptoms</a></li>
-                                        <li><a href="#causes">Causes</a></li>
-                                        <li><a href="#diagnosis"> Diagnosis</a></li>
-                                        <li><a href="#treatment"> Treatment </a></li>
-                                        <li><a href="#complication">Complications</a></li>
-                                    </ul>
-                                    <ul class="box">
-
-                                        <li class="link_name"> LIVING WITH VITILIGO </li>
-                                        <li><a href="#diet">Diet</a></li>
-                                        <li><a href="#makeup"> Makeup</a></li>
-                                        <li><a href="#yoga"> Yoga</a></li>
-                                        <li><a href="#stress">Stress and Vitilig</a></li>
-
-                                    </ul>
-                                    <ul class="box">
-                                        <li class="link_name">DID YOU KNOW?</li>
-                                        <li><a href="#myth"> Myths and Facts </a></li>
-                                        <li><a href="#do">Dos and Donʼts </a></li>
-                                        <li><a href="#faqs">FAQs</a></li>
-
-                                    </ul>
-
-                                    <ul class="box">
-                                        <li class="link_name"> OUR INITIATIVES </li>
+                </div>
+                <div class="swiper-button-next">
+                    <div class="circle-1  p-2">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="swiper-button-prev">
+                    <div class="circle  p-2"><i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
 
 
-                                    </ul>
-                                    <ul class="box">
-                                        <li class="link_name"> CONNECT US </li>
 
 
-                                    </ul>
+                <footer>
+                    <div class="content">
+                        <div class="top">
+                            <div class="logo-details">
+                                <img src="assets/img/MicrosoftTeams-image (4).png" class="img-fluid" />
+                            </div>
+                            <div class="link-boxes">
+                                <ul class="box">
+                                    <li class="link_name">HOME</li>
 
-                                    
+                                </ul>
+                                <ul class="box">
+                                    <li class="link_name">ALL ABOUT VITILIGO </li>
+                                    <li><a href="#sign">Sign/Symptoms</a></li>
+                                    <li><a href="#causes">Causes</a></li>
+                                    <li><a href="#diagnosis"> Diagnosis</a></li>
+                                    <li><a href="#treatment"> Treatment </a></li>
+                                    <li><a href="#complication">Complications</a></li>
+                                </ul>
+                                <ul class="box">
 
-                                </div>
+                                    <li class="link_name"> LIVING WITH VITILIGO </li>
+                                    <li><a href="#diet">Diet</a></li>
+                                    <li><a href="#makeup"> Makeup</a></li>
+                                    <li><a href="#yoga"> Yoga</a></li>
+                                    <li><a href="#stress">Stress and Vitilig</a></li>
 
-                                <div class="footer_btn">
-                                    <button id="backToTop" title="Go to top"> <i class="fa-solid fa-chevron-down"></i> Back to Top</button>
-                                </div>
+                                </ul>
+                                <ul class="box">
+                                    <li class="link_name">DID YOU KNOW?</li>
+                                    <li><a href="#myth"> Myths and Facts </a></li>
+                                    <li><a href="#do">Dos and Donʼts </a></li>
+                                    <li><a href="#faqs">FAQs</a></li>
+
+                                </ul>
+
+                                <ul class="box">
+                                    <li class="link_name"> OUR INITIATIVES </li>
+
+
+                                </ul>
+                                <ul class="box">
+                                    <li class="link_name"> CONNECT US </li>
+
+
+                                </ul>
+
+
+
                             </div>
 
-
-                        </div>
-                        <div class="bottom-details">
-                            <div class="bottom">
-                                <div class="bottom_text">
-                                    <span class="copyright_text"> © 2024. All rights reserved
-                                    </span>
-
-                                </div>
-                                <div class="bottom_img">
-                                    <img src="assets/img/MicrosoftTeams-image (8).png " class="img-fluid" />
-                                </div>
+                            <div class="footer_btn btn">
+                                <button id="backToTop" title="Go to top"> <i class="fa-solid fa-chevron-down"></i> Back
+                                    to
+                                    Top</button>
                             </div>
-
                         </div>
-                    </footer>
+
+
+                    </div>
+                    <div class="bottom-details">
+                        <div class="bottom">
+                            <div class="bottom_text">
+                                <span class="copyright_text"> © 2024. All rights reserved
+                                </span>
+
+                            </div>
+                            <div class="bottom_img">
+                                <img src="assets/img/MicrosoftTeams-image (8).png " class="img-fluid" />
+                            </div>
+                        </div>
+
+                    </div>
+                </footer>
 
 
 
 
-                    <script>
-                        document.addEventListener('DOMContentLoaded', function () {
-                            const options = {
-                                root: null,
-                                rootMargin: '0px',
-                                threshold: 0.6
-                            };
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const options = {
+                            root: null,
+                            rootMargin: '0px',
+                            threshold: 0.6
+                        };
 
-                            const observer = new IntersectionObserver((entries, observer) => {
-                                entries.forEach(entry => {
-                                    if (entry.isIntersecting) {
-                                        document.querySelectorAll('nav ul li a').forEach(link => {
-                                            link.classList.remove('active');
-                                        });
-                                        const id = entry.target.getAttribute('id');
-                                        document.querySelector(`nav ul li a[href="#${id}"]`).classList.add('active');
-                                    }
-                                });
-                            }, options);
-
-                            document.querySelectorAll('section').forEach(section => {
-                                observer.observe(section);
+                        const observer = new IntersectionObserver((entries, observer) => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                    document.querySelectorAll('nav ul li a').forEach(link => {
+                                        link.classList.remove('active');
+                                    });
+                                    const id = entry.target.getAttribute('id');
+                                    document.querySelector(`nav ul li a[href="#${id}"]`).classList.add('active');
+                                }
                             });
-                        });
-                    </script>
+                        }, options);
 
-                    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-                    <script src="assets/js/bootstrap.min.js"></script>
-                    <script src="./assets/js/swiper-bundle.min.js"></script>
-                    <script src="./assets/js/custom.js"></script>
+                        document.querySelectorAll('section').forEach(section => {
+                            observer.observe(section);
+                        });
+                    });
+                </script>
+
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                <script src="assets/js/bootstrap.min.js"></script>
+                <script src="./assets/js/swiper-bundle.min.js"></script>
+                <script src="./assets/js/custom.js"></script>
+                <script data-cfasync="false"
+                    src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                <script type="text/javascript" src="js/jquery.js"></script>
+                <script type="text/javascript" src="js/vendors.min.js"></script>
+                <script type="text/javascript" src="js/main.js"></script>
+
+                <script data-cfasync="false"
+                    src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+
 
 </body>
 

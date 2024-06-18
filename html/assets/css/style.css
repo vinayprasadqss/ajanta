@@ -8,7 +8,8 @@
   font-family: "Poppins", sans-serif;
 }
 
-body ,html{
+body,
+html {
   overflow: hidden;
   overflow-y: auto;
 }
@@ -68,13 +69,14 @@ header nav.navBarNew .container .navbar-collapse li a {
   font-weight: 500;
 }
 
-header nav.navBarNew .container .navbar-collapse li a:hover{
+header nav.navBarNew .container .navbar-collapse li a:hover {
   color: #8c287b;
 }
 
 header nav.navBarNew .container .navbar-collapse li a.active {
   /* background-color: #cf8ebd; */
-    color:#cf8ebd;;
+  color: #cf8ebd;
+  ;
 }
 
 .HomeBanner .swiper {
@@ -212,9 +214,10 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 }
 
 
-.dropdown-menu{
-  --bs-dropdown-link-active-bg:transparent!important;
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: transparent !important;
 }
+
 .dropdown-item {
   padding: 10px;
   border-bottom: 1px solid lightgray;
@@ -255,9 +258,9 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 }
 
 .btn_group button:hover {
-  background-color: white!important;
-  border: 1px solid black!important;
-  color: black!important;
+  background-color: white !important;
+  border: 1px solid black !important;
+  color: black !important;
 }
 
 .btn_group_1 {
@@ -273,9 +276,9 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 }
 
 .btn_group_1 button:hover {
-  background-color: white!important;
-  border: 1px solid black!important;
-  color: black!important;
+  background-color: white !important;
+  border: 1px solid black !important;
+  color: black !important;
 }
 
 
@@ -310,7 +313,7 @@ header nav.navBarNew .container .navbar-collapse li a.active {
   }
 }
 
-.symptoms{
+.symptoms {
   width: 10%;
 }
 
@@ -396,7 +399,7 @@ header nav.navBarNew .container .navbar-collapse li a.active {
   white-space: nowrap;
 
   &.rotated-text {
-  right: 33px;
+    right: 33px;
   }
 
   &.rotated-texts {
@@ -962,7 +965,7 @@ p {
 .fa-arrow-right {
   font-weight: 400;
   font-size: 28px;
-  color:#4c4b4b;
+  color: #4c4b4b;
 }
 
 .swiper-button-next {
@@ -981,6 +984,7 @@ p {
   border-radius: 26px;
   border: 2px dotted purple;
 }
+
 .circle-1 {
   width: 50px;
   border-radius: 26px;
@@ -1128,13 +1132,13 @@ form textarea {
   padding: 11px;
   border-top-left-radius: 23px;
   border-bottom-left-radius: 23px;
-  font-size: 12px!important;
+  font-size: 12px !important;
 }
 
-#backToTop button{
+#backToTop button {
   background-color: white;
   color: black;
- 
+
 }
 
 #backToTop {
@@ -1304,12 +1308,388 @@ form textarea {
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 993px) {
-  .about_content {
+@media (max-width: 993px) {
+  .heading {
     text-align: left;
   }
 
+  .about_content p {
+    font-size: 25px;
+  }
+
+  .about_img {
+    width: 100% !important;
+    margin-top: 50px;
+    margin-left: 0px !important;
+  }
+
+  .btn_group button {
+    font-size: 24px;
+  }
+
+  .btn_group_1 button {
+    font-size: 24px;
+  }
+
+  .AboutVitiligo p {
+    font-size: 25px;
+  }
+
+  .cases{
+    margin-top: 70px;
+  }
+
+  .list_content i{
+    margin-top: 20px;
+  }
+
+  .vitiligo_img img{
+    margin-left: 0px!important;
+  }
+.row_containers{
+  width: 85%;
+}
+.row_container{
+  width: 85%;
+}
+.rotated-text, .rotated-texts {
+  &.rotated-text {
+      right: 14px;
+      font-size: 20px;
+  }
+}
+.rotated-text, .rotated-texts {
+  &.rotated-texts {
+      right: 45px;
+      font-size: 20px;
+  }
+}
+.segemntal{
+  gap:29px;
+}
+
+  .container, .container-md, .container-sm {
+      max-width: 789px;
+  }
+.About_section h4{
+  font-size: 1.8rem;
+}
+.About_section p{
+  font-size: 25px;
+}
+.About_section h5{
+  margin-top: 10px;
+}
+.column_detail {
+  width: 100%;
+}
+.about_image{
+  display: none;
+}
+
+.About_section_3{
+  margin-top: 30px;
+}
+
+.About_section_3 p{
+  font-size: 25px!important;
+}
+
+.description p {
+  font-size: 25px;
+}
+
+.living_img{
+  margin-top: 20px;
+}
+.living_img img{
+  margin-left: 0px;
+
+}
+.Living{
+  width: 100%;
+
+  img{
+    padding: 50px;
+  }
+
+  p{
+    
+      padding-left: 38px;
+      padding-right: 38px;
+  
+  }
+}
+.Living_With_Vitiligo{
+ margin-top: 50px!important;
+ p{
+  font-size: 25px;
+}
+}
+
+.column{
+  width: 100%;
+}
+.Cosmetic span,
+  h5 {
+    font-size: 2rem !important;
+  }
+
+}
 
 
+@media (min-width: 2400px) {
 
+  .heading {
+    margin-top: 30px;
+    font-size: 3.9rem;
+  }
+
+  .swiper_content {
+    width: 100%;
+  }
+
+  .bg-image {
+    width: 100%;
+  }
+
+  .inner p {
+    font-size: 25px;
+    line-height: 46px !important;
+
+  }
+
+  .nav-item {
+    font-size: 24px !important;
+  }
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1635px !important;
+  }
+
+  .About p {
+    font-size: 2rem;
+    line-height: 1.7;
+  }
+
+  .btn_group button {
+    font-size: 22px;
+  }
+
+  .btn_group_1 button {
+    font-size: 22px;
+  }
+
+  .AboutVitiligo p {
+    font-size: 2rem;
+    line-height: 1.7;
+  }
+
+  .list_content {
+    align-items: center;
+  }
+
+  .About_section p {
+    font-size: 2rem;
+    line-height: 1.7;
+  }
+
+  .About_section_2 p {
+    font-size: 2rem;
+    line-height: 1.7;
+  }
+
+  .About_section_3 p {
+    font-size: 2rem;
+    line-height: 1.7;
+  }
+
+  .about_content p {
+    font-size: 2rem !important;
+    line-height: 1.7 !important;
+  }
+
+  .About_section h4 {
+    font-size: 2.3rem;
+  }
+
+  .cases p {
+    font-size: 34px;
+  }
+
+  .cases_second p {
+    font-size: 34px !important;
+  }
+
+  .column_detail {
+    width: 85%;
+
+    h4 {
+      font-size: 2rem;
+    }
+
+  }
+
+  .about_image {
+    left: 1014px;
+
+    img {
+      height: 104%;
+    }
+  }
+
+  .description p {
+    font-size: 2rem;
+    line-height: 1.7;
+  }
+
+  .Living_With_Vitiligo p {
+    font-size: 2rem;
+    line-height: 1.7;
+  }
+
+  .Living p {
+    padding: 18px;
+  }
+
+  .column h4 {
+    font-size: 3rem;
+  }
+
+  .column .list_content {
+    align-items: flex-start;
+  }
+
+  .list_content i {
+    margin-top: 20px;
+  }
+
+  .food_item {
+    gap: 56px;
+  }
+
+  .Cosmetic span,
+  h5 {
+    font-size: 2.3rem !important;
+  }
+
+  .Cosmetic .list_content {
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  .cosmetic_img img {
+    height: 580px;
+
+  }
+
+  .Living img {
+    padding: 24px;
+
+
+  }
+
+  .Living p {
+    padding: 24px;
+
+
+  }
+
+  .yoga_content p {
+    font-size: 24px;
+  }
+
+  .yoga_content h2 {
+    font-size: 3.2rem;
+  }
+
+  .how_to_do {
+    font-size: 2.5rem !important;
+  }
+
+  .list .list_content .list_description p {
+    line-height: 1.6 !important;
+  }
+
+  .list img {
+    height: 100% !important;
+  }
+
+  .images_yoga {
+    height: 100%;
+  }
+
+
+  .did_you_know p {
+    font-size: 2rem;
+    line-height: 1.7;
+  }
+
+  .accordion-item h1 button {
+    font-size: 2rem;
+  }
+
+  .accordion-body {
+    font-size: 2rem;
+  }
+
+  footer ul li a {
+    font-size: 1.5rem !important;
+  }
+
+  .link_name {
+    font-size: 1.5rem !important;
+  }
+
+  footer {
+    .content {
+      max-width: 1585px;
+      margin: auto;
+    }
+  }
+
+  .btn button {
+    font-size: 27px;
+    padding: 20px;
+  }
+
+  #backToTop {
+    width: 9%;
+    display: none;
+    position: fixed;
+    bottom: 335px;
+    right: -13px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 11px;
+    border-top-left-radius: 33px;
+    border-bottom-left-radius: 33px;
+    font-size: 24px !important;
+  }
+
+  footer {
+    & .bottom-details {
+      & .bottom_text {
+
+        span,
+        a {
+          font-size: 22px;
+          font-weight: 300;
+          margin-left: -283px;
+          color: #fff;
+          opacity: 0.8;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
