@@ -1137,6 +1137,11 @@ form textarea {
  
 }
 
+#backToTop {
+  display: none;
+}
+
+
 
 /* .mySwiper {
   overflow: scroll;

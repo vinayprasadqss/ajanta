@@ -38,7 +38,7 @@ var swiper= new Swiper(".mySwiper2", {
       },
   });
 
-
+// scroll down button
   document.querySelectorAll(".scrollButton").forEach(button => {
     button.addEventListener("click", function() {
         const target = document.querySelector(this.getAttribute("data-target"));
@@ -58,6 +58,8 @@ var swiper= new Swiper(".mySwiper2", {
     });
 });
 
+
+//popup
 
 var popupForm = document.getElementById("popupForm");
 
@@ -116,6 +118,29 @@ backToTopButton.onclick = function() {
   }
   
 
+
+//display none backtotop button in another section
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const backToTopButton = document.getElementById('backToTop');
+    const footer = document.querySelector('footer');
+
+    function checkFooterVisibility() {
+        const rect = footer.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+        if (isVisible) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    }
+
+    window.addEventListener('scroll', checkFooterVisibility);
+    window.addEventListener('resize', checkFooterVisibility);
+    
+    // Initial check
+    checkFooterVisibility();
+});
 
 
 
