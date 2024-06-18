@@ -4,7 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <title>Page Title</title>
+    <title>Know Your Vitiligo</title>
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+
+
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/all.min.css" crossorigin="anonymous" />
@@ -100,32 +104,37 @@
                             </a> -->
 
 
+    <!--                            <a class="nav-link nav_contact" href="#">
+                                     <img src="./assets/img/menu_bg.png" alt="bg" />
+                                    <button id="contactUsButton" class="contact nav-link ">Contact Us
+                                </button>
+                                <div id="popupForm" class="popup">
+                                    <div class="popup-content">
+                                        <div class="close_btn">
+                                            <span class="close">&times;</span>
+                                        </div>
+
+                                        <h1>Connect with us</h1>
+                                        <hr>
+                                        <p>Please write your massage and contact information below. We will respond as soon as possible.</p>
+
+                                        <form>
+                                            <input type="email" id="email" name="email" required placeholder="knowyourvitiligo@ajantpharma.com"><br><br>
+                                            <textarea id="message" name="message" required placeholder="Type your massage here!"></textarea><br><br>
+                                            <input type="number" id="number" name="number" required placeholder="Enter your phone number"/><br><br>
+                                            <label>
+                                                <input type="checkbox" id="privacy" name="privacy" required>
+                                                I confirm that i've read and agree to<span class="text-decoration-underline mx-1">Privacy policy.</span>
+                                            </label><br><br>
+                                            <button type="submit">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                </a>-->
+
                             <a class="nav-link nav_contact" href="#">
                                  <img src="./assets/img/menu_bg.png" alt="bg" />
-                                <button id="contactUsButton" class="contact nav-link ">Contact Us
-                            </button>
-                            <div id="popupForm" class="popup">
-                                <div class="popup-content">
-                                    <div class="close_btn">
-                                        <span class="close">&times;</span>
-                                    </div>
-                                   
-                                    <h1>Connect with us</h1>
-                                    <hr>
-                                    <p>Please write your massage and contact information below. We will respond as soon as possible.</p>
-                                   
-                                    <form>
-                                        <input type="email" id="email" name="email" required placeholder="knowyourvitiligo@ajantpharma.com"><br><br>
-                                        <textarea id="message" name="message" required placeholder="Type your massage here!"></textarea><br><br>
-                                        <input type="number" id="number" name="number" required placeholder="Enter your phone number"/><br><br>
-                                        <label>
-                                            <input type="checkbox" id="privacy" name="privacy" required>
-                                            I confirm that i've read and agree to<span class="text-decoration-underline mx-1">Privacy policy.</span> 
-                                        </label><br><br>
-                                        <button type="submit">Submit</button>
-                                    </form>
-                                </div>
-                            </div>
+                                <button class="contact nav-link " data-bs-toggle="modal" data-bs-target="#contactForm">Contact Us</button>
                             </a>
                         </li>
                     </ul>
@@ -2092,7 +2101,7 @@
 
                     <section id="stress">
 
-                    
+
                         <div class="row justify-content-center mt-5">
                             <div class="col-8">
                                 <h1 class="heading">Stress and Vitiligo</h1>
@@ -2468,7 +2477,7 @@
                                                     <button class="accordion-button" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
                                                         aria-expanded="true" aria-controls="flush-collapseTwo">
-                                                        How often should I practice yoga to see potential benefits for vitiligo? 
+                                                        How often should I practice yoga to see potential benefits for vitiligo?
                                                     </button>
                                                 </h1>
                                                 <div id="flush-collapseTwo" class="accordion-collapse collapse show"
@@ -2482,7 +2491,7 @@
                                                     <button class="accordion-button" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
                                                         aria-expanded="true" aria-controls="flush-collapseThree">
-                                                        Can yoga have any negative effects on vitiligo? 
+                                                        Can yoga have any negative effects on vitiligo?
                                                     </button>
                                                 </h1>
                                                 <div id="flush-collapseThree" class="accordion-collapse collapse show"
@@ -2720,7 +2729,7 @@
 
                                     </ul>
 
-                                    
+
 
                                 </div>
 
@@ -2746,8 +2755,57 @@
                         </div>
                     </footer>
 
+<div class="modal fade contactFormOverlay" id="contactForm" tabindex="-1" aria-labelledby="contactFormLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="popup-content">
+                        <div class="close_btn" data-bs-dismiss="modal" aria-label="Close">
+                            <span class="close">&times;</span>
+                        </div>
 
+                        <h1>Connect with us</h1>
+                        <hr>
+                        <p>Please write your massage and contact information below. We will respond as soon as possible.</p>
 
+                    <form onsubmit="handleSubmit(event)" method="POST">
+                        <input type="email" id="email" name="email" required
+                               placeholder="knowyourvitiligo@ajantpharma.com"><br><br>
+                        <textarea id="message" name="message" required
+                                  placeholder="Type your massage here!"></textarea><br><br>
+                        <input type="number" id="phone" name="number" required
+                               placeholder="Enter your phone number" /><br><br>
+                        <label>
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            I confirm that i've read and agree to<span
+                                class="text-decoration-underline mx-1">Privacy policy.</span>
+                        </label><br><br>
+                        <button type="submit" id="loading">Submit</button>
+                    </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modalz fade" id="modalz" tabindex="-1" aria-labelledby="confirmationLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="confirmationLabel">Submission Successful</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Thank you for contacting us. Your form has been successfully submitted. We appreciate your visit
+                and will respond to your inquiry as soon as possible.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
 
                     <script>
                         document.addEventListener('DOMContentLoaded', function () {
@@ -2779,6 +2837,67 @@
                     <script src="assets/js/bootstrap.min.js"></script>
                     <script src="./assets/js/swiper-bundle.min.js"></script>
                     <script src="./assets/js/custom.js"></script>
+
+                    <script>
+                        const handleSubmit = async (event) => {
+                            try {
+                                const email = document.getElementById("email").value;
+                                const phone = document.getElementById("phone").value;
+                                const msg = document.getElementById("message").value;
+                                const pop = document.getElementById("popupForm");
+                                event.preventDefault();
+                                if (email === "") {
+                                    return ("Email is Required");
+                                }
+                                else if (phone === "") {
+                                    return ("Phone Number is Required");
+                                }
+                                document.getElementById("loading").innerText = "Loading...";
+                                const formData = {
+                                    email: email,
+                                    phone: phone,
+                                    msg: msg
+                                };
+                                const response = await fetch('https://ajanta-backend.onrender.com/api/create', {
+                                    method: 'POST',
+                                    headers: {
+                                        'Content-Type': 'application/json'
+                                    },
+                                    body: JSON.stringify(formData)
+                                });
+
+                                if (!response.ok) {
+                                    throw new Error('Network response was not ok');
+                                }
+
+                                const data = await response.json();
+
+                                if (data) {
+                                    var modal = new bootstrap.Modal(document.getElementById('modalz'));
+                                    modal.show();
+
+                                    var modalElement = document.getElementById('contactForm');
+                                    var modalForm = bootstrap.Modal.getInstance(modalElement); // Returns a Bootstrap modal instance
+                                    modalForm.hide();
+
+                                    document.getElementById("email").value = "";
+                                    document.getElementById("phone").value = "";
+                                    document.getElementById("message").value = "";
+                                }
+                            } catch (error) {
+                                console.log(error);
+                                alert(error?.response?.data?.msg)
+                            }finally{
+                                document.getElementById("loading").innerText = "Submit";
+                            }
+
+
+
+
+                        }
+
+
+                    </script>
 
 </body>
 

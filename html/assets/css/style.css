@@ -1134,7 +1134,7 @@ form textarea {
 #backToTop button{
   background-color: white;
   color: black;
- 
+
 }
 
 #backToTop {
@@ -1312,4 +1312,29 @@ form textarea {
 
 
 
+}
+
+
+.contactFormOverlay .modal-content{
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.contactFormOverlay .popup-content{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border: 0;
+  box-shadow: none;
+}
+
+.contactFormOverlay .popup-content .close_btn{
+  position: absolute;
+  right: -38px;
+  top: -44px;
+}
+.contactFormOverlay .popup-content .close_btn .close{
+  height: 35px;
+  width: 35px;
+  font-size: 25px;
 }
