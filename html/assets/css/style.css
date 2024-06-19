@@ -1145,6 +1145,108 @@ form textarea {
   display: none;
 }
 
+.container{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.bannerslider .nav-dots {
+  position: absolute;
+  top: 165px;
+  /* left: 22%; */
+  /* right: 5%; */
+  /* transform: translateY(-50%); */
+  /* margin: 0; */
+  /* padding: 0; */
+  /* cursor: pointer; */
+  z-index: 999999999999;
+}
+.bannerslider .nav-dots {
+  position: fixed;
+  top: 50%;
+  left: 5%;
+  /* right: 5%; */
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.bannerslider .nav-dot {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #52616a;
+  border-radius: 50%;
+  list-style: none;
+  background: #c9d6de;
+  transition: all 0.3s;
+}
+.bannerslider .nav-dot:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+.bannerslider .nav-dot:hover, .nav-dot.is-active {
+  transform: scale(1.8);
+  background: transparent;
+}
+.bannerslider .section {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+
+.bannerslider .section__heading {
+  margin: 0;
+  color: white;
+  font-size: 32px;
+  text-transform: capitalize;
+}
+.contents {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+}
+
+.contents.other .inner ul {
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+ .contents.other .inner ul li {
+  width: 50%;
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  margin: 20px 0;
+  padding: 0 40px;
+}
+
+ .contents.other .inner ul li p {
+  font-size: 18px;
+}
+
+ .contents.other .inner ul li strong {
+  font-weight: bold;
+}
+.contents .inner {
+  max-width: 420px;
+}
+
+ .contents .inner img {
+  margin-bottom: 20px;
+  max-width: 350px;
+}
+ .contents .inner p {
+  line-height: 32px;
+  text-align: left;
+}
+
+.hide-dots {
+  display: none!important;
+}
 
 
 /* .mySwiper {
@@ -1306,9 +1408,37 @@ form textarea {
 
 
 }
+@media (max-width: 1024px) {
+  .heading {
+    text-align: left;
+  }
+  .bannerslider .section {
+
+    height: 0%!important;
+}
+.swiper_content img{
+  width: 100%!important;
+}
+.bg-image {
+  position: absolute!important;
+  top: 41px!important;
+  left: 21px!important;
+}
+.bg-image img{
+  width: 85%!important;
+}
+
+.contents {
+  width: 100%!important;
+  position: absolute!important;
+  top: 55%!important;
+  left: 0%!important;
+}
+
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (max-width: 993px) {
+/* @media (max-width: 993px) {
   .heading {
     text-align: left;
   }
@@ -1435,7 +1565,7 @@ form textarea {
     font-size: 2rem !important;
   }
 
-}
+} */
 
 
 @media (min-width: 2400px) {
@@ -1543,11 +1673,14 @@ form textarea {
     }
   }
 
-  .description p {
-    font-size: 2rem;
+  .list_description p {
+    font-size: 2rem!important;
     line-height: 1.7;
   }
-
+  .description p {
+    font-size: 2rem!important;
+    line-height: 1.7;
+  }
   .Living_With_Vitiligo p {
     font-size: 2rem;
     line-height: 1.7;
@@ -1572,7 +1705,9 @@ form textarea {
   .food_item {
     gap: 56px;
   }
-
+.Cosmetic p{
+  font-size: 2rem!important;
+}
   .Cosmetic span,
   h5 {
     font-size: 2.3rem !important;
@@ -1626,6 +1761,16 @@ form textarea {
 
 
   .did_you_know p {
+    font-size: 2rem;
+    line-height: 1.7;
+  }
+
+  .do_dont p{
+     font-size: 2rem;
+     line-height: 1.7;
+  }
+
+  .mySwiper2 p{
     font-size: 2rem;
     line-height: 1.7;
   }
@@ -1691,5 +1836,9 @@ form textarea {
         }
       }
     }
+  }
+  .paragraph{
+    font-size: 2rem!important;
+    line-height: 1.7;
   }
 }

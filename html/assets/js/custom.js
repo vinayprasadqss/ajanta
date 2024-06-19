@@ -11,6 +11,67 @@ var swiper = new Swiper(".mySwiper", {
     },
     autoplay: false
 });
+class Slider {
+    constructor(options) {
+      this.sections = document.querySelectorAll(options.section);
+      this.navigation = document.querySelector(options.dots);
+      this.bannerSlider = document.querySelector('.bannerslider');
+  
+      this.navigation.addEventListener('click', this.scrollToSection.bind(this));
+      window.addEventListener('scroll', this.setDotStatus.bind(this));
+    }
+  
+    removeDotStyles() {
+      const dots = this.navigation.querySelectorAll('.nav-dot');
+      dots.forEach(dot => dot.classList.remove('is-active'));
+    }
+  
+    setDotStatus() {
+      const scrollPosition = window.scrollY;
+      const bannerSliderTop = this.bannerSlider.offsetTop;
+      const bannerSliderHeight = this.bannerSlider.offsetHeight;
+      const bannerSliderBottom = bannerSliderTop + bannerSliderHeight;
+  
+      // Show dots only if scroll position is within the banner slider section
+      if (scrollPosition >= bannerSliderTop && scrollPosition < bannerSliderBottom) {
+        this.navigation.classList.remove('hide-dots');
+      } else {
+        this.navigation.classList.add('hide-dots');
+      }
+  
+      // Update dot active status within the banner slider section
+      this.sections.forEach((section, index) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+  
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          this.removeDotStyles();
+          const dots = Array.from(this.navigation.children);
+          dots[index].classList.add('is-active');
+        }
+      });
+    }
+  
+    scrollToSection(e) {
+      const dots = Array.from(this.navigation.children);
+  
+      dots.forEach((dot, index) => {
+        if (dot === e.target) {
+          window.scrollTo({
+            top: this.sections[index].offsetTop,
+            behavior: 'smooth',
+          });
+        }
+      });
+    }
+  }
+  
+  new Slider({
+    section: '.bannerslider .section',
+    dots: '#js-dots',
+  });
+  
+  
 
 swiper.on('slideChange', function () {
     swiper.params.mousewheel.releaseOnEdges = false;
