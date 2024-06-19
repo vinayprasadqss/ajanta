@@ -205,14 +205,13 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 .bg-image {
   position: absolute;
   top: 205px;
-  left: 143px;
+  left: 303px;
 
 }
 
 .bg-image img {
-  width: 75% !important;
+  width: 69% !important;
 }
-
 
 .dropdown-menu {
   --bs-dropdown-link-active-bg: transparent !important;
@@ -1398,17 +1397,170 @@ form textarea {
   }
 }
 
-/* Medium devices (landscape tablets, 768px to 992px) */
-@media (min-width: 769px) and (max-width: 992px) {
+
+@media (max-width: 768px)  {
   .about_content {
     text-align: left;
   }
+  .row_container{
+    width: 85%!important;
+    h5{
+      font-size: 12px!important;
+    }
+  }
+  .row_containers{
+    width: 85%!important;
+
+    h5{
+      font-size: 12px!important;
+    }
+  }
+  .rotated-text, .rotated-texts {
+    &.rotated-text {
+      font-size: 14px!important;
+        right: 7px!important;
+    }}
+
+    .rotated-text, .rotated-texts {
+      &.rotated-texts {
+        font-size: 14px!important;
+          right: 25px!important;
+          top: 20px!important;
+      }
+  }
+
+    .about_img{
+      margin-left: 0px!important;
+      margin-top: 30px!important;
+    }
+    .vitiligoSymptoms_img{
+      margin-left: 0px!important;
+    }
+    .about_image img{
+      display: none!important;
+    }
+
+    .column_detail{
+      width: 100%!important;
+    }
+    .living_img {
+      margin-left: 0px!important;
+    }
+    .living_img img {
+      margin-top: 30px!important;
+      margin-left: 0px!important;
+    }
+    .Living{
+      width: 100%!important;
+    }
+    .column{
+      width: 100%!important;
+    }
+    .cosmetic_img{
+      margin-top: 30px!important;
+      margin-left: 0px!important;
+    }
+    .cases_second, .cases {
+      p {
+          font-size: 18px!important;
+      }
+  }
+  .yoga_contents{
+    width: 15%!important;
+  }
+  .slide-1 p{
+    margin-top: 0px!important;
+    font-size: 12px!important;
+  }
+  .swiper-button-next {
+    right: -105px!important;
+    margin-right: 116px;
+    border-radius: 70px;
+    top: 245px;
+    height: 50px!important;
+    background-color: #fdfdfd!important;
+    width: 50px;
+    /* padding: 20px; */
+    border: 1px solid #dadada;
+}
+.swiper-button-prev{
+  top: 245px;
+  height: 50px!important;
+  width: 50px;
+}
+
+.circle-1 {
+  width: 30px!important;
+  height: 30px!important;
+  border-radius: 26px;
+  border: 2px dotted #dadada;
+}
+.circle {
+  width: 30px!important;
+  height: 30px!important;
+  border-radius: 26px;
+  border: 2px dotted #dadada;
+}
 
 
+.fa-arrow-right{
+  
+    font-size: 16px!important;
+    position: absolute!important;
+    top: 16px!important;
+
+}
+
+.fa-arrow-left{
+  
+  font-size: 16px!important;
+  position: absolute!important;
+  top: 16px!important;
+
+}
+ .link-boxes {
+  width: 100%!important;
+}
+.link_name{
+  font-size: 8px!important;
+}
+.box li a{
+  font-size: 8px!important;
+}
+.copyright_text{
+  font-size: 10px!important;
+}
+
+.bottom_img {
+  img {
+      width: 50%;
+      margin-right: -390px!important;
+  }
+
+  /* .images_yoga{
+    height: 100%!important;
+    img{
+      height: 100%!important;
+    }
+    
+  } */
+
+  /* .list_description p {
+    font-size: 18px!important;
+    line-height: 1.5!important;
+    margin-top: 0px!important;
+    margin-bottom: 4px!important;
+  } */
+}
 
 
 }
+
+
 @media (max-width: 1024px) {
+  .do {
+    gap: 81px!important;
+}
   .heading {
     text-align: left;
   }
@@ -1460,7 +1612,18 @@ form textarea {
 .column{
   width: 30%;
 }
+.bottom img img{
+ margin: left 441px;
+}
+footer {
+  & .bottom-details {
+      & .bottom_text {
+          span, a {
+              
+              margin-left: -11px;
+           }}}
 
+}
 }
 
 /* Large devices (desktops, 992px and up) */
