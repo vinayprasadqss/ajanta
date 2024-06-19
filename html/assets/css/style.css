@@ -1756,6 +1756,22 @@ footer {
 
 } */
 
+@media (min-width: 1440px) {
+.contents{
+
+    left: 20px!important;
+    position: absolute;
+    top: 61%;
+   
+
+}
+.bannerslider .section {
+  height: 0%!important;
+}
+
+
+}
+
 
 @media (min-width: 2400px) {
 
