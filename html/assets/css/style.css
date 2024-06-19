@@ -561,7 +561,7 @@ header nav.navBarNew .container .navbar-collapse li a.active {
   background-color: #e8e8ea;
   border-radius: 646px 646px 0 0;
   justify-content: center;
-  width: 50%;
+  width: 100%;
   padding-bottom: 50px;
   display: flex;
 }
@@ -1435,35 +1435,30 @@ form textarea {
   left: 0%!important;
 }
 
-.btn_group button {
-  font-size: 23px;
-  padding: 10px;
-  width: 29%;
- 
-}
 
-.btn_group_1 button {
-  font-size: 23px;
-  padding: 10px;
-  width: 29%;
- 
-}
-.about_content{
-  display: block;
-  width: 80%;
-
-  p{
-    font-size: 1.7rem;
-  }
-}
-.about_content_1 {
- 
-  width: 80%;
-}
 
 .about_img{
   margin-top: 50px;
   margin-left: 0px!important;
+}
+
+.column_detail h4{
+  font-size: 1.1rem!important;
+}
+.about_image {
+  position: absolute;
+  bottom: 0px;
+  left: 462px;
+  width: 50%;
+  top: -29px;
+}
+
+.Living {
+  width: 30%;
+  border-radius: 8px;
+}
+.column{
+  width: 30%;
 }
 
 }
