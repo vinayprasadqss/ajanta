@@ -160,15 +160,17 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 
 .HomeBanner .swiper-pagination {
   position: absolute;
-  left: 5% !important;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
   /* Adjust horizontal positioning as needed */
-  top: 50% !important;
+  top: 85% !important;
   /* Center vertically */
   transform: translateY(-50%) !important;
-  display: flex;
-  flex-direction: column;
+
   /* Stack dots vertically */
 }
+
 
 .HomeBanner .swiper-pagination .swiper-pagination-bullet {
   margin: 5px 0;
@@ -195,6 +197,7 @@ header nav.navBarNew .container .navbar-collapse li a.active {
   position: relative;
 }
 
+
 /* .first_slide{
   height: 100vh!important;
 } */
@@ -204,8 +207,8 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 
 .bg-image {
   position: absolute;
-  top: 205px;
-  left: 303px;
+  top: 299px;
+  left: 284px;
 
 }
 
@@ -623,6 +626,9 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 .fa-xmark {
   color: red !important;
 }
+
+
+
 
 footer {
   background: black;
@@ -1164,7 +1170,7 @@ form textarea {
 }
 
 
-#backToTop {
+#backToTopBtn {
   width: 6%;
   /* display: none; */
   position: fixed;
@@ -1179,17 +1185,55 @@ form textarea {
   padding: 11px;
   border-top-left-radius: 23px;
   border-bottom-left-radius: 23px;
+  font-size: 12px !important;}
+
+
+#footer {
+  position: relative; /* Required for positioning the button within the footer */
+}
+
+
+#backToTop {
+  width: 6%;
+  /* display: none; */
+  position: absolute;
+  bottom: 298px;
+  right: -13px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 11px;
+  border-top-left-radius: 23px;
+  border-bottom-left-radius: 23px;
   font-size: 12px !important;
 }
 
-#backToTop button {
-  background-color: white;
-  color: black;
 
-}
 
 #backToTop {
   /* display: none; */
+}
+.back-to-top {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* Place it at the bottom of the page */
+  right: 30px; /* Place it 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #555; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Pointer/hand icon */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+.back-to-top:hover {
+  background-color: #333; /* Add a dark-grey background on hover */
 }
 
 .container{
@@ -1211,7 +1255,7 @@ form textarea {
 }
 .bannerslider .nav-dots {
   position: fixed;
-  top: 70%;
+  top: 60%;
   left: 5%;
   /* right: 5%; */
   transform: translateY(-50%);
@@ -1946,6 +1990,11 @@ footer {
 
 }
 }
+
+
+
+
+
 
 /* Large devices (desktops, 992px and up) */
 /* @media (max-width: 993px) {
