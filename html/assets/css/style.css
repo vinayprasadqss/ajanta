@@ -435,7 +435,11 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 
 .about_section_img img {
   height: 300px;
-  width: 100%;
+  width: auto;
+}
+
+.about_section_img {
+  text-align: end;
 }
 
 .About_section_3 p,
@@ -638,7 +642,7 @@ footer {
 
   .content {
     max-width: 1250px;
-    margin: auto;
+
 
     .top {
       display: flex;
@@ -802,7 +806,7 @@ footer {
 }
 
 .bottom_img {
-  text-align: center;
+  text-align: end;
 
   img {
     width: 50%;
@@ -968,7 +972,7 @@ p {
   transform: translateY(-50%);
   z-index: 10; /* Ensure buttons are above the slides */
   color: white; /* Adjust color as needed */
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust background color as needed */
+
   cursor: pointer;
   border-radius: 50%; /* Ensure circular shape */
   width: 40px; /* Adjust size as needed */
@@ -1014,7 +1018,9 @@ p {
 
   
 }
-
+.icon i {
+  margin-top: 13px;
+}
 /* .about_section_img img {
   width: 80%;
     height: 300px;
@@ -1160,7 +1166,7 @@ form textarea {
 
 #backToTop {
   width: 6%;
-  display: none;
+  /* display: none; */
   position: fixed;
   bottom: 298px;
   right: -13px;
@@ -1183,7 +1189,7 @@ form textarea {
 }
 
 #backToTop {
-  display: none;
+  /* display: none; */
 }
 
 .container{
@@ -1205,7 +1211,7 @@ form textarea {
 }
 .bannerslider .nav-dots {
   position: fixed;
-  top: 50%;
+  top: 70%;
   left: 5%;
   /* right: 5%; */
   transform: translateY(-50%);
@@ -1213,12 +1219,11 @@ form textarea {
   padding: 0;
   cursor: pointer;
 }
-
-.bannerslider .nav-dot :active{
-  border: 2px solid #cf8ebd;
-  background-color:#cf8ebd;
-
+.nav-dot.active {
+  background-color: pink; /* Pink background color when dot is active */
+  color: pink;
 }
+
 .bannerslider .nav-dot {
   width: 12px;
   height: 12px;
@@ -1232,9 +1237,24 @@ form textarea {
   margin-bottom: 20px;
 }
 .bannerslider .nav-dot:hover, .nav-dot.is-active {
-  transform: scale(1.8);
+  /* transform: scale(1.8); */
   background: transparent;
 }
+.nav-dot{
+  background: white!important;
+}
+
+.list_description p {
+  
+margin-top: 3px!important;
+margin-bottom: 0%!important;
+}
+
+
+.nav-dot.active {
+  background-color: #cf8ebd!important /* Pink background color when dot is active */
+}
+
 .bannerslider .section {
   display: grid;
   justify-content: center;
