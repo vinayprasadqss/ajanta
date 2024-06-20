@@ -937,19 +937,45 @@ p {
 
 }
 
-.swiper-button-prev {
-  position: relative!important;
-  bottom: 199px!important;
-  /* top: 321px; */
-  z-index: 10!important;
-  margin-left: 116px;
-  border-radius: 70px;
-  height: 66px;
-  width: 69px;
-  /* padding: 20px; */
-  border: 1px solid purple;
 
-  bottom: 198px;
+#initiative {
+  position: relative;
+}
+
+
+.swiper-button-prev {
+  position: absolute;
+  left: 109px;
+  top: 50%;
+  border: 1px solid purple;
+  transform: translateY(-50%);
+  z-index: 10; /* Ensure buttons are above the slides */
+  color: white; /* Adjust color as needed */
+  background-color: transparent; /* Adjust background color as needed */
+  cursor: pointer;
+  border-radius: 50%; /* Ensure circular shape */
+  width: 66px; /* Adjust size as needed */
+  height: 66px; /* Adjust size as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  z-index: 10; /* Ensure buttons are above the slides */
+  color: white; /* Adjust color as needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust background color as needed */
+  cursor: pointer;
+  border-radius: 50%; /* Ensure circular shape */
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -974,9 +1000,10 @@ p {
 }
 
 #initiative .swiper-button-next {
-  position: relative !important; /* Ensure it's positioned absolutely */
+ 
+  top: 50%;
   right: auto; /* Distance from the right side */
-  bottom: 198px!important;
+  /* bottom: 198px!important; */
   left: 92%!important;
   z-index: 10 !important;
   border-radius: 70px;
@@ -988,9 +1015,6 @@ p {
   
 }
 
-.icon i {
-  margin-top: 14px!important;
-}
 /* .about_section_img img {
   width: 80%;
     height: 300px;
@@ -1189,10 +1213,16 @@ form textarea {
   padding: 0;
   cursor: pointer;
 }
+
+.bannerslider .nav-dot :active{
+  border: 2px solid #cf8ebd;
+  background-color:#cf8ebd;
+
+}
 .bannerslider .nav-dot {
   width: 12px;
   height: 12px;
-  border: 2px solid #52616a;
+  border: 2px solid #cf8ebd;
   border-radius: 50%;
   list-style: none;
   background: #c9d6de;
