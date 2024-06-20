@@ -820,7 +820,7 @@ footer {
 }
 
 .do {
-  gap: 40px;
+  gap: 62px!important;
 }
 
 .about_section_column {
@@ -2346,11 +2346,3 @@ footer {
 
 
 /* MBILE  */
-@media (max-width: 425px) {
-
-.slider-section{
-  display: none !important;
-}
-
-
-} 
