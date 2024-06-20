@@ -1252,14 +1252,142 @@ form textarea {
   overflow: scroll;
 } */
 
-@media (max-width: 600px) {
+
+
+@media only screen 
+  and (max-device-width: 375px)  {
+  .dont{
+   
+    padding: 0px!important;
+    margin-right: 0px!;
+    margin-left: 0px !important;
+    /* margin-left: calc(-.5* var(--bs-gutter-x)); */
+}
+.donts{
+   
+  padding: 0px!important;
+  margin-right: 0px!;
+  margin-left: 0px !important;
+  gap: 0px!important;
+  /* margin-left: calc(-.5* var(--bs-gutter-x)); */
+}
+
+.banner-img{
+  width: 100%!important;
+  height: 100%!important;
+  object-fit: contain!important;
+}
+
+/* .contentss {
+  width: 100% !important;
+  position: absolute !important;
+  top: -1% !important;
+  left: 0% !important;
+} */
+
+.bottom-details{
+  margin-left: -30px!important;
+}
+
+.box{
+  padding-left: 13px!important;
+    margin-left: 0px !important;
+}
+
+
+/*   
+      .rotate-1 {
+          font-size: 10px !important;
+          right: -4px!important;
+          top: 20px !important;
+      }
+   */
+
+
+footer {
+  & .content {
+      & .link-boxes {
+       
+        width: 100%!important;
+       margin: auto!important;
+          & .box {
+              .link_name {
+                 
+                  font-size: 6px!important;
+                 
+              }
+
+              li a{
+                font-size: 6px!important;
+              }
+          }
+      }
+
+
+      footer {
+        & .content {
+            & .top {
+            
+                & .logo-details {
+                    img {
+                        width: 73%!important;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .top{
+      display: block!important;
+    }
+    
+    
+  }
+}
+
+  
+}
+
+@media (max-width: 630px) {
+  .About_section h4{
+    font-size: 1.1rem!important;
+  }
+
+  .About_section p{
+    font-size: 1.1rem!important;
+  }
+
+  .third{
+    margin: auto!important;
+  }
+
+  .row_container{
+    display: flex!important;
+  }
+  .row_containers{
+    display: flex!important;
+  }
+  .cases_1 p{
+    font-size: 12px!important;
+  }
 
   .heading {
     font-size: 2rem;
   }
+  .list_description p{
+    text-align: left!important;
+    font-size: 1.1rem!important;
+  }
 
   .about_content p {
-    font-size: 1.6rem;
+    text-align: left!important;
+    font-size: 1.3rem!important;
+  }
+
+  .VitiligoContent p{
+    text-align: left!important;
+    font-size: 1.3rem!important;
   }
 
   .about_img img {
@@ -1267,14 +1395,46 @@ form textarea {
     margin-left: -10px
   }
 
-  .about_content {
-    text-align: center;
+  .about_content .description p{
+    text-align: center!important;
   }
+
+  .how_to_do{
+    text-align: left!important;
+  }
+
+  .icon_box {
+    border: 1px solid !important;
+    width: 66px !important;
+    height: 65px!important;
+    border-radius: 47px!important;
+    display: flex!important;
+    justify-content: center!important;
+
+}
+
+
+
+
+
+.accordion-button{
+  font-size: 1.1rem!important;
+}
+
+.accordion-body {
+  font-size: 1.1rem!important;
+}
+
+.do p{
+  font-size: 12px!important;
+}
 
   .btn_group,
   .btn_group_1 {
     display: flex;
+    text-align: left!important;
     flex-direction: column;
+
   }
 
   .btn_group {
@@ -1282,9 +1442,10 @@ form textarea {
     align-items: center;
 
     button {
-      margin: 0px !important;
+      margin-top: 10px!important;
+      /* margin: 0px !important; */
       padding: 10px;
-      width: 79%;
+      width: 100%;
       background-color: white;
       font-size: 26px;
     }
@@ -1297,10 +1458,15 @@ form textarea {
 
     button {
       margin: 0px !important;
+      /* margin-top: 10px!important; */
       padding: 10px;
-      width: 79%;
+      width: 100%;
       background-color: white;
       font-size: 26px;
+    }
+
+    .Complications{
+      margin-top: 10px!important;
     }
   }
 
@@ -1314,6 +1480,11 @@ form textarea {
     height: auto;
   }
 
+ 
+
+ .AboutVitiligo p{
+  font-size: 1.3rem;
+ }
 
   h4 {
     font-size: 1.9rem;
@@ -1321,9 +1492,9 @@ form textarea {
   }
 
 
-  .VitiligoContent p {
+  /* .VitiligoContent p {
     font-size: 1.6rem;
-  }
+  } */
 
   .vitiligo_img img {
     margin-top: 40px;
@@ -1351,37 +1522,61 @@ form textarea {
     width: 100%;
   }
 
-  .About_section_3 p {
-    font-size: 1.6rem;
-    text-align: center;
+  .diagnose p {
+    margin-top: 8px!important;
+   align-items: flex-start!important;
   }
+
+ 
 
   .about_section_4_img img {
     width: 100%;
   }
 
-  .description p {
-    font-size: 1.5rem;
+  .categories{
+    margin-top: 10px!important;
   }
+.cosmetic_img{
+  margin-left: 0px!important;
+}
+.cosmetic_img img{
+  margin-left: 0px!important;
+}
+  
 
   .categories {
     width: 100%;
   }
 
+  .center{
+    text-align: center!important;
+  }
   .living_img img {
     margin-top: 20px;
   }
 
-  .Living_With_Vitiligo p {
-    font-size: 1.5rem;
-  }
-
+ 
   .Living {
     width: 100%;
     margin-top: 30px;
   }
+
+  .column h4{
+    font-size: 1.2rem!important;
+    text-align: start!important;
+  }
+  .slides img{
+    height: 100%!important;
+  }
+
+  .prev {
+    left: -114px!important;
+  }
+.bottom_imges{
+  margin-left: -114px!important;
 }
 
+}
 /* Small devices (portrait tablets and large phones, 600px to 768px) */
 @media (min-width: 601px) and (max-width: 768px) {
   .about_content {
@@ -1399,17 +1594,29 @@ form textarea {
 
 
 @media (max-width: 768px)  {
-  .about_content {
+  .about_section_img{
+    margin-left: 0px!important;
+    img{
+      margin-left: 0px!important;
+    }
+  }
+
+  .align{
+   
+    text-align: left!important;
+  }
+  .heading {
     text-align: left;
   }
+  
   .row_container{
-    width: 85%!important;
+    width: 94%!important;
     h5{
       font-size: 12px!important;
     }
   }
   .row_containers{
-    width: 85%!important;
+    width: 94%!important;
 
     h5{
       font-size: 12px!important;
@@ -1467,6 +1674,27 @@ form textarea {
   }
   .yoga_contents{
     width: 15%!important;
+
+  }
+
+  .yoga_content h2{
+font-size: 20px!important;
+
+
+  }
+
+  .fact_container{
+    justify-content: center;
+    display: flex;
+    width: 92%;
+    margin: auto;
+
+  }
+
+  .yoga_content p{
+   
+      font-size: 12px!important;
+    
   }
   .slide-1 p{
     margin-top: 0px!important;
@@ -1534,8 +1762,9 @@ form textarea {
 .bottom_img {
   img {
       width: 50%;
-      margin-right: -390px!important;
+      margin-right: -321px!important;
   }
+
 
   /* .images_yoga{
     height: 100%!important;
@@ -1552,7 +1781,19 @@ form textarea {
     margin-bottom: 4px!important;
   } */
 }
+.vitiligo_img img{
+  margin-left: 0px!important;
+}
 
+.fa-circle{
+  margin-top:15px!important;
+
+}
+
+.vitiligoSymptoms_img 
+  img {
+    margin-left: 0px!important;
+  }
 
 }
 
@@ -1571,19 +1812,31 @@ form textarea {
 .swiper_content img{
   width: 100%!important;
 }
+
+.banner-img{
+  height:100% !important;
+  width: 100% !important;
+}
 .bg-image {
-  position: absolute!important;
-  top: 41px!important;
-  left: 21px!important;
+  
+    width: 100% !important;
+
+    top: 106px !important;
+    height: 100% !important;
+  position: absolute !important;
+ 
+  left: 21px !important;
 }
 .bg-image img{
-  width: 85%!important;
+  width: 62% !important;
+  height: auto;
 }
 
 .contents {
-  width: 100%!important;
+  /* width: 100%!important; */
+  height: 100%!important;
   position: absolute!important;
-  top: 55%!important;
+  top: 26%!important;
   left: 0%!important;
 }
 
@@ -2072,3 +2325,32 @@ footer {
   width: 35px;
   font-size: 25px;
 }
+
+
+/* @media only screen and (max-width: 430px) {
+
+
+    .contents {
+        width: 100% !important;
+        position: absolute !important;
+        top: -18% !important;
+        left: 0% !important;
+    }
+
+
+}
+
+
+
+
+
+
+/* MBILE  */
+@media (max-width: 425px) {
+
+.slider-section{
+  display: none !important;
+}
+
+
+} */
