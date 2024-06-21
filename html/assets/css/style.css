@@ -213,7 +213,7 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 .bg-image {
   position: absolute;
   top: 299px;
-  left: 284px;
+  left: 250px;
 
 }
 
@@ -1008,7 +1008,7 @@ footer {
 
 nav ul li a.active {
   /* border-bottom: 2px solid pink; */
-  color: #8c287b;
+  color: #8c287b !important;
 }
 
 .swiper-pagination-progressbar {
@@ -1044,7 +1044,7 @@ p {
 
 
 .swiper-button-prev {
-  position: absolute;
+  position: fixed;
   left: 13px;
   top: 50%;
   border: 1px solid purple;
@@ -1063,7 +1063,7 @@ p {
 
 .swiper-button-next {
   right: 5px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 0%;
   transform: translateY(-50%);
