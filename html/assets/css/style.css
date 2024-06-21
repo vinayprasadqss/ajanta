@@ -1044,7 +1044,7 @@ p {
 
 
 .swiper-button-prev {
-  position: fixed;
+  position: absolute;
   left: 13px;
   top: 50%;
   border: 1px solid purple;
@@ -1063,7 +1063,7 @@ p {
 
 .swiper-button-next {
   right: 5px;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 0%;
   transform: translateY(-50%);
