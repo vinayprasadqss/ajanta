@@ -652,8 +652,8 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 
 .fact_container {
   padding-top: 190px;
-  background-color: #e8e8ea;
-  border-radius: 646px 646px 0 0;
+  background-color: #ebecec;
+  border-radius: 725px 725px 0 0;
   justify-content: center;
   width: 100%;
   padding-bottom: 50px;
@@ -662,12 +662,14 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 
 .accordion-body {
   font-size: 1.2rem;
+  color: #808586;
 
 
 }
 
 .accordion-item h1 button {
   font-weight: 700 !important;
+  border-bottom: 2px solid #b2b3b3;
   color: #7a7471 !important;
 }
 
@@ -1043,7 +1045,7 @@ p {
 
 .swiper-button-prev {
   position: absolute;
-  left: 109px;
+  left: 13px;
   top: 50%;
   border: 1px solid purple;
   transform: translateY(-50%);
@@ -1060,6 +1062,7 @@ p {
 }
 
 .swiper-button-next {
+  right: 5px;
   position: absolute;
   top: 50%;
   left: 0%;
@@ -1102,7 +1105,7 @@ p {
   top: 50%;
   right: auto; /* Distance from the right side */
   /* bottom: 198px!important; */
-  left: 92%!important;
+  left: 94%!important;
   z-index: 10 !important;
   border-radius: 70px;
   height: 66px;
@@ -1259,16 +1262,17 @@ form textarea {
 
 
 #backToTopBtn {
-  width: 6%;
+  /* width: 6%; */
   /* display: none; */
   position: fixed;
   bottom: 298px;
-  right: -13px;
+  right: -11px;
   z-index: 99;
   border: none;
   outline: none;
   background-color: white;
   color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   padding: 11px;
   border-top-left-radius: 23px;
@@ -1794,6 +1798,43 @@ footer {
 
 
 @media (max-width: 768px)  {
+  .bottom_img {
+    img {
+        width: 50% !important;
+        margin-right: 0px !important;
+        
+    }
+}
+  .yoga_content {
+    margin-top: 0 !important;
+    padding: 12px;
+    width: 84% !important;
+}
+
+  .heading{
+    text-align: left !important;
+  }
+
+  p{
+    text-align: left !important;
+  }
+  .bg-image {
+    width: 100% !important;
+    top: 106px !important;
+   
+    position: absolute !important;
+    left: 21px !important;
+    img{
+      height: 55% !important;
+    }
+}
+
+  .HomeBanner .swiper-slide .content .inner {
+    max-width: 338px !important;
+}
+  /* #initiative .swiper-button-next {
+ 
+    top: 0%!important;} */
   .about_section_img{
     margin-left: 0px!important;
     img{
@@ -1801,6 +1842,7 @@ footer {
     }
   }
 
+ 
   .align{
    
     text-align: left!important;
@@ -1904,17 +1946,17 @@ font-size: 20px!important;
     right: -105px!important;
     margin-right: 116px;
     border-radius: 70px;
-    top: 245px;
-    height: 50px!important;
+    top: 75% !important;
+  height: 55px ! important;
     background-color: #fdfdfd!important;
-    width: 50px;
+    width: 57px !important;
     /* padding: 20px; */
     border: 1px solid #dadada;
 }
 .swiper-button-prev{
-  top: 245px;
-  height: 50px!important;
-  width: 50px;
+  top: 75% !important;
+  height: 55px!important;
+  width: 57px !important;
 }
 
 .circle-1 {
@@ -1938,6 +1980,12 @@ font-size: 20px!important;
     top: 16px!important;
 
 }
+.bottom_img {
+  img {
+      width: 50% !important;
+      margin-right: -50px !important;
+  }
+}
 
 .fa-arrow-left{
   
@@ -1959,11 +2007,6 @@ font-size: 20px!important;
   font-size: 10px!important;
 }
 
-.bottom_img {
-  img {
-      width: 50%;
-      margin-right: -321px!important;
-  }
 
 
   /* .images_yoga{
@@ -1995,7 +2038,7 @@ font-size: 20px!important;
     margin-left: 0px!important;
   }
 
-}
+
 
 
 @media (max-width: 1024px) {
@@ -2531,6 +2574,246 @@ footer {
   font-size: 25px;
 }
 
+
+@media (max-width: 430px) {
+
+  .rotated-text, .rotated-texts {
+    &.rotated-texts {
+        font-size: 14px !important;
+        right: 4px !important;
+        top: 20px !important;
+    }
+}
+.image h5{
+  font-size: 10px !important;
+}
+
+  .segmental .list_description p{
+    font-size: 10px !important;
+  }
+
+  .segmental i{
+    font-size: 5px !important;
+  }
+
+  .non_segmental i{
+    font-size: 5px !important;
+  }
+
+  .first ,.second ,.thirds , .four{
+   margin-top: 6px !important;
+  }
+
+  .paragraph{
+    font-size: 1.1rem!important;
+  }
+  .slides-2 {
+    
+    
+    width: 100% !important;
+
+    h4{
+      font-size: 1rem!important;
+      text-align: justify!important;
+     }
+  
+  }
+
+ 
+ .second_slider img{
+ width: 100%!important;
+ }
+
+ .bottom_img img{
+  margin-right: -50px!important;
+ }
+
+  .slides-2{
+    
+      
+
+      p{
+        font-size: 1.1rem!important;
+        text-align: justify!important;
+      }
+
+    
+  
+  }
+  .do_dont p{
+    font-size: 1.1rem!important;
+  }
+
+  .rights{
+    align-items: start!important;
+  }
+
+  #initiative .swiper-button-next {
+    top: 50%;
+    right: auto;
+    /* bottom: 198px !important; */
+    left: 74% !important;
+    z-index: 10 !important;
+    border-radius: 70px;
+    /* height: 66px !important;
+    width: 69px !important; */
+    border: 1px solid #dadada;
+}
+
+  .non_segmental .list_description p{
+    font-size: 10px !important;
+
+    p{
+      font-size: 10px !important;
+    }
+  }
+  .yoga_content p {
+    font-size: 8px !important;
+}
+
+.yoga_content h2 {
+  font-size: 16px !important;
+}
+
+.yoga_contents h1 {
+  font-size: 2rem !important;
+}
+  .yoga_content {
+    width: 80% !important;
+  }
+
+  .align{
+    font-size: 1.1rem !important;
+  }
+  .Living_info p{
+    padding: 10px!important;
+    font-size: 1.1rem !important;
+  }
+
+  .about_categories{
+    padding: 13px!important;
+  }
+
+  .about_section_img img{
+    margin-top: 10px !important;
+  }
+  .about_section_4_img p{
+    font-size: 1.1rem !important;
+  }
+
+  .lists{
+    margin-top: 5px !important;
+  }
+  .non_segmental  
+
+    p{
+      font-size: 10px !important;
+    }
+
+
+  .vitiligoSymptoms_img img {
+    margin-top: 10px !important;
+}
+
+.diagnose{
+  margin-top: 0% !important;
+}
+
+  .VitiligoContent {
+
+    margin-top: 0% !important;
+
+    p{
+      font-size: 1rem !important;
+    }
+  }
+
+  .cases_second, .cases {
+    p {
+        font-size: 13px !important;
+    }
+}
+
+  .list_description p{
+    padding-top: 3px !important;
+  }
+
+  .AboutVitiligo p{
+    text-align: left !important;
+    font-size: 1rem !important;
+  }
+
+  .heading{
+    font-size: 1.8rem !important;
+  }
+
+  .about_img{
+    text-align: right !important;
+    margin-top: 0% !important;
+  }
+
+  .btn_group {
+    button {
+        margin-top: 10px !important;
+        /* margin: 0px !important; */
+        padding: 10px;
+        width: 100%;
+        background-color: white;
+        font-size: 17px;
+    }
+}
+.btn_group_1 {
+  button {
+   
+      /* margin: 0px !important; */
+      padding: 10px;
+      width: 100%;
+      background-color: white;
+      font-size: 17px;
+  }
+}
+  .inner{
+    margin-left: 4px !important;
+  }
+
+
+  .about_content p {
+    text-align: left !important;
+    font-size: 1rem !important;
+}
+
+  #about{
+    margin-top: 0% !important;
+  }
+
+  .HomeBanner .swiper {
+    position: relative !important;
+    z-index: 1 !important;
+    width: 100vw !important;
+    height: auto !important;
+    margin-top: 100px !important;
+}
+
+  .log img{
+    width: 40%!important;
+  }
+
+  .inner p {
+    line-height: 1.4 !important;
+    max-width: 154px !important;
+    font-size: 7px !important;
+}
+
+.bg-image{
+  width: 100% !important;
+  top: -1px !important;
+  height: 100% !important;
+  position: absolute !important;
+  left: 21px !important;
+
+}
+
+}
 
 /* @media only screen and (max-width: 430px) {
 
