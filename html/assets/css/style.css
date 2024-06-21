@@ -2806,7 +2806,7 @@ footer {
 
 .bg-image{
   width: 100% !important;
-  top: -1px !important;
+  top: 35px !important;
   height: 100% !important;
   position: absolute !important;
   left: 21px !important;
