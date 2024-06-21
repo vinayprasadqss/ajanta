@@ -445,6 +445,23 @@ header nav.navBarNew .container .navbar-collapse li a.active {
  
 }
 
+.how_to_do{
+  color: #5a5a5a;
+  font-weight: 600;
+}
+.yoga_contents h1{
+  color: #5a5a5a;
+  font-weight: 700;
+}
+.yoga_content h2{
+   color: #5a5a5a;
+   font-weight: 700;
+}
+.paragraph h3{
+  font-weight: 700;
+  color: #5a5a5a;
+}
+
 .cases_second{
   background-color: #fdfdfd!important;
 
@@ -453,6 +470,20 @@ header nav.navBarNew .container .navbar-collapse li a.active {
     color:#923683!important;
     font-weight: 300!important;
   }
+}
+
+.steps{
+  width: 40px; border: 1px solid ;padding: 5px; height: 40px; background-color: black; border-radius: 10px;
+}
+
+.step {
+  left: 13px;
+  top: 2%;
+}
+.step_heading{
+  font-size: 26px;
+  font-weight: 900;
+  color: white;
 }
 
 .vitiligoSymptoms_img {
@@ -469,6 +500,18 @@ header nav.navBarNew .container .navbar-collapse li a.active {
   position: relative;
 }
 
+.first  {
+  margin-top: 3px !important;
+}
+.second {
+  margin-top: 3px !important;
+}
+.thirds{
+  margin-top: 3px !important;
+}
+.four{
+  margin-top: 3px !important;
+}
 .rotated-text,
 .rotated-texts {
   position: absolute;
