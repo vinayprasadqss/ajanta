@@ -216,7 +216,9 @@ header nav.navBarNew .container .navbar-collapse li a.active {
   left: 250px;
 
 }
-
+.right{
+  align-items: center;
+}
 .bg-image img {
   width: 69% !important;
 }
@@ -2643,7 +2645,7 @@ footer {
   .fact_container {
     padding-top: 99px  !important;
     background-color: #ebecec;
-    border-radius: 603px 603px 0 0 !important;
+    /* border-radius: 603px 603px 0 0 !important; */
     justify-content: center  !important;
     /* width: 100%; */
     padding-bottom: 50px;
