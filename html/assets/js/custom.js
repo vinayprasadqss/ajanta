@@ -2,12 +2,16 @@
 var swiper = new Swiper(".mySwiper", {
   direction: "horizontal",
   slidesPerView: 1,
-  
   spaceBetween: 30,
+    loop: true,
   pagination: {
       el: ".swiper-pagination",
       clickable: true,
   },
+    autoplay: {
+        delay: 3000,  // Delay between slides in milliseconds
+        disableOnInteraction: false,  // Enable or disable autoplay on user interactions
+    }
 });
 
 var swiper= new Swiper(".mySwiper2", {
@@ -15,7 +19,7 @@ var swiper= new Swiper(".mySwiper2", {
   slidesPerView: 1, // Number of slides per view
   spaceBetween: 10, // Space between each slide
   loop: true, // Enable looping mode
-  
+
   pagination: {
       el: ".swiper-pagination",
       type: "progressbar",
@@ -55,7 +59,7 @@ var btn = document.getElementById("contactUsButton");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal
 btn.onclick = function() {
   popupForm.style.display = "block";
 }

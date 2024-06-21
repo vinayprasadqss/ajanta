@@ -46,8 +46,9 @@ a {
 }
 
 p{
-  color: #727270;
-  font-weight: 500;
+  /*color: #727270;*/
+  color: #414040;
+  font-weight: 400;
 }
 
 header {
@@ -57,7 +58,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 11;
   box-shadow: 0px 0px 4px 0px #858585;
 }
 
@@ -73,15 +74,18 @@ header nav.navBarNew .container .navbar-collapse li a {
   text-transform: uppercase;
   font-weight: 500;
 }
+header nav.navBarNew .container .navbar-collapse li a button{
+  text-transform: uppercase;
+  font-weight: 500;
+}
 
-header nav.navBarNew .container .navbar-collapse li a:hover {
+header nav.navBarNew .container .navbar-collapse li a:hover, header nav.navBarNew .container .navbar-collapse li a.nav_contact button:hover {
   color: #8c287b;
 }
 
 header nav.navBarNew .container .navbar-collapse li a.active {
   /* background-color: #cf8ebd; */
   color: #cf8ebd;
-  ;
 }
 
 .HomeBanner .swiper {
@@ -120,6 +124,7 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 .HomeBanner .swiper-slide .content .inner p {
   line-height: 32px;
   text-align: left;
+  font-size: 15px;
 }
 
 .HomeBanner .swiper-slide img {
@@ -169,7 +174,7 @@ header nav.navBarNew .container .navbar-collapse li a.active {
   gap: 20px;
   justify-content: center;
   /* Adjust horizontal positioning as needed */
-  top: 85% !important;
+  bottom: 50px;
   /* Center vertically */
   transform: translateY(-50%) !important;
 
@@ -194,6 +199,14 @@ header nav.navBarNew .container .navbar-collapse li a.active {
   background-color: #d090bd;
   /* Change active dot color */
   border: 1px solid #d090bd;
+}
+
+.HomeBanner .secondSlide.swiper-slide .content .inner{
+  max-width: 800px;
+}
+
+.HomeBanner .secondSlide.swiper-slide .content .inner img{
+  max-width: 100%;
 }
 
 .slider {
@@ -298,7 +311,7 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 
 
   p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2;
   }
 }
@@ -339,11 +352,11 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 
   p {
     line-height: 2;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   li {
-    font-size: 18px;
+    font-size: 16px;
   }
 
 
@@ -428,7 +441,7 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 
 .cases_second,
 .cases {
- 
+
   margin-top: 25px;
   background-color: white;
   color: purple;
@@ -438,7 +451,7 @@ header nav.navBarNew .container .navbar-collapse li a.active {
   /* border-right: 10px solid purple !important; */
 
   p {
-    font-size: 27px;
+    font-size: 22px;
   }
 }
 
@@ -449,7 +462,7 @@ header nav.navBarNew .container .navbar-collapse li a.active {
     color:#923683!important;
     font-weight: 300!important;
   }
- 
+
 }
 
 .how_to_do{
@@ -485,11 +498,11 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 
 .step {
   left: 13px;
-  top: 2%;
+  top: 12px;
 }
 .step_heading{
-  font-size: 26px;
-  font-weight: 900;
+  font-size: 22px;
+  font-weight: 700;
   color: white;
 }
 
@@ -544,7 +557,7 @@ header nav.navBarNew .container .navbar-collapse li a.active {
   justify-content: space-around;
   margin: 0;
   padding: 0;
-  border: 1px solid;
+  border: 1px solid #ccc;
   border-radius: 10px;
 
   &.row_container {
@@ -642,13 +655,16 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 .Cosmetic {
   background-color: #ebecec;
 }
+.Cosmetic h5.heading{
+  color: #000;
+}
 
 .cosmetic_img {
   margin-left: 20px;
 
   img {
     width: 100%;
-    height: 330px;
+    height: auto;
     margin-left: 20px;
   }
 }
@@ -1068,6 +1084,7 @@ nav ul li a.active {
 .heading {
   color: #727271;
   font-weight: 600;
+  font-size: 30px;
 }
 
 .strong {
@@ -1078,8 +1095,8 @@ nav ul li a.active {
 
 .list_description,
 p {
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .slides {
@@ -1140,30 +1157,33 @@ p {
 
 .fa-arrow-left {
   font-weight: 400;
-  font-size: 28px;
+  font-size: 21px;
   color: purple;
 }
 
 .fa-arrow-right {
   font-weight: 400;
-  font-size: 28px;
-  color: #4c4b4b;
+  font-size: 21px;
+  /*color: #4c4b4b;*/
+  color: purple;
 }
 
 #initiative .swiper-button-next {
- 
+
   top: 50%;
   right: auto; /* Distance from the right side */
   /* bottom: 198px!important; */
-  left: 94%!important;
+  left: auto !important;
+  right: 13px;
   z-index: 10 !important;
-  border-radius: 70px;
+  border-radius: 50%;
   height: 66px;
-  width: 69px;
-  border: 1px solid #dadada;
- 
+  width: 66px;
+  /*border: 1px solid #dadada;*/
+  border: 1px solid purple;
 
-  
+
+
 }
 .icon i {
   margin-top: 13px;
@@ -1175,14 +1195,23 @@ p {
 } */
 .circle {
   width: 50px;
-  border-radius: 26px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:50%;
   border: 2px dotted purple;
 }
 
 .circle-1 {
   width: 50px;
-  border-radius: 26px;
-  border: 2px dotted #dadada;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  /*border: 2px dotted #dadada;*/
+  border: 2px dotted purple;
 }
 
 
@@ -1255,7 +1284,7 @@ form input[type="checkbox"] {
 
   button {
     width: 100%;
-    padding: 20px;
+    padding: 15px;
     background-color: #535353;
     color: white;
     border: none;
@@ -1308,6 +1337,7 @@ form textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  font-size: 15px;
 }
 
 
@@ -1431,7 +1461,7 @@ form textarea {
 }
 
 .list_description p {
-  
+
 margin-top: 3px!important;
 margin-bottom: 0%!important;
 }
@@ -1508,17 +1538,17 @@ margin-bottom: 0%!important;
 
 
 
-@media only screen 
+@media only screen
   and (max-device-width: 375px)  {
   .dont{
-   
+
     padding: 0px!important;
     margin-right: 0px!;
     margin-left: 0px !important;
     /* margin-left: calc(-.5* var(--bs-gutter-x)); */
 }
 .donts{
-   
+
   padding: 0px!important;
   margin-right: 0px!;
   margin-left: 0px !important;
@@ -1549,7 +1579,7 @@ margin-bottom: 0%!important;
 }
 
 
-/*   
+/*
       .rotate-1 {
           font-size: 10px !important;
           right: -4px!important;
@@ -1561,14 +1591,14 @@ margin-bottom: 0%!important;
 footer {
   & .content {
       & .link-boxes {
-       
+
         width: 100%!important;
        margin: auto!important;
           & .box {
               .link_name {
-                 
+
                   font-size: 6px!important;
-                 
+
               }
 
               li a{
@@ -1581,7 +1611,7 @@ footer {
       footer {
         & .content {
             & .top {
-            
+
                 & .logo-details {
                     img {
                         width: 73%!important;
@@ -1589,18 +1619,18 @@ footer {
                 }
             }
         }
-        
+
     }
 
     .top{
       display: block!important;
     }
-    
-    
+
+
   }
 }
 
-  
+
 }
 
 @media (max-width: 630px) {
@@ -1734,7 +1764,7 @@ footer {
     height: auto;
   }
 
- 
+
 
  .AboutVitiligo p{
   font-size: 1.3rem;
@@ -1781,7 +1811,7 @@ footer {
    align-items: flex-start!important;
   }
 
- 
+
 
   .about_section_4_img img {
     width: 100%;
@@ -1796,7 +1826,7 @@ footer {
 .cosmetic_img img{
   margin-left: 0px!important;
 }
-  
+
 
   .categories {
     width: 100%;
@@ -1809,7 +1839,7 @@ footer {
     margin-top: 20px;
   }
 
- 
+
   .Living {
     width: 100%;
     margin-top: 30px;
@@ -1855,7 +1885,7 @@ footer {
     img {
         width: 50% !important;
         margin-right: 0px !important;
-        
+
     }
 }
   .yoga_content {
@@ -1874,7 +1904,7 @@ footer {
   .bg-image {
     width: 100% !important;
     top: 106px !important;
-   
+
     position: absolute !important;
     left: 21px !important;
     img{
@@ -1886,7 +1916,7 @@ footer {
     max-width: 338px !important;
 }
   /* #initiative .swiper-button-next {
- 
+
     top: 0%!important;} */
   .about_section_img{
     margin-left: 0px!important;
@@ -1895,15 +1925,15 @@ footer {
     }
   }
 
- 
+
   .align{
-   
+
     text-align: left!important;
   }
   .heading {
     text-align: left;
   }
-  
+
   .row_container{
     width: 94%!important;
     h5{
@@ -1987,9 +2017,9 @@ font-size: 20px!important;
   }
 
   .yoga_content p{
-   
+
       font-size: 12px!important;
-    
+
   }
   .slide-1 p{
     margin-top: 0px!important;
@@ -1998,39 +2028,30 @@ font-size: 20px!important;
   .swiper-button-next {
     right: -105px!important;
     margin-right: 116px;
-    border-radius: 70px;
     top: 75% !important;
   height: 55px ! important;
     background-color: #fdfdfd!important;
-    width: 57px !important;
+    width: 55px !important;
     /* padding: 20px; */
-    border: 1px solid #dadada;
 }
 .swiper-button-prev{
   top: 75% !important;
   height: 55px!important;
-  width: 57px !important;
+  width: 55px !important;
 }
 
 .circle-1 {
   width: 30px!important;
   height: 30px!important;
-  border-radius: 26px;
-  border: 2px dotted #dadada;
 }
 .circle {
   width: 30px!important;
   height: 30px!important;
-  border-radius: 26px;
-  border: 2px dotted #dadada;
 }
 
 
 .fa-arrow-right{
-  
     font-size: 16px!important;
-    position: absolute!important;
-    top: 16px!important;
 
 }
 .bottom_img {
@@ -2041,7 +2062,7 @@ font-size: 20px!important;
 }
 
 .fa-arrow-left{
-  
+
   font-size: 16px!important;
   position: absolute!important;
   top: 16px!important;
@@ -2051,13 +2072,13 @@ font-size: 20px!important;
   width: 100%!important;
 }
 .link_name{
-  font-size: 8px!important;
+  font-size: 12px!important;
 }
 .box li a{
-  font-size: 8px!important;
+  font-size: 12px!important;
 }
 .copyright_text{
-  font-size: 10px!important;
+  font-size: 12px!important;
 }
 
 
@@ -2067,7 +2088,7 @@ font-size: 20px!important;
     img{
       height: 100%!important;
     }
-    
+
   } */
 
   /* .list_description p {
@@ -2082,11 +2103,12 @@ font-size: 20px!important;
 }
 
 .fa-circle{
-  margin-top:15px!important;
+  margin-top:10px!important;
+  color: #414040;
 
 }
 
-.vitiligoSymptoms_img 
+.vitiligoSymptoms_img
   img {
     margin-left: 0px!important;
   }
@@ -2114,13 +2136,13 @@ font-size: 20px!important;
   width: 100% !important;
 }
 .bg-image {
-  
+
     width: 100% !important;
 
     top: 106px !important;
     height: 100% !important;
   position: absolute !important;
- 
+
   left: 21px !important;
 }
 .bg-image img{
@@ -2168,7 +2190,7 @@ footer {
   & .bottom-details {
       & .bottom_text {
           span, a {
-              
+
               margin-left: -11px;
            }}}
 
@@ -2316,7 +2338,7 @@ footer {
     left: 20px!important;
     position: absolute;
     top: 61%;
-   
+
 
 }
 .bannerslider .section {
@@ -2615,6 +2637,12 @@ footer {
   border: 0;
   box-shadow: none;
 }
+.contactFormOverlay .popup-content h1{
+  font-size: 26px;
+}
+.contactFormOverlay .popup-content p{
+  font-size: 15px;
+}
 
 .contactFormOverlay .popup-content .close_btn{
   position: absolute;
@@ -2690,18 +2718,18 @@ footer {
     font-size: 1.1rem!important;
   }
   .slides-2 {
-    
-    
+
+
     width: 100% !important;
 
     h4{
       font-size: 1rem!important;
       text-align: justify!important;
      }
-  
+
   }
 
- 
+
  .second_slider img{
  width: 100%!important;
  }
@@ -2711,16 +2739,16 @@ footer {
  }
 
   .slides-2{
-    
-      
+
+
 
       p{
         font-size: 1.1rem!important;
         text-align: justify!important;
       }
 
-    
-  
+
+
   }
   .do_dont p{
     font-size: 1.1rem!important;
@@ -2786,7 +2814,7 @@ footer {
   .lists{
     margin-top: 5px !important;
   }
-  .non_segmental  
+  .non_segmental
 
     p{
       font-size: 10px !important;
@@ -2846,7 +2874,7 @@ footer {
 }
 .btn_group_1 {
   button {
-   
+
       /* margin: 0px !important; */
       padding: 10px;
       width: 100%;
@@ -2897,22 +2925,37 @@ footer {
 
 }
 
-/* @media only screen and (max-width: 430px) {
 
-
-    .contents {
-        width: 100% !important;
-        position: absolute !important;
-        top: -18% !important;
-        left: 0% !important;
-    }
-
-
+@media (max-width: 1400px){
+  header nav.navBarNew .container .navbar-collapse li a img{
+    margin-right: 5px;
+  }
 }
 
+@media(max-width: 992px){
+  header nav.navBarNew {
+    background: #fff;
 
+  }
+  header nav.navBarNew ul li a img{
+    display: none;
+  }
+  header nav.navBarNew ul li {
+    border-top: 1px solid #ccc;
+    padding: 8px;
+    margin-top: 5px;
+  }
+}
 
+@media (max-width: 767px){
+  footer .content .top {
+    flex-wrap: wrap;
+  }
+  footer .content .top .logo-details{
+    margin: 0 auto;
+  }
+  footer .content .top .link-boxes{
+    flex-wrap: wrap;
+  }
+}
 
-
-
-/* MBILE  */
