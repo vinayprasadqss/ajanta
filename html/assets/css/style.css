@@ -385,6 +385,11 @@ header nav.navBarNew .container .navbar-collapse li a.active {
   position: relative;
 
 }
+.accordion-button:not(.collapsed)::before {
+  content: '\f068';
+  margin-top: -6px;
+  margin-right: -19px;
+}
 
 .border-left-right {
   position: relative;
@@ -1841,6 +1846,9 @@ footer {
 
 
 @media (max-width: 768px)  {
+  .swiper-button-next{
+    margin-left: 143px !important;
+  }
   .bottom_img {
     img {
         width: 50% !important;
@@ -2620,6 +2628,35 @@ footer {
 
 @media (max-width: 430px) {
 
+  .swiper-button-prev {
+    top: 59% !important;
+    height: 55px !important;
+    width: 57px !important;
+}
+.swiper-button-next{
+  top: 59% !important;
+  margin-left: 40px !important;
+  left: 20px !important;
+}
+
+}
+  .fact_container {
+    padding-top: 99px  !important;
+    background-color: #ebecec;
+    border-radius: 603px 603px 0 0 !important;
+    justify-content: center  !important;
+    /* width: 100%; */
+    padding-bottom: 50px;
+    display: flex;
+}
+  .accordion-item{
+    margin-top: 0% !important;
+  }
+
+  .right{
+    align-items: start !important;
+  }
+
   .rotated-text, .rotated-texts {
     &.rotated-texts {
         font-size: 14px !important;
@@ -2850,7 +2887,7 @@ footer {
 .bg-image{
   width: 100% !important;
   top: 35px !important;
-  height: 100% !important;
+  height: auto !important;
   position: absolute !important;
   left: 21px !important;
 
