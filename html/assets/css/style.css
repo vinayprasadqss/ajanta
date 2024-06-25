@@ -1216,7 +1216,7 @@ p {
 #initiative .swiper-button-next {
 
   top: 50%;
-  right: 150px; /* Distance from the right side */
+  right: 200px; /* Distance from the right side */
   /* bottom: 198px!important; */
   left: auto !important;
   z-index: 10 !important;
@@ -1400,7 +1400,7 @@ color: #ccc;
   outline: none;
   background-color: white;
   color: black;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow:0 0 8px 3px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   padding: 11px;
   border-top-left-radius: 23px;
