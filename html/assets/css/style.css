@@ -1190,14 +1190,7 @@ p {
   justify-content: center;
   align-items: center;
 }
-@media (max-width:1025px){
-  .swiper-button-prev{
-    left: 13px;
-  }
-  .swiper-button-next{
-    right: 5px;
-  }
-}
+
 
 .swiper-button-prev::after {
   display: none;
@@ -1329,7 +1322,7 @@ form input[type="checkbox"] {
 
   form label {
     color: #6e6e6d;
-    font-size: 12px;
+    font-size: 15px;
     text-transform: none;
   }
 
@@ -1388,7 +1381,11 @@ form textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  font-size: 15px;
+  font-size: 18px;
+}
+form input::placeholder,
+form textarea::placeholder {
+color: #ccc;
 }
 
 
@@ -2267,7 +2264,7 @@ footer {
 .mySwiper2 .btn {
 padding: 0;
 }
-.mySwiper2 .btn button.btn {
+.mySwiper2 .btn button.btn, .mySwiper2 .btn a.btn {
   border-radius: 0;
   padding: 7px 35px;
   font-size: 18px;
@@ -2697,6 +2694,9 @@ padding: 0;
   }
 }
 
+.contactFormOverlay .modal-dialog{
+  max-width: 475px;
+}
 
 .contactFormOverlay .modal-content{
   padding: 30px;
@@ -2714,7 +2714,7 @@ padding: 0;
   font-size: 26px;
 }
 .contactFormOverlay .popup-content p{
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .contactFormOverlay .popup-content .close_btn{
@@ -2725,7 +2725,7 @@ padding: 0;
 .contactFormOverlay .popup-content .close_btn .close{
   height: 35px;
   width: 35px;
-  font-size: 25px;
+  font-size: 21px;
 }
 
 
@@ -2998,6 +2998,14 @@ padding: 0;
 
 }
 
+@media (max-width:1660px){
+  #initiative .swiper-button-prev{
+    left: 13px;
+  }
+  #initiative .swiper-button-next{
+    right: 5px;
+  }
+}
 
 @media (max-width: 1400px){
   header nav.navBarNew .container .navbar-collapse li a img{
