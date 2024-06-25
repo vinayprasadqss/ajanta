@@ -86,6 +86,40 @@ header nav.navBarNew .container .navbar-collapse li a button{
 header nav.navBarNew .container .navbar-collapse li a:hover, header nav.navBarNew .container .navbar-collapse li a.nav_contact button:hover {
   color: #8c287b;
 }
+header nav.navBarNew .container .nav-item{
+  position: relative;
+}
+header nav.navBarNew .container .nav-item .overEffectDropdown{
+display: none;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  left: 9px;
+  width: 190px;
+  box-shadow: 0 4px 7px 0px #ccc;
+}
+header nav.navBarNew .container .nav-item .overEffectDropdown li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header nav.navBarNew .container .nav-item .overEffectDropdown li a, header nav.navBarNew .container .nav-item .overEffectDropdown li button{
+color: #414040;
+  padding: 10px;
+  font-size: 17px;
+  padding-left: 17px;
+}
+
+header nav.navBarNew .container .nav-item .overEffectDropdown li a:hover, header nav.navBarNew .container .nav-item .overEffectDropdown li button:hover{
+  background: #cf8ebd;
+  color: #fff;
+}
+
+header nav.navBarNew .container .nav-item:hover .overEffectDropdown{
+  display: block;
+}
 
 header nav.navBarNew .container .navbar-collapse li a.active {
   /* background-color: #cf8ebd; */
@@ -904,13 +938,15 @@ footer {
           margin: 6px 0;
           list-style: none;
 
-          a {
+          a, button {
             color: #fff;
-            font-size: 14px;
+            font-size: 18px;
             font-weight: 400;
             text-decoration: none;
             opacity: 0.8;
             transition: all 0.4s ease;
+            background: transparent;
+            border: none;
 
             &:hover {
               opacity: 1;
@@ -973,7 +1009,7 @@ footer {
 
       span,
       a {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 300;
         margin-left: -202px;
         color: #fff;
@@ -1028,7 +1064,7 @@ footer {
 }
 
 .about_section_column {
-  padding: 40px;
+  padding: 40px 40px 34px 40px;
   border-radius: 15px;
   background-color: #afcbd7;
 }
@@ -1052,7 +1088,7 @@ footer {
 }
 
 .column_detail {
-  width: 80%;
+  width: 77%;
   background-color: #d2e0e6 !important;
 
 
@@ -1405,8 +1441,15 @@ color: #ccc;
   padding: 11px;
   border-top-left-radius: 23px;
   border-bottom-left-radius: 23px;
-  font-size: 12px !important;}
+  font-size: 14px !important;
+  align-items: center;
+  justify-content: center;
+}
 
+#backToTopBtn .fa-solid {
+  margin-right: 5px;
+  font-size: 16px;
+}
 
 #footer {
   position: relative; /* Required for positioning the button within the footer */
