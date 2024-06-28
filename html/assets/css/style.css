@@ -3098,8 +3098,38 @@ button {
   }
   header nav.navBarNew ul li {
     border-top: 1px solid #ccc;
-    padding: 8px;
     margin-top: 5px;
+  }
+}
+@media (max-width: 991px){
+  header nav.navBarNew .container .nav-item .overEffectDropdown{
+    display: block;
+    position: relative;
+    width: 100%;
+    left: 0;
+    box-shadow: none;
+  }
+  header nav.navBarNew .container .nav-item .overEffectDropdown li a, header nav.navBarNew .container .nav-item .overEffectDropdown li button{
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none;
+    padding-left: 20px;
+  }
+  header nav.navBarNew .container .navbar-collapse.show{
+    height: calc(100vh - 60px);
+    overflow: auto;
+  }
+  .navbar-toggler:focus{
+    box-shadow: none;
+  }
+  .navbar-toggler .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%280, 0, 0, 0.5%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7l22 22M26 7L4 29"%3E%3C/path%3E%3C/svg%3E');
+    margin-top: -3px;
+  }
+
+  .navbar-toggler.collapsed .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%280, 0, 0, 0.5%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"%3E%3C/path%3E%3C/svg%3E');
+    margin-top: 0px;
   }
 }
 
