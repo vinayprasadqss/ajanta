@@ -9,15 +9,15 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
   },
     autoplay: {
-        delay: 3000,  // Delay between slides in milliseconds
-        disableOnInteraction: false,  // Enable or disable autoplay on user interactions
+        delay: 3000,
+        disableOnInteraction: false,
     }
 });
 
 var swiper= new Swiper(".mySwiper2", {
   autoHeight: true,
   slidesPerView: 1, // Number of slides per view
-  spaceBetween: 10, // Space between each slide
+  spaceBetween: 30, // Space between each slide
   loop: true, // Enable looping mode
 
   pagination: {
