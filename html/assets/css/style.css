@@ -76,7 +76,19 @@ header nav.navBarNew .container .navbar-collapse li a {
   text-transform: uppercase;
   font-weight: normal;
   color: #000;
+  padding-left: 10px;
+  padding-right: 13px;
 }
+header nav.navBarNew .container .navbar-collapse li a:after{
+  background: url(./../img/menu_bg.png) no-repeat right center;
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 21px;
+  top: 7px;
+  right: 0;
+}
+
 header nav.navBarNew .container .navbar-collapse li a button{
   text-transform: uppercase;
   font-weight: normal;
@@ -97,8 +109,9 @@ header nav.navBarNew .container .nav-item .overEffectDropdown{
   position: absolute;
   top: 100%;
   left: 9px;
-  width: 190px;
   box-shadow: 0 4px 7px 0px #ccc;
+  width: 100%;
+  min-width: 190px;
 }
 header nav.navBarNew .container .nav-item .overEffectDropdown li{
   list-style: none;
@@ -314,14 +327,17 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 
 .btn_group {
   margin-top: 25px;
+  display: flex;
 }
 
 .btn_group button {
-  padding: 10px;
+  padding: 0;
   width: 30%;
   background-color: #fdfdfd;
   color: #c2c4c4;
   border: 1px solid #c2c4c4;
+  min-height: 50px;
+  line-height: 22px;
 }
 
 .btn_group button:hover {
@@ -332,14 +348,17 @@ header nav.navBarNew .container .navbar-collapse li a.active {
 
 .btn_group_1 {
   margin-top: 15px;
+  display: flex;
 }
 
 .btn_group_1 button {
-  padding: 10px;
+  padding: 0;
   width: 30%;
   background-color: #fdfdfd;
   color: #c2c4c4;
   border: 1px solid #c2c4c4;
+  min-height: 50px;
+  line-height: 22px;
 }
 
 .btn_group_1 button:hover {
@@ -869,10 +888,11 @@ i {
 
 
 footer {
-  background: black;
+  background: #231f20;
   width: 100%;
   bottom: 0;
   left: 0;
+  position: relative;
 }
 footer::before {
   /* content: ''; */
@@ -989,7 +1009,7 @@ footer .content .link-boxes .input-box input[type="button"]:hover {
 }
 footer .bottom-details {
   width: 100%;
-  background: black;
+  background: #231f20;
 }
 footer .bottom-details .bottom_text {
   max-width: 1250px;
@@ -1033,7 +1053,7 @@ footer .bottom-details .bottom_text a {
   text-align: end;
 
 img {
-  width: 360px;
+  width: 600px;
   max-width: 70%;
   margin-right: 0;
 }
@@ -1418,7 +1438,7 @@ form textarea::placeholder {
   /* width: 6%; */
   /* display: none; */
   position: fixed;
-  bottom: 100px;
+  bottom: 180px;
   right: -11px;
   z-index: 99;
   border: none;
@@ -3026,17 +3046,96 @@ button {
   font-size: 18px;
   border-color: #000 !important;
 }
+
+.copyWrite{
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  text-align: right;
+}
+
+.copyWrite .copyright_text{
+  color: white;
+  font-size: 12px;
+}
+.copyWrite .createdBy {
+  text-align: right;
+}
+.copyWrite .createdBy p{
+  font-size: 12px;
+}
+
 .createdBy p{
   color: #939497;
-  font-size: 16px;
+  font-size: 12px;
 }
 .createdBy img{
   margin-left: 5px;
+  width: 90px;
 }
 .footer_btn.btn{
   padding: 0;
   border: none;
 }
+
+.langSelect{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 5px;
+  padding-left: 10px;
+}
+.langSelect .fa-globe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.langSelect img{
+  width: 4px;
+  height: 23px;
+  margin: auto;
+}
+
+.langSelect select{
+  border: none;
+  text-transform: uppercase;
+  background: transparent;
+}
+.langSelect select:focus-visible{
+  outline: none;
+  border: none;
+}
+
+
+/* language wise css */
+body.tamil-lang header nav.navBarNew li a{
+  font-size: 12px;
+}
+
+
+body.tamil-lang header nav.navBarNew .container .nav-item .overEffectDropdown li a, 
+body.tamil-lang header nav.navBarNew .container .nav-item .overEffectDropdown li button{
+  font-size: 12px;
+  text-wrap: wrap;
+}
+
+body.tamil-lang header nav.navBarNew .container .navbar-collapse li a button{
+  text-align: left;
+}
+
+body.tamil-lang footer .content .link-boxes .box li a, body.tamil-lang footer .content .link-boxes .box li button{
+  font-size: 14px;
+  text-align: left;
+}
+
+
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1360px;
+  }
+}
+
+
 @media (max-width:1660px){
   #initiative .swiper-button-prev{
     left: 13px;
@@ -3044,6 +3143,18 @@ button {
   #initiative .swiper-button-next{
     right: 5px;
   }
+
+  .copyWrite{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+  }
+  .copyWrite p {
+    margin-bottom: 0;
+  }
+
 }
 
 @media (max-width: 1400px){
@@ -3180,18 +3291,28 @@ button {
     display: block;
   }
 
-  .AllAboutVitiligo .btn_group,  .AllAboutVitiligo .btn_group_1{
+  .AllAboutVitiligo .btn_group,  .AllAboutVitiligo .btn_group_1,
+  .Living_With_Vitiligo .btn_group,  .Living_With_Vitiligo .btn_group_1,
+  .did_you_know .btn_group,  .did_you_know .btn_group_1
+  {
     display: flex;
     text-align: left !important;
     flex-direction: column;
     gap:10px;
   }
+ 
 
-  .AllAboutVitiligo .btn_group button,  .AllAboutVitiligo .btn_group_1 button{
+   
+  .AllAboutVitiligo .btn_group button,  .AllAboutVitiligo .btn_group_1 button,
+  .Living_With_Vitiligo  .btn_group button,  .Living_With_Vitiligo  .btn_group_1 button,
+  .did_you_know  .btn_group button,  .did_you_know  .btn_group_1 button
+  {
     text-align: center;
     width: 100%;
     margin: 0 !important;
   }
+
+
   .About {
     padding-top: 15px;
   }
@@ -3353,6 +3474,4 @@ button {
   }
 
 }
-
-
 
